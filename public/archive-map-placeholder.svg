@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">淮海战役区域态势示意底图</title>
+  <desc id="desc">用于交互开发的旧纸风格示意图，正式历史作战图待核验替换。</desc>
+  <defs>
+    <filter id="paper">
+      <feTurbulence baseFrequency=".7" numOctaves="3" seed="7" type="fractalNoise" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray">
+        <feFuncA type="table" tableValues="0 .14"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="rough">
+      <feTurbulence baseFrequency=".02" numOctaves="2" seed="9" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+    </filter>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#624b33" stroke-opacity=".16" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 10 5 0 10Z" fill="#9b2927"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="1100" fill="#e6d09e"/>
+  <rect width="1600" height="1100" fill="url(#grid)"/>
+  <rect width="1600" height="1100" filter="url(#paper)" opacity=".7"/>
+  <path d="M-50 230C220 130 350 300 560 220S950 80 1190 210s340 90 500 5" fill="none" stroke="#5d786f" stroke-opacity=".46" stroke-width="18" filter="url(#rough)"/>
+  <path d="M70 1020C270 850 390 930 520 790s240-130 350-30 230 60 360-80 270-130 440-70" fill="none" stroke="#668078" stroke-opacity=".4" stroke-width="12" filter="url(#rough)"/>
+  <g fill="none" stroke="#6a5439" stroke-opacity=".38" stroke-width="5" filter="url(#rough)">
+    <path d="M80 480c220-160 400-70 580-180s380-130 700-70"/>
+    <path d="M280 980c120-190 250-260 430-330s420-80 710-250"/>
+    <path d="M190 180c80 240 200 350 390 440s340 130 480 360"/>
+  </g>
+  <g fill="#493827" font-family="KaiTi, STKaiti, serif" text-anchor="middle">
+    <text x="790" y="340" font-size="78" font-weight="700" letter-spacing="18">徐州</text>
+    <text x="1120" y="250" font-size="45" opacity=".72">邳州方向</text>
+    <text x="480" y="760" font-size="52" opacity=".76">宿县方向</text>
+    <text x="250" y="600" font-size="46" opacity=".72">永城方向</text>
+  </g>
+  <g fill="none" stroke="#9b2927" stroke-width="12" stroke-linecap="round" stroke-dasharray="28 18" marker-end="url(#arrow)" filter="url(#rough)">
+    <path d="M1280 260C1130 330 1010 350 890 360"/>
+    <path d="M300 600C470 520 610 470 760 405"/>
+    <path d="M620 900C650 740 700 610 770 455"/>
+  </g>
+  <g transform="translate(60 60)">
+    <rect width="490" height="140" rx="3" fill="#ead9b3" fill-opacity=".78" stroke="#6b5034" stroke-opacity=".48" stroke-width="2"/>
+    <text x="30" y="52" fill="#942321" font-family="KaiTi, STKaiti, serif" font-size="34" font-weight="700" letter-spacing="5">淮海战役遗址分布</text>
+    <text x="30" y="98" fill="#5c4936" font-family="KaiTi, STKaiti, serif" font-size="24">交互布局示意底图 · 正式作战图待替换</text>
+  </g>
+  <g transform="translate(1310 860)" fill="none" stroke="#4e3a28" stroke-width="4" opacity=".65">
+    <circle cx="90" cy="90" r="76"/>
+    <path d="M90 8v164M8 90h164"/>
+    <path d="m90 5 13 34H77Z" fill="#9b2927" stroke="none"/>
+    <text x="90" y="-12" fill="#4e3a28" stroke="none" font-family="serif" font-size="30" text-anchor="middle">北</text>
+  </g>
+</svg>

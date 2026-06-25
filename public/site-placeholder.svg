@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">史料图片占位图</title>
+  <desc id="desc">正式发布前需替换为已确认版权和说明信息的历史照片。</desc>
+  <defs>
+    <filter id="grain">
+      <feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#d8c294"/>
+  <rect x="32" y="32" width="736" height="536" fill="none" stroke="#6b5237" stroke-width="3" opacity=".55"/>
+  <path d="M160 410 310 250l100 105 76-78 155 133Z" fill="#725b40" opacity=".35"/>
+  <circle cx="590" cy="180" r="55" fill="#9b2927" opacity=".38"/>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <text x="400" y="470" fill="#493727" font-family="KaiTi, STKaiti, serif" font-size="36" text-anchor="middle" letter-spacing="6">历史照片待核实替换</text>
+  <text x="400" y="515" fill="#66513b" font-family="serif" font-size="20" text-anchor="middle">SOURCE &amp; COPYRIGHT TO BE VERIFIED</text>
+</svg>

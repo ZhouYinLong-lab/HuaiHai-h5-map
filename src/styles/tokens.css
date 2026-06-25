@@ -1,0 +1,13 @@
+:root {
+  --color-paper: #ead8ad;
+  --color-paper-light: #f7ebce;
+  --color-ink: #34261c;
+  --color-ink-muted: #665445;
+  --color-red: #9f1d20;
+  --color-red-dark: #741417;
+  --color-gold: #ad7c2f;
+  --color-night: #2b2119;
+  --shadow-archive: 0 18px 50px rgb(37 23 13 / 32%);
+  --shadow-panel: 0 -18px 55px rgb(24 16 10 / 28%);
+  --radius-panel: 18px;
+}
