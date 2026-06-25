@@ -4,6 +4,7 @@ const sites = JSON.parse(readFileSync(new URL("../src/data/sites.json", import.m
 const requiredFields = [
   "id", "name", "shortName", "region", "address", "x", "y", "category",
   "stage", "summary", "history", "image", "imageAlt", "navigationQuery",
+  "kind", "eventDate", "eventTitle", "labelPosition",
   "videoSearchUrl", "gallery", "sources", "contentStatus",
 ];
 
@@ -17,7 +18,7 @@ for (const [index, site] of sites.entries()) {
   if (!Array.isArray(site.gallery) || !Array.isArray(site.sources)) errors.push(`${site.name}: gallery/sources 必须为数组`);
 }
 
-if (sites.length < 8) errors.push(`遗址数量不足：当前 ${sites.length}，至少需要 8`);
+if (sites.length < 16) errors.push(`地标数量不足：当前 ${sites.length}，至少需要 16`);
 
 if (errors.length > 0) {
   console.error(errors.join("\n"));
