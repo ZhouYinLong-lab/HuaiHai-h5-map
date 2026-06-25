@@ -42,6 +42,10 @@ export function SitePanel({ site, onClose }: SitePanelProps) {
           <h2 id="site-panel-title" className="font-display text-2xl font-bold leading-tight text-archive-ink">
             {site.name}
           </h2>
+          <div className="site-event-heading">
+            <time>{site.eventDate}</time>
+            <strong>{site.eventTitle}</strong>
+          </div>
           <p className="mt-3 text-sm leading-7 text-archive-muted">{site.summary}</p>
           <p className="site-address">{site.address}</p>
           <p className="mt-3 border-l-2 border-archive-gold bg-black/[0.035] px-3 py-2 text-xs leading-5 text-archive-muted">

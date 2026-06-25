@@ -13,17 +13,20 @@ const ALL = "全部";
 export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirectoryProps) {
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState(ALL);
+  const [stage, setStage] = useState(ALL);
   const regions = useMemo(() => [ALL, ...new Set(sites.map((site) => site.region.slice(0, 2)))], [sites]);
+  const stages = useMemo(() => [ALL, "第一阶段", "第二阶段", "第三阶段", "纪念传承"], []);
   const filteredSites = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return sites.filter((site) => {
       const matchesRegion = region === ALL || site.region.startsWith(region);
+      const matchesStage = stage === ALL || site.stage === stage;
       const haystack = [site.name, site.shortName, site.region, site.category, site.stage, ...site.tags]
         .join(" ")
         .toLowerCase();
-      return matchesRegion && (!normalized || haystack.includes(normalized));
+      return matchesRegion && matchesStage && (!normalized || haystack.includes(normalized));
     });
-  }, [query, region, sites]);
+  }, [query, region, sites, stage]);
 
   return (
     <section className="content-page" aria-labelledby="directory-title">
@@ -50,18 +53,33 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
             placeholder="搜索名称、地区或类型"
           />
         </label>
-        <div className="filter-row" aria-label="按省份筛选">
-          {regions.map((item) => (
-            <button
-              key={item}
-              type="button"
-              className={region === item ? "is-active" : ""}
-              onClick={() => setRegion(item)}
-              aria-pressed={region === item}
-            >
-              {item}
-            </button>
-          ))}
+        <div className="directory-filter-stack">
+          <div className="filter-row" aria-label="按省份筛选">
+            {regions.map((item) => (
+              <button
+                key={item}
+                type="button"
+                className={region === item ? "is-active" : ""}
+                onClick={() => setRegion(item)}
+                aria-pressed={region === item}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+          <div className="filter-row filter-row--stage" aria-label="按战役阶段筛选">
+            {stages.map((item) => (
+              <button
+                key={item}
+                type="button"
+                className={stage === item ? "is-active" : ""}
+                onClick={() => setStage(item)}
+                aria-pressed={stage === item}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -80,6 +98,10 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
                   <button type="button" onClick={() => onSelectSite(site)}>{site.name}</button>
                 </h3>
                 <span className="site-card__address">{site.address}</span>
+                <div className="site-card__event">
+                  <time>{site.eventDate}</time>
+                  <strong>{site.eventTitle}</strong>
+                </div>
                 <div className="site-card__status" aria-label="内容准备状态">
                   <span className={site.contentStatus.images === "已补充" ? "is-ready" : ""}>
                     <ImageIcon /> 图片{site.contentStatus.images}
@@ -101,7 +123,7 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
           <SearchIcon />
           <h3>没有匹配的遗址</h3>
           <p>换一个关键词或清除地区筛选试试。</p>
-          <button type="button" onClick={() => { setQuery(""); setRegion(ALL); }}>清除筛选</button>
+          <button type="button" onClick={() => { setQuery(""); setRegion(ALL); setStage(ALL); }}>清除筛选</button>
         </div>
       )}
     </section>

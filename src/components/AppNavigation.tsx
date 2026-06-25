@@ -1,5 +1,5 @@
 import type { AppView } from "../types/site";
-import { InfoIcon, ListIcon, MapIcon } from "./Icons";
+import { InfoIcon, ListIcon, MapIcon, TimelineIcon } from "./Icons";
 
 interface AppNavigationProps {
   activeView: AppView;
@@ -13,6 +13,7 @@ const items: Array<{
   icon: typeof MapIcon;
 }> = [
   { id: "map", label: "地图探索", eyebrow: "MAP", icon: MapIcon },
+  { id: "timeline", label: "战役脉络", eyebrow: "TIMELINE", icon: TimelineIcon },
   { id: "directory", label: "遗址名录", eyebrow: "SITES", icon: ListIcon },
   { id: "about", label: "项目说明", eyebrow: "ABOUT", icon: InfoIcon },
 ];
@@ -48,7 +49,7 @@ export function AppNavigation({ activeView, onChange }: AppNavigationProps) {
             );
           })}
         </div>
-        <p className="desktop-nav__foot">8 处遗址 · 资料持续核验中</p>
+        <p className="desktop-nav__foot">16 处地标事件 · 资料持续核验中</p>
       </nav>
 
       <nav className="mobile-nav" aria-label="主要导航">

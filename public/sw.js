@@ -1,9 +1,9 @@
-const CACHE_NAME = "huaihai-map-v1";
+const CACHE_NAME = "huaihai-map-v2";
 const APP_SHELL = [
   "/",
   "/manifest.webmanifest",
   "/app-icon.svg",
-  "/archive-map-placeholder.svg",
+  "/archive-map.svg",
   "/site-placeholder.svg"
 ];
 

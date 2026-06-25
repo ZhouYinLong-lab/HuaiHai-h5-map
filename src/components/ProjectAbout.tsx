@@ -28,7 +28,7 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
         <article className="about-card about-card--wide">
           <span className="about-card__index">01</span>
           <h3>项目定位</h3>
-          <p>面向手机、平板和电脑的社会实践成果展示平台。以沉浸式地图为主，遗址名录为辅，突出传播与学习体验。</p>
+          <p>面向手机、平板和电脑的社会实践成果展示平台。以沉浸式地图和三阶段时间线为主，遗址名录为辅，突出传播与学习体验。</p>
         </article>
         <article className="about-card">
           <span className="about-card__index">02</span>
@@ -48,7 +48,7 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
           <h3>当前只等待权威资料与媒体素材</h3>
         </div>
         <div className="readiness-grid">
-          <ReadinessItem icon={MapIcon} label="遗址节点" value={sites.length} total={sites.length} suffix="处已建档" />
+          <ReadinessItem icon={MapIcon} label="地标事件" value={sites.length} total={sites.length} suffix="处已建档" />
           <ReadinessItem icon={CheckIcon} label="史实核验" value={readyHistory} total={sites.length} suffix="处已完成" />
           <ReadinessItem icon={ImageIcon} label="历史图片" value={readyImages} total={sites.length} suffix="处已补充" />
           <ReadinessItem icon={PlayIcon} label="视频资料" value={readyVideos} total={sites.length} suffix="处已补充" />

@@ -14,6 +14,10 @@ export interface Site {
   imageAlt: string;
   address: string;
   stage: string;
+  kind: "memorial" | "battlefield" | "command" | "uprising";
+  eventDate: string;
+  eventTitle: string;
+  labelPosition: "left" | "right" | "top" | "bottom";
   tags: string[];
   history: string;
   gallery: Array<{
@@ -33,4 +37,4 @@ export interface Site {
   };
 }
 
-export type AppView = "map" | "directory" | "about";
+export type AppView = "map" | "timeline" | "directory" | "about";

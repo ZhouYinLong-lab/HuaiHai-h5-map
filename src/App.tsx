@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AppNavigation } from "./components/AppNavigation";
+import { CampaignTimeline } from "./components/CampaignTimeline";
 import { ShareIcon } from "./components/Icons";
 import { MapStage } from "./components/MapStage";
 import { ProjectAbout } from "./components/ProjectAbout";
@@ -8,7 +9,7 @@ import { SitePanel } from "./components/SitePanel";
 import siteData from "./data/sites.json";
 import type { AppView, Site } from "./types/site";
 
-const sites = siteData satisfies Site[];
+const sites = siteData as Site[];
 
 function App() {
   const [activeSite, setActiveSite] = useState<Site | null>(null);
@@ -62,6 +63,7 @@ function App() {
 
   const viewTitles: Record<AppView, string> = {
     map: "遗址交互地图",
+    timeline: "战役脉络",
     directory: "遗址档案名录",
     about: "项目说明",
   };
@@ -93,6 +95,7 @@ function App() {
               onSelectSite={setActiveSite}
             />
           )}
+          {activeView === "timeline" && <CampaignTimeline sites={sites} onShowOnMap={showSiteOnMap} />}
           {activeView === "directory" && (
             <SiteDirectory sites={sites} onSelectSite={setActiveSite} onShowOnMap={showSiteOnMap} />
           )}

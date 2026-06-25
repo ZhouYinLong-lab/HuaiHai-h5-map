@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1120" role="img" aria-labelledby="title desc">
+  <title id="title">淮海战役地标与战场态势原创示意图</title>
+  <desc id="desc">依据公开党史和文旅资料重新绘制的交互示意底图，呈现徐州、邳州、宿县、双堆集、永城、商丘等区域关系，不作为精确导航地图。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ead9ae"/>
+      <stop offset=".48" stop-color="#e2c991"/>
+      <stop offset="1" stop-color="#d5b779"/>
+    </linearGradient>
+    <radialGradient id="vignette">
+      <stop offset=".58" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5b3b1d" stop-opacity=".24"/>
+    </radialGradient>
+    <pattern id="smallGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#6c5436" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <pattern id="largeGrid" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M200 0H0V200" fill="none" stroke="#5d4328" stroke-opacity=".09" stroke-width="2"/>
+    </pattern>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="4" seed="18"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer>
+    </filter>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence baseFrequency=".012" numOctaves="2" seed="11" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5"/>
+    </filter>
+    <filter id="inkShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#3a2515" flood-opacity=".24"/>
+    </filter>
+    <marker id="redArrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M1 1 11 6 1 11 4 6Z" fill="#9f2729"/>
+    </marker>
+    <marker id="darkArrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M1 1 11 6 1 11 4 6Z" fill="#493528"/>
+    </marker>
+  </defs>
+
+  <rect width="1800" height="1120" fill="url(#paper)"/>
+  <rect width="1800" height="1120" fill="url(#smallGrid)"/>
+  <rect width="1800" height="1120" fill="url(#largeGrid)"/>
+
+  <!-- 三阶段态势区域 -->
+  <path d="M980 92C1230 40 1570 145 1720 350c-30 175-210 270-445 265-175-20-310-105-405-235 5-120 35-215 110-288Z" fill="#9c3030" fill-opacity=".055" stroke="#9c3030" stroke-opacity=".25" stroke-dasharray="16 12" stroke-width="3"/>
+  <path d="M490 480C720 390 1000 515 1120 755c-38 215-245 335-500 270-190-62-280-235-210-410 20-58 45-100 80-135Z" fill="#9c3030" fill-opacity=".06" stroke="#9c3030" stroke-opacity=".25" stroke-dasharray="16 12" stroke-width="3"/>
+  <path d="M40 405C275 300 590 355 730 565 690 765 490 885 210 830 60 758-35 585 40 405Z" fill="#4e392b" fill-opacity=".045" stroke="#4e392b" stroke-opacity=".22" stroke-dasharray="16 12" stroke-width="3"/>
+
+  <!-- 等高线 -->
+  <g fill="none" stroke="#795c38" stroke-opacity=".14" stroke-width="3" filter="url(#rough)">
+    <path d="M-60 120c180 75 290 20 425 52s215 120 390 70 250-120 410-90 245 100 425 48 250-20 330 20"/>
+    <path d="M-70 180c180 80 320 35 445 72s245 105 390 55 260-115 410-68 250 100 420 55 245-35 320 10"/>
+    <path d="M-50 930c210-90 345-20 520-50s280-150 450-105 260 145 420 125 265-125 520-65"/>
+    <path d="M-50 990c210-85 360-25 530-60s290-135 455-90 250 135 430 105 260-115 510-55"/>
+    <path d="M110 360c100-70 210-95 325-60s190 120 315 100 215-105 340-75"/>
+    <path d="M1160 660c115-80 250-85 355-15s170 82 315 30"/>
+  </g>
+
+  <!-- 河流 -->
+  <g fill="none" stroke-linecap="round" filter="url(#rough)">
+    <path d="M-50 235C165 185 250 315 460 270s330-160 560-105 305 170 515 135 270-20 360 15" stroke="#617c78" stroke-opacity=".6" stroke-width="20"/>
+    <path d="M-40 850c190-120 350-65 520-125s270-145 430-65 240 175 420 112 245-130 520-65" stroke="#63817d" stroke-opacity=".54" stroke-width="15"/>
+    <path d="M1420 70c-55 180-20 300 65 420s88 260 15 465" stroke="#718c85" stroke-opacity=".43" stroke-width="11"/>
+  </g>
+  <g fill="#526c69" fill-opacity=".68" font-family="KaiTi, STKaiti, serif" font-size="24">
+    <text x="105" y="210" rotate="-5">故黄河</text>
+    <text x="1110" y="785" rotate="-8">浍河水系</text>
+    <text x="1475" y="300" rotate="72">运河</text>
+  </g>
+
+  <!-- 铁路交通 -->
+  <g fill="none" stroke="#42352b" stroke-opacity=".52">
+    <path d="M80 470C420 440 700 405 930 330s475-70 820-35" stroke-width="6"/>
+    <path d="M82 470C420 440 700 405 930 330s475-70 820-35" stroke="#d8bd82" stroke-width="2" stroke-dasharray="12 11"/>
+    <path d="M920 40c-5 255 25 430-15 620s15 330 38 460" stroke-width="6"/>
+    <path d="M920 40c-5 255 25 430-15 620s15 330 38 460" stroke="#d8bd82" stroke-width="2" stroke-dasharray="12 11"/>
+  </g>
+  <g fill="#49382a" font-family="KaiTi, STKaiti, serif" font-size="22" opacity=".78">
+    <text x="430" y="420" rotate="-4">陇海铁路</text>
+    <text x="940" y="515" rotate="88">津浦铁路</text>
+  </g>
+
+  <!-- 作战动线 -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#inkShadow)">
+    <path d="M1590 280C1450 300 1340 315 1230 340s-175 25-255 5" stroke="#9f2729" stroke-width="13" stroke-dasharray="26 17" marker-end="url(#redArrow)"/>
+    <path d="M1530 185C1390 200 1270 225 1165 280" stroke="#9f2729" stroke-width="9" stroke-dasharray="20 14" marker-end="url(#redArrow)"/>
+    <path d="M640 950C650 850 680 765 735 705s100-145 120-250" stroke="#9f2729" stroke-width="13" stroke-dasharray="26 17" marker-end="url(#redArrow)"/>
+    <path d="M360 710C480 650 585 620 700 625" stroke="#9f2729" stroke-width="10" stroke-dasharray="22 15" marker-end="url(#redArrow)"/>
+    <path d="M190 675C270 630 335 595 420 575" stroke="#493528" stroke-width="8" stroke-dasharray="18 14" marker-end="url(#darkArrow)"/>
+    <path d="M915 400C815 480 735 545 665 620" stroke="#493528" stroke-width="8" stroke-dasharray="18 14" marker-end="url(#darkArrow)"/>
+  </g>
+
+  <!-- 城镇与区域 -->
+  <g font-family="KaiTi, STKaiti, serif" fill="#3e3025">
+    <g font-size="58" font-weight="700" opacity=".84">
+      <text x="890" y="330">徐州</text>
+      <text x="1320" y="320">邳州</text>
+      <text x="710" y="670">宿县</text>
+      <text x="285" y="630">永城</text>
+      <text x="75" y="700">商丘</text>
+    </g>
+    <g font-size="34" opacity=".68">
+      <text x="1010" y="190">贾汪</text>
+      <text x="1500" y="410">新沂 · 窑湾</text>
+      <text x="620" y="540">萧县</text>
+      <text x="600" y="790">临涣</text>
+      <text x="760" y="990">双堆集</text>
+      <text x="310" y="560">陈官庄</text>
+    </g>
+  </g>
+
+  <!-- 阶段印章 -->
+  <g font-family="KaiTi, STKaiti, serif">
+    <g transform="translate(1380 90) rotate(3)">
+      <rect width="250" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
+      <text x="125" y="34" fill="#9f2729" font-size="25" font-weight="700" text-anchor="middle">第一阶段</text>
+      <text x="125" y="62" fill="#654736" font-size="17" text-anchor="middle">徐东 · 碾庄圩方向</text>
+    </g>
+    <g transform="translate(650 845) rotate(-2)">
+      <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
+      <text x="135" y="34" fill="#9f2729" font-size="25" font-weight="700" text-anchor="middle">第二阶段</text>
+      <text x="135" y="62" fill="#654736" font-size="17" text-anchor="middle">宿县 · 双堆集方向</text>
+    </g>
+    <g transform="translate(95 410) rotate(-3)">
+      <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#493528" stroke-width="3"/>
+      <text x="135" y="34" fill="#493528" font-size="25" font-weight="700" text-anchor="middle">第三阶段</text>
+      <text x="135" y="62" fill="#654736" font-size="17" text-anchor="middle">永城 · 陈官庄方向</text>
+    </g>
+  </g>
+
+  <!-- 标题牌 -->
+  <g transform="translate(55 52)" filter="url(#inkShadow)">
+    <path d="M0 0h520l28 28v122H0Z" fill="#efe1ba" fill-opacity=".92" stroke="#5e432e" stroke-opacity=".72" stroke-width="3"/>
+    <path d="M520 0v28h28" fill="none" stroke="#5e432e" stroke-width="3"/>
+    <text x="28" y="54" fill="#8f2024" font-family="KaiTi, STKaiti, serif" font-size="40" font-weight="700" letter-spacing="5">淮海战役地标与事件图</text>
+    <text x="30" y="96" fill="#4e392b" font-family="KaiTi, STKaiti, serif" font-size="22">1948.11.06 — 1949.01.10</text>
+    <text x="30" y="128" fill="#6d5239" font-family="serif" font-size="16" letter-spacing="2">ORIGINAL INTERACTIVE SITUATION MAP · 非导航地图</text>
+  </g>
+
+  <!-- 指北针与比例说明 -->
+  <g transform="translate(1600 875)" fill="none" stroke="#4d3829" stroke-width="4" opacity=".75">
+    <circle cx="72" cy="72" r="62"/>
+    <path d="M72 7v130M7 72h130"/>
+    <path d="m72 3 12 32H60Z" fill="#9f2729" stroke="none"/>
+    <text x="72" y="-12" fill="#4d3829" stroke="none" font-family="KaiTi, STKaiti, serif" font-size="27" text-anchor="middle">北</text>
+  </g>
+  <g transform="translate(80 1020)" fill="#4d3829" opacity=".68" font-family="KaiTi, STKaiti, serif">
+    <text font-size="18">地理关系与作战动线为互动展示示意，不用于精确导航或学术制图。</text>
+  </g>
+
+  <rect width="1800" height="1120" fill="url(#vignette)"/>
+  <rect width="1800" height="1120" filter="url(#grain)" opacity=".8"/>
+</svg>

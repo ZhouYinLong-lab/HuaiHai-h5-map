@@ -69,3 +69,7 @@ export function CheckIcon(props: IconProps) {
 export function ExternalIcon(props: IconProps) {
   return <svg {...baseProps} {...props}><path d="M14 4h6v6M20 4l-9 9" /><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5" /></svg>;
 }
+
+export function TimelineIcon(props: IconProps) {
+  return <svg {...baseProps} {...props}><path d="M6 3v18" /><circle cx="6" cy="6" r="2" /><circle cx="6" cy="12" r="2" /><circle cx="6" cy="18" r="2" /><path d="M10 6h10M10 12h7M10 18h10" /></svg>;
+}
