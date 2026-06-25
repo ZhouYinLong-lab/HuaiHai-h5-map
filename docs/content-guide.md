@@ -36,8 +36,9 @@ public/
 
 ## 正式底图
 
-将核验并获得使用许可的底图放入 `public/media/map/`，随后修改
-`src/components/MapStage.tsx` 中的图片路径。替换后需重新微调各节点的 `x`、`y`。
+当前使用 `public/archive-map.svg` 中的原创战役态势示意图。若后续更换为已授权的
+历史作战图，请修改 `src/components/MapStage.tsx` 中的图片路径，并重新微调各节点
+的 `x`、`y`。
 
 ## 视频
 
