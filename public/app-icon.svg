@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="88" fill="#2b2119"/>
+  <rect x="64" y="64" width="384" height="384" rx="16" fill="#ead8ad"/>
+  <path d="M116 330c90-80 180-70 280-164" fill="none" stroke="#9f1d20" stroke-width="22" stroke-linecap="round" stroke-dasharray="38 24"/>
+  <path d="M308 118v252" stroke="#4c2e20" stroke-width="16" stroke-linecap="round"/>
+  <path d="M316 126c54 6 78 20 112 4l-20 55 20 51c-38 13-68-4-112-8Z" fill="#9f1d20"/>
+  <text x="192" y="278" fill="#34261c" font-family="KaiTi,serif" font-size="118" font-weight="700" text-anchor="middle">淮</text>
+</svg>
