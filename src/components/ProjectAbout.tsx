@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import type { Site } from "../types/site";
 import { CheckIcon, ImageIcon, MapIcon, PlayIcon } from "./Icons";
 
@@ -6,9 +7,17 @@ interface ProjectAboutProps {
 }
 
 export function ProjectAbout({ sites }: ProjectAboutProps) {
-  const readyHistory = sites.filter((site) => site.contentStatus.history === "已核实").length;
-  const readyImages = sites.filter((site) => site.contentStatus.images === "已补充").length;
-  const readyVideos = sites.filter((site) => site.contentStatus.video === "已补充").length;
+  const { readyHistory, readyImages, readyVideos } = useMemo(() => {
+    let history = 0;
+    let images = 0;
+    let videos = 0;
+    for (const site of sites) {
+      if (site.contentStatus.history === "已核实") history++;
+      if (site.contentStatus.images === "已补充") images++;
+      if (site.contentStatus.video === "已补充") videos++;
+    }
+    return { readyHistory: history, readyImages: images, readyVideos: videos };
+  }, [sites]);
 
   return (
     <section className="content-page about-page" aria-labelledby="about-title">

@@ -11,6 +11,13 @@ import type { AppView, Site } from "./types/site";
 
 const sites = siteData as Site[];
 
+const viewTitles: Record<AppView, string> = {
+  map: "遗址交互地图",
+  timeline: "战役脉络",
+  directory: "遗址档案名录",
+  about: "项目说明",
+};
+
 function App() {
   const [activeSite, setActiveSite] = useState<Site | null>(null);
   const [activeView, setActiveView] = useState<AppView>("map");
@@ -61,16 +68,9 @@ function App() {
     }
   };
 
-  const viewTitles: Record<AppView, string> = {
-    map: "遗址交互地图",
-    timeline: "战役脉络",
-    directory: "遗址档案名录",
-    about: "项目说明",
-  };
-
   return (
     <main className="app-shell">
-      <AppNavigation activeView={activeView} onChange={changeView} />
+      <AppNavigation activeView={activeView} onChange={changeView} siteCount={sites.length} />
 
       <div className="app-main">
         <header className="app-header">

@@ -4,6 +4,7 @@ import { InfoIcon, ListIcon, MapIcon, TimelineIcon } from "./Icons";
 interface AppNavigationProps {
   activeView: AppView;
   onChange: (view: AppView) => void;
+  siteCount: number;
 }
 
 const items: Array<{
@@ -18,7 +19,7 @@ const items: Array<{
   { id: "about", label: "项目说明", eyebrow: "ABOUT", icon: InfoIcon },
 ];
 
-export function AppNavigation({ activeView, onChange }: AppNavigationProps) {
+export function AppNavigation({ activeView, onChange, siteCount }: AppNavigationProps) {
   return (
     <>
       <nav className="desktop-nav" aria-label="主要导航">
@@ -49,7 +50,7 @@ export function AppNavigation({ activeView, onChange }: AppNavigationProps) {
             );
           })}
         </div>
-        <p className="desktop-nav__foot">16 处地标事件 · 资料持续核验中</p>
+        <p className="desktop-nav__foot">{siteCount} 处地标事件 · 资料持续核验中</p>
       </nav>
 
       <nav className="mobile-nav" aria-label="主要导航">
