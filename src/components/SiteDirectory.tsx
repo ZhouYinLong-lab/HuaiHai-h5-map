@@ -14,14 +14,14 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState(ALL);
   const [stage, setStage] = useState(ALL);
-  const regions = useMemo(() => [ALL, ...new Set(sites.map((site) => site.region.slice(0, 2)))], [sites]);
+  const regions = useMemo(() => [ALL, ...new Set(sites.map((site) => site.province))], [sites]);
   const stages = useMemo(() => [ALL, "第一阶段", "第二阶段", "第三阶段", "纪念传承"], []);
   const filteredSites = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return sites.filter((site) => {
-      const matchesRegion = region === ALL || site.region.startsWith(region);
+      const matchesRegion = region === ALL || site.province === region;
       const matchesStage = stage === ALL || site.stage === stage;
-      const haystack = [site.name, site.shortName, site.region, site.category, site.stage, ...site.tags]
+      const haystack = [site.name, site.shortName, site.province, site.region, site.category, site.stage, ...site.tags]
         .join(" ")
         .toLowerCase();
       return matchesRegion && matchesStage && (!normalized || haystack.includes(normalized));

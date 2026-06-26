@@ -2,6 +2,7 @@ export interface Site {
   id: string;
   name: string;
   shortName: string;
+  province: string;
   region: string;
   x: number;
   y: number;

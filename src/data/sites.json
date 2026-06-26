@@ -3,6 +3,7 @@
     "id": "huaihai-campaign-museum",
     "name": "淮海战役纪念馆",
     "shortName": "纪念馆",
+    "province": "江苏",
     "region": "江苏徐州",
     "address": "江苏省徐州市泉山区，详细门牌待核实",
     "x": 50,
@@ -21,17 +22,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的淮海战役纪念馆史料图片占位图",
-    "tags": ["纪念场馆", "徐州", "主题展陈", "战役全景"],
+    "tags": [
+      "纪念场馆",
+      "徐州",
+      "主题展陈",
+      "战役全景"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "xuzhou-memorial-tower",
     "name": "淮海战役烈士纪念塔园林",
     "shortName": "纪念塔",
+    "province": "江苏",
     "region": "江苏徐州",
     "address": "江苏省徐州市泉山区，详细门牌待核实",
     "x": 46,
@@ -50,17 +64,29 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的淮海战役烈士纪念塔园林史料图片占位图",
-    "tags": ["纪念设施", "徐州", "英烈纪念"],
+    "tags": [
+      "纪念设施",
+      "徐州",
+      "英烈纪念"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "jiawang-uprising-memorial",
     "name": "贾汪起义纪念馆",
     "shortName": "贾汪起义",
+    "province": "江苏",
     "region": "江苏徐州贾汪",
     "address": "徐州市贾汪区，详细地址待核实",
     "x": 57,
@@ -79,18 +105,35 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的贾汪起义纪念馆史料图片占位图",
-    "tags": ["起义", "贾汪", "何基沣", "张克侠", "第一阶段"],
+    "tags": [
+      "起义",
+      "贾汪",
+      "何基沣",
+      "张克侠",
+      "第一阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "中国军网：何基沣、张克侠发动贾汪起义（原网页已迁移）", "url": null },
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "中国军网：何基沣、张克侠发动贾汪起义（原网页已迁移）",
+        "url": null
+      },
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "已核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "已核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "nianzhuang-memorial",
     "name": "碾庄圩战斗纪念馆",
     "shortName": "碾庄圩",
+    "province": "江苏",
     "region": "江苏邳州",
     "address": "江苏省邳州市碾庄镇，详细门牌待核实",
     "x": 74,
@@ -109,18 +152,34 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的碾庄圩战斗纪念馆史料图片占位图",
-    "tags": ["战役旧址", "邳州", "黄百韬兵团", "第一阶段"],
+    "tags": [
+      "战役旧址",
+      "邳州",
+      "黄百韬兵团",
+      "第一阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "徐州市人民政府：铭记淮海战役伟大胜利", "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html" },
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "徐州市人民政府：铭记淮海战役伟大胜利",
+        "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html"
+      },
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "已核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "已核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "yaowan-battle-memorial",
     "name": "窑湾战斗纪念馆",
     "shortName": "窑湾战斗",
+    "province": "江苏",
     "region": "江苏新沂",
     "address": "江苏省新沂市窑湾镇，详细地址待核实",
     "x": 86,
@@ -139,17 +198,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的窑湾战斗纪念馆史料图片占位图",
-    "tags": ["战斗纪念地", "新沂", "窑湾", "第一阶段"],
+    "tags": [
+      "战斗纪念地",
+      "新沂",
+      "窑湾",
+      "第一阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "lvliang-langshan-memorial",
     "name": "吕梁狼山阻击战纪念碑",
     "shortName": "狼山阻击",
+    "province": "江苏",
     "region": "江苏徐州铜山",
     "address": "徐州市铜山区吕梁地区，准确位置待核实",
     "x": 62,
@@ -168,17 +240,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的吕梁狼山阻击战纪念碑图片占位图",
-    "tags": ["阻击战", "铜山", "狼山", "第一阶段"],
+    "tags": [
+      "阻击战",
+      "铜山",
+      "狼山",
+      "第一阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "linhuan-wenchang-palace",
     "name": "临涣文昌宫淮海战役总前委旧址",
     "shortName": "文昌宫",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县临涣镇，详细地址待核实",
     "x": 40,
@@ -197,18 +282,34 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的临涣文昌宫总前委旧址史料图片占位图",
-    "tags": ["总前委", "临涣", "文昌宫", "第二阶段"],
+    "tags": [
+      "总前委",
+      "临涣",
+      "文昌宫",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "淮北市人民政府：文昌宫革命文物主题陈列资料（网页已迁移）", "url": null },
-      { "title": "国务院：第八批全国重点文物保护单位名单", "url": "https://www.gov.cn/zhengce/content/2019-10/16/content_5440577.htm" }
+      {
+        "title": "淮北市人民政府：文昌宫革命文物主题陈列资料（网页已迁移）",
+        "url": null
+      },
+      {
+        "title": "国务院：第八批全国重点文物保护单位名单",
+        "url": "https://www.gov.cn/zhengce/content/2019-10/16/content_5440577.htm"
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "xiaolijia-front-committee",
     "name": "淮海战役总前委旧址（小李家）",
     "shortName": "小李家",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县韩村镇小李家，详细地址待核实",
     "x": 47,
@@ -227,17 +328,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的小李家总前委旧址史料图片占位图",
-    "tags": ["总前委", "小李家", "韩村", "第二阶段"],
+    "tags": [
+      "总前委",
+      "小李家",
+      "韩村",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "caomiao-command-post",
     "name": "草庙圩子淮海战役华东野战军指挥部旧址",
     "shortName": "草庙圩子",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县，详细地址待核实",
     "x": 34,
@@ -256,17 +370,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的草庙圩子华野指挥部旧址史料图片占位图",
-    "tags": ["华东野战军", "指挥部", "草庙圩子", "第二阶段"],
+    "tags": [
+      "华东野战军",
+      "指挥部",
+      "草庙圩子",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "淮北市人民政府：草庙圩子旧址保护资料（网页已迁移）", "url": null }
+      {
+        "title": "淮北市人民政府：草庙圩子旧址保护资料（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "xiaozhuzhuang-battlefield",
     "name": "小朱庄淮海战役战场旧址",
     "shortName": "小朱庄",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县，详细地址待核实",
     "x": 41,
@@ -285,17 +412,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的小朱庄战场旧址史料图片占位图",
-    "tags": ["战场旧址", "小朱庄", "双堆集", "第二阶段"],
+    "tags": [
+      "战场旧址",
+      "小朱庄",
+      "双堆集",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "淮北市人民政府：小朱庄战场旧址保护资料（网页已迁移）", "url": null }
+      {
+        "title": "淮北市人民政府：小朱庄战场旧址保护资料（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "zhongyuange-site",
     "name": "钟源阁淮海战役旧址",
     "shortName": "钟源阁",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县临涣地区，详细地址待核实",
     "x": 37,
@@ -314,17 +454,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的钟源阁淮海战役旧址史料图片占位图",
-    "tags": ["钟源阁", "临涣", "革命旧址", "第二阶段"],
+    "tags": [
+      "钟源阁",
+      "临涣",
+      "革命旧址",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "淮北市人民政府：钟源阁旧址保护资料（网页已迁移）", "url": null }
+      {
+        "title": "淮北市人民政府：钟源阁旧址保护资料（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "shuangduiji-memorial",
     "name": "淮海战役双堆集烈士陵园",
     "shortName": "双堆集",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县双堆集镇，详细地址待核实",
     "x": 48,
@@ -343,18 +496,34 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的双堆集烈士陵园史料图片占位图",
-    "tags": ["烈士陵园", "双堆集", "黄维兵团", "第二阶段"],
+    "tags": [
+      "烈士陵园",
+      "双堆集",
+      "黄维兵团",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "徐州市人民政府：铭记淮海战役伟大胜利", "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html" },
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "徐州市人民政府：铭记淮海战役伟大胜利",
+        "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html"
+      },
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "已核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "已核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "shuangduiji-annihilation-museum",
     "name": "双堆集歼灭战纪念馆",
     "shortName": "歼灭战馆",
+    "province": "安徽",
     "region": "安徽淮北濉溪",
     "address": "安徽省淮北市濉溪县双堆集镇，详细地址待核实",
     "x": 53,
@@ -373,17 +542,29 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的双堆集歼灭战纪念馆史料图片占位图",
-    "tags": ["纪念场馆", "双堆集", "第二阶段"],
+    "tags": [
+      "纪念场馆",
+      "双堆集",
+      "第二阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "淮北市人民政府：双堆集红色文化资源资料（网页已迁移）", "url": null }
+      {
+        "title": "淮北市人民政府：双堆集红色文化资源资料（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "caiwa-front-committee",
     "name": "蔡洼淮海战役总前委会议暨华野指挥部旧址",
     "shortName": "蔡洼旧址",
+    "province": "安徽",
     "region": "安徽宿州萧县",
     "address": "安徽省宿州市萧县丁里镇蔡洼村，详细地址待核实",
     "x": 31,
@@ -402,17 +583,30 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的蔡洼总前委会议暨华野指挥部旧址史料图片占位图",
-    "tags": ["总前委会议", "华东野战军", "蔡洼", "第三阶段"],
+    "tags": [
+      "总前委会议",
+      "华东野战军",
+      "蔡洼",
+      "第三阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）", "url": null }
+      {
+        "title": "文化和旅游部：淮海战役·伟大胜利精品线路（网页已迁移，链接待补）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "chenguanzhuang-memorial",
     "name": "陈官庄淮海战役纪念馆",
     "shortName": "陈官庄",
+    "province": "河南",
     "region": "河南商丘永城",
     "address": "河南省永城市陈官庄乡，详细地址待核实",
     "x": 18,
@@ -431,18 +625,34 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的陈官庄淮海战役纪念馆史料图片占位图",
-    "tags": ["陈官庄", "杜聿明集团", "决战", "第三阶段"],
+    "tags": [
+      "陈官庄",
+      "杜聿明集团",
+      "决战",
+      "第三阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "徐州市人民政府：铭记淮海战役伟大胜利", "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html" },
-      { "title": "永城市人民政府：陈官庄淮海战役纪念馆（网页已迁移）", "url": null }
+      {
+        "title": "徐州市人民政府：铭记淮海战役伟大胜利",
+        "url": "https://www.xz.gov.cn/003/003006/20250326/7595add8-ed4d-4560-960b-b71067142c92.html"
+      },
+      {
+        "title": "永城市人民政府：陈官庄淮海战役纪念馆（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "已核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "已核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   },
   {
     "id": "zhangcaiyuan-front-committee",
     "name": "张菜园淮海战役总前委旧址纪念馆",
     "shortName": "张菜园",
+    "province": "河南",
     "region": "河南商丘睢阳",
     "address": "河南省商丘市睢阳区闫集镇张菜园村，详细地址待核实",
     "x": 8,
@@ -461,11 +671,23 @@
     "videoUrl": null,
     "image": "/site-placeholder.svg",
     "imageAlt": "待替换的张菜园总前委旧址纪念馆史料图片占位图",
-    "tags": ["总前委", "商丘", "张菜园", "第三阶段"],
+    "tags": [
+      "总前委",
+      "商丘",
+      "张菜园",
+      "第三阶段"
+    ],
     "gallery": [],
     "sources": [
-      { "title": "河南省人民政府：河南省红色旅游线路中的张菜园旧址（网页已迁移）", "url": null }
+      {
+        "title": "河南省人民政府：河南省红色旅游线路中的张菜园旧址（网页已迁移）",
+        "url": null
+      }
     ],
-    "contentStatus": { "history": "待核实", "images": "待补充", "video": "待补充" }
+    "contentStatus": {
+      "history": "待核实",
+      "images": "待补充",
+      "video": "待补充"
+    }
   }
 ]
