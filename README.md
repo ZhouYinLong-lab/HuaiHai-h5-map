@@ -74,26 +74,113 @@
 
 项目为纯静态前端，不使用数据库、后台、用户系统或权限系统。
 
-## 本地运行
+## 本地部署与预览
 
-环境要求：Node.js 20.19 或更高版本。
+### 环境要求
+
+- Node.js 20.19 或更高版本
+- npm 10 或更高版本
+
+确认环境：
+
+```bash
+node --version
+npm --version
+```
+
+### 1. 安装依赖
+
+在项目根目录执行：
 
 ```bash
 npm install
+```
+
+### 2. 电脑本地开发预览
+
+```bash
 npm run dev
 ```
 
-生产构建：
+终端显示类似以下地址后，在浏览器打开：
+
+```text
+http://localhost:5173/
+```
+
+开发服务器支持热更新，修改代码后页面会自动刷新。
+
+### 3. 手机或其他设备局域网预览
+
+电脑和手机需要连接同一个 Wi‑Fi，然后执行：
 
 ```bash
+npm run dev -- --host 0.0.0.0
+```
+
+终端会显示 `Network` 地址，例如：
+
+```text
+http://192.168.1.100:5173/
+```
+
+在手机浏览器输入该地址即可查看。也可以用 PowerShell 查询电脑局域网 IP：
+
+```powershell
+Get-NetIPAddress -AddressFamily IPv4 |
+  Where-Object { $_.IPAddress -notlike "127.*" } |
+  Select-Object InterfaceAlias, IPAddress
+```
+
+如果手机无法访问：
+
+1. 确认手机和电脑位于同一局域网；
+2. 确认使用的是 WLAN 地址，不是 `127.0.0.1`；
+3. 允许 Node.js 通过 Windows 防火墙；
+4. 检查路由器是否开启了设备隔离；
+5. 确认端口 `5173` 未被其他程序占用。
+
+### 4. 生产构建
+
+```bash
+npm run validate:content
 npm run build
 ```
 
-预览生产包：
+构建结果输出至 `dist/`。生产包包含：
+
+- 压缩后的 HTML、CSS 和 JavaScript
+- 原创 SVG 地图
+- Web App Manifest
+- Service Worker 离线外壳
+- Azure Static Web Apps 配置
+
+### 5. 本地预览生产包
 
 ```bash
-npm run preview
+npm run preview -- --host 0.0.0.0
 ```
+
+电脑浏览器访问：
+
+```text
+http://localhost:4173/
+```
+
+手机访问终端显示的 `Network` 地址，例如：
+
+```text
+http://192.168.1.100:4173/
+```
+
+开发预览和生产预览的区别：
+
+| 命令 | 用途 | 默认端口 |
+|---|---|---:|
+| `npm run dev` | 日常开发、热更新 | 5173 |
+| `npm run preview` | 验证最终 `dist/` 构建结果 | 4173 |
+
+停止本地服务器时，在运行服务器的终端按 `Ctrl + C`。
 
 检查遗址数据结构：
 
@@ -144,11 +231,24 @@ HuaiHai-h5-map/
 
 拿到正式资料后的替换步骤见 [内容替换指南](docs/content-guide.md)。
 
-## 部署
+## 上线部署
 
 ### Azure Static Web Apps
 
-推荐配置：
+仓库已经包含 `public/staticwebapp.config.json`。推荐直接连接 GitHub 仓库，让 Azure 在每次推送 `main` 后自动构建和发布。
+
+#### Azure Portal 操作
+
+1. 登录 [Azure Portal](https://portal.azure.com/)。
+2. 搜索并创建 `Static Web App`。
+3. 订阅选择 Azure for Students。
+4. 部署来源选择 GitHub。
+5. 授权 GitHub，并选择：
+   - Organization：`ZhouYinLong-lab`
+   - Repository：`HuaiHai-h5-map`
+   - Branch：`main`
+6. Build Presets 选择 `React` 或 `Custom`。
+7. 填写以下构建配置：
 
 | 配置项 | 值 |
 |---|---|
@@ -157,11 +257,43 @@ HuaiHai-h5-map/
 | Output location | `dist` |
 | Build command | `npm run build` |
 
-仓库已提供 `public/staticwebapp.config.json`，构建时会自动复制到 `dist/`。
+8. 创建资源并等待 GitHub Actions 完成。
+9. 在 Azure 资源概览页打开自动生成的站点地址。
+
+Azure 会在仓库中自动创建 `.github/workflows/` 工作流。以后执行：
+
+```bash
+git push origin main
+```
+
+即可触发自动部署。
+
+#### Azure 构建失败排查
+
+- Node 版本应满足 20.19 或更高版本。
+- Output location 必须是 `dist`。
+- API location 应保持为空。
+- 检查 GitHub 仓库 Actions 页面中的失败日志。
+- 确认 `npm run build` 在本地能够通过。
 
 ### 其他静态托管
 
 运行 `npm run build` 后，将 `dist/` 目录上传至任意静态网站服务即可。服务器需要将未知前端路径回退到 `index.html`。
+
+常见平台包括：
+
+- Cloudflare Pages
+- Vercel
+- Netlify
+- GitHub Pages
+- Nginx 静态服务器
+
+通用构建配置：
+
+```text
+Build command: npm run build
+Output directory: dist
+```
 
 ## 史料与版权原则
 
