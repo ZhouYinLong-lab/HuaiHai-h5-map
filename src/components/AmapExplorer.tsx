@@ -41,6 +41,7 @@ const AMAP_KEY = import.meta.env.VITE_AMAP_KEY?.trim() ?? "";
 const AMAP_SECURITY_JS_CODE = import.meta.env.VITE_AMAP_SECURITY_JS_CODE?.trim() ?? "";
 const AMAP_LOADER_URL = "https://webapi.amap.com/loader.js";
 const AMAP_DOC_URL = "https://lbs.amap.com/";
+const AMAP_KEY_STATUS = AMAP_KEY ? "高德 JS API 已预置" : "高德 JS API 待部署配置";
 
 function buildAmapSearchUrl(query: string) {
   return `https://uri.amap.com/search?keyword=${encodeURIComponent(query)}&callnative=1`;
@@ -143,7 +144,7 @@ export function AmapExplorer({ sites, onSelectSite }: AmapExplorerProps) {
 
   const statusText = {
     idle: "准备加载高德地图",
-    "missing-key": "等待配置高德 Web 服务 Key",
+    "missing-key": "高德内嵌地图待部署配置",
     loading: "正在加载高德地图 JS API",
     ready: "高德地图 API 已接入",
     error: "高德地图加载失败，请检查 Key、域名白名单或网络",
@@ -156,8 +157,8 @@ export function AmapExplorer({ sites, onSelectSite }: AmapExplorerProps) {
           <p className="section-eyebrow">AMAP SERVICE</p>
           <h2>高德地图辅助核验与导航</h2>
           <p>
-            本页用于把遗址档案与高德开放平台衔接起来。未配置 Key 时，仍保留高德 URI 跳转；
-            配置 Key 后，可加载高德 JS API 用于地图预览和后续 POI 核验。
+            本页用于把遗址档案与高德开放平台衔接起来。访问者无需填写 Key；
+            项目部署时预置 Key 后，页面会自动加载高德 JS API，用于地图预览和 POI 核验。
           </p>
         </div>
         <a className="amap-doc-link" href={AMAP_DOC_URL} target="_blank" rel="noreferrer">
@@ -173,16 +174,16 @@ export function AmapExplorer({ sites, onSelectSite }: AmapExplorerProps) {
               <span>API 状态</span>
               <strong>{statusText}</strong>
             </div>
-            <code>{AMAP_KEY ? "VITE_AMAP_KEY=已配置" : "VITE_AMAP_KEY="}</code>
+            <code>{AMAP_KEY_STATUS}</code>
           </div>
           <div className={`amap-map ${loadState === "missing-key" ? "is-empty" : ""}`} ref={mapRef}>
             {loadState === "missing-key" && (
               <div className="amap-empty">
                 <RouteIcon />
-                <h3>等待填入高德 Key</h3>
+                <h3>高德内嵌地图暂未启用</h3>
                 <p>
-                  在项目根目录创建 <code>.env.local</code>，填入 <code>VITE_AMAP_KEY</code>
-                  后重启本地服务即可启用地图预览。
+                  管理员在构建或部署环境预置高德 Web 端 JSAPI Key 后，访问者打开页面即可直接使用；
+                  当前仍可通过下方按钮跳转高德地图检索遗址。
                 </p>
               </div>
             )}

@@ -22,7 +22,7 @@
 | 遗址图文档案和媒体槽位 | 已完成 |
 | 卷轴式红色文化开场动画 | 已完成 |
 | B站视频和高德地图 URI 跳转 | 已完成 |
-| 高德开放平台 JS API 页面 | 已接入，Key 待填写 |
+| 高德开放平台 JS API 页面 | 已接入，部署时预置 Key |
 | PWA 离线应用外壳 | 已完成 |
 | Azure Static Web Apps 配置 | 已完成 |
 | 原创战役态势底图 | 已完成 |
@@ -46,7 +46,7 @@
 - 封面、历史正文、图集、来源和视频内容槽位
 - B站或权威平台视频外链
 - 高德地图地点检索
-- 高德开放平台 JS API 辅助页，支持 Key 留空占位
+- 高德开放平台 JS API 辅助页，部署方预置 Key 后访问者可直接使用
 - 手机底部导航、平板网格、桌面档案侧栏
 - Web App Manifest、Service Worker 和离线应用外壳
 
@@ -102,9 +102,14 @@ npm --version
 npm install
 ```
 
-### 2. 可选：配置高德开放平台 Key
+### 2. 配置高德开放平台 Key
 
-项目已预留高德开放平台配置，但默认不提交真实 Key。需要启用“高德辅助”页面中的 JS API 地图预览时，复制 `.env.example` 为 `.env.local`：
+高德地图分两种能力：
+
+- 高德 URI 跳转：不需要 Key，点击后跳转到高德地图检索。
+- 页面内嵌高德 JS 地图：需要高德开放平台 Web 端 JSAPI Key。
+
+Key 只需要开发者或部署方配置一次，访问网站的普通用户不需要填写。项目默认不提交真实 Key；本地开发时复制 `.env.example` 为 `.env.local`：
 
 ```bash
 cp .env.example .env.local
@@ -117,7 +122,15 @@ VITE_AMAP_KEY=你的高德Web端JSAPI Key
 VITE_AMAP_SECURITY_JS_CODE=你的安全密钥，可按高德控制台要求填写
 ```
 
-如果暂时不填写 Key，项目仍可正常运行；高德辅助页会显示配置提示，并保留每个遗址的高德 URI 检索跳转。
+填写后重启开发服务器：
+
+```bash
+npm run dev
+```
+
+生产部署时，也应在构建环境中配置同名变量。这样打包后的网页会自动带上高德配置，用户打开页面即可直接使用内嵌高德地图。
+
+> 注意：Web 端 JSAPI Key 会出现在前端页面里，这是浏览器地图服务的正常工作方式。请在高德控制台设置 Web 端域名白名单，避免 Key 被其他网站滥用。
 
 ### 3. 电脑本地开发预览
 
@@ -290,6 +303,26 @@ git push origin main
 ```
 
 即可触发自动部署。
+
+#### 在 Azure/GitHub Actions 中配置高德 Key
+
+因为本项目使用 Vite，`VITE_AMAP_KEY` 和 `VITE_AMAP_SECURITY_JS_CODE` 是构建时变量。正式部署时不要让用户填写，也不要把真实 Key 直接写进代码；推荐放在 GitHub Actions Secrets 中：
+
+1. 打开 GitHub 仓库 `ZhouYinLong-lab/HuaiHai-h5-map`。
+2. 进入 `Settings` → `Secrets and variables` → `Actions`。
+3. 新增两个 Repository secrets：
+   - `VITE_AMAP_KEY`
+   - `VITE_AMAP_SECURITY_JS_CODE`
+4. 打开 Azure 自动生成的 `.github/workflows/*.yml`。
+5. 在构建/部署步骤中加入：
+
+```yaml
+env:
+  VITE_AMAP_KEY: ${{ secrets.VITE_AMAP_KEY }}
+  VITE_AMAP_SECURITY_JS_CODE: ${{ secrets.VITE_AMAP_SECURITY_JS_CODE }}
+```
+
+保存并推送后，Azure Static Web Apps 会重新构建。构建成功后，访问者打开网站时不需要填写任何 Key。
 
 #### Azure 构建失败排查
 
