@@ -9,7 +9,7 @@
 
 ## 项目状态
 
-页面、交互、多端适配、离线外壳和部署配置均已完成。目前只需补充并核验正式历史资料、图片、视频和作战底图。
+页面、交互、多端适配、离线外壳和部署配置均已完成。当前已补充 16 处节点的公网来源、主要地址和基础史实；正式上线前仍需补充授权图片、逐站视频、精确高德定位和正式底图授权。
 
 | 模块 | 状态 |
 |---|---|
@@ -25,10 +25,10 @@
 | Azure Static Web Apps 配置 | 已完成 |
 | 原创战役态势底图 | 已完成 |
 | 公网权威来源链接 | 已补充 |
-| 权威遗址史料细节 | 部分待核实 |
+| 权威遗址史料细节 | 11/16 已核实 |
 | 历史照片和专题视频 | 待提供 |
 
-完整资料需求见 [资料收集清单](docs/material-checklist.md)。
+完整资料需求见 [资料收集清单](docs/material-checklist.md)，必须实地采集或授权确认的内容见 [实地资料需求表](docs/on-site-materials.md)。
 
 ## 核心功能
 
@@ -307,6 +307,7 @@ Output directory: dist
 ## 相关文档
 
 - [资料收集清单](docs/material-checklist.md)
+- [实地资料需求表](docs/on-site-materials.md)
 - [地标事件调研与来源说明](docs/research-sources.md)
 - [内容替换指南](docs/content-guide.md)
 - [完整 QA 报告](docs/qa-report.md)
