@@ -38,4 +38,4 @@ export interface Site {
   };
 }
 
-export type AppView = "map" | "timeline" | "directory" | "about";
+export type AppView = "map" | "timeline" | "directory" | "amap" | "about";

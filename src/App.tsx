@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { AmapExplorer } from "./components/AmapExplorer";
 import { AppNavigation } from "./components/AppNavigation";
 import { CampaignTimeline } from "./components/CampaignTimeline";
 import { ShareIcon } from "./components/Icons";
 import { MapStage } from "./components/MapStage";
+import { OpeningScroll } from "./components/OpeningScroll";
 import { ProjectAbout } from "./components/ProjectAbout";
 import { SiteDirectory } from "./components/SiteDirectory";
 import { SitePanel } from "./components/SitePanel";
@@ -15,6 +17,7 @@ const viewTitles: Record<AppView, string> = {
   map: "遗址交互地图",
   timeline: "战役脉络",
   directory: "遗址档案名录",
+  amap: "高德地图辅助",
   about: "项目说明",
 };
 
@@ -70,6 +73,7 @@ function App() {
 
   return (
     <main className="app-shell">
+      <OpeningScroll />
       <AppNavigation activeView={activeView} onChange={changeView} siteCount={sites.length} />
 
       <div className="app-main">
@@ -99,6 +103,7 @@ function App() {
           {activeView === "directory" && (
             <SiteDirectory sites={sites} onSelectSite={setActiveSite} onShowOnMap={showSiteOnMap} />
           )}
+          {activeView === "amap" && <AmapExplorer sites={sites} onSelectSite={setActiveSite} />}
           {activeView === "about" && <ProjectAbout sites={sites} />}
         </div>
       </div>

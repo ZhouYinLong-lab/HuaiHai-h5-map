@@ -1,5 +1,5 @@
 import type { AppView } from "../types/site";
-import { InfoIcon, ListIcon, MapIcon, TimelineIcon } from "./Icons";
+import { InfoIcon, ListIcon, MapIcon, RouteIcon, TimelineIcon } from "./Icons";
 
 interface AppNavigationProps {
   activeView: AppView;
@@ -16,6 +16,7 @@ const items: Array<{
   { id: "map", label: "地图探索", eyebrow: "MAP", icon: MapIcon },
   { id: "timeline", label: "战役脉络", eyebrow: "TIMELINE", icon: TimelineIcon },
   { id: "directory", label: "遗址名录", eyebrow: "SITES", icon: ListIcon },
+  { id: "amap", label: "高德辅助", eyebrow: "AMAP", icon: RouteIcon },
   { id: "about", label: "项目说明", eyebrow: "ABOUT", icon: InfoIcon },
 ];
 
