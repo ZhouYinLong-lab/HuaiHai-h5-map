@@ -1,5 +1,13 @@
 # 淮海战役红色遗址交互地图
 
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  <img src="https://img.shields.io/github/languages/top/ZhouYinLong-lab/HuaiHai-h5-map" alt="Top Language">
+  <img src="https://img.shields.io/github/last-commit/ZhouYinLong-lab/HuaiHai-h5-map" alt="Last Commit">
+  <img src="https://img.shields.io/github/stars/ZhouYinLong-lab/HuaiHai-h5-map?style=social" alt="Stars">
+</p>
+
+
 > 淮海战役红色文化数字化传播实践成果
 > 面向手机、平板和电脑的 H5 红色遗址数字展示平台
 
