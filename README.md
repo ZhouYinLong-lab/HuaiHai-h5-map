@@ -11,7 +11,10 @@
 > 淮海战役红色文化数字化传播实践成果
 > 面向手机、平板和电脑的 H5 红色遗址数字展示平台
 
-项目以“泛黄历史地图 + 红色地标事件”为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
+项目以”泛黄历史地图 + 红色地标事件”为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
+
+[![Deploy to GitHub Pages](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml/badge.svg)](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml)
+🔗 在线访问：[huaihai.zylatent.com](https://huaihai.zylatent.com)
 
 ![桌面端地图展示](docs/qa/qa-desktop-map.png)
 
@@ -339,6 +342,38 @@ env:
 - API location 应保持为空。
 - 检查 GitHub 仓库 Actions 页面中的失败日志。
 - 确认 `npm run build` 在本地能够通过。
+
+### GitHub Pages（自定义域名）
+
+项目已配置 GitHub Actions 自动部署到 GitHub Pages，绑定自定义域名 `huaihai.zylatent.com`。
+
+#### 首次启用
+
+1. 进入仓库 `Settings` → `Pages`。
+2. **Source** 选择 `GitHub Actions`。
+3. 进入 `Settings` → `Environments`，确认 `github-pages` 环境已自动创建。
+4. 进入 `Settings` → `Secrets and variables` → `Actions`，新增以下 Repository secrets：
+
+| Secret 名称 | 说明 |
+|---|---|
+| `VITE_AMAP_KEY` | 高德 Web 端 JSAPI Key |
+| `VITE_AMAP_SECURITY_JS_CODE` | 高德安全密钥 |
+
+5. 推送 `main` 分支后，Actions 自动构建并部署到 `huaihai.zylatent.com`。
+
+#### DNS 配置（需手动完成）
+
+在域名 DNS 服务商处添加 CNAME 记录，将 `huaihai.zylatent.com` 指向 `zhouyinlong-lab.github.io`。GitHub 建议同时配置以下 IP 作为 A 记录备用（详见 [GitHub Docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)）。
+
+#### 构建流程
+
+每次推送 `main` 分支时，`.github/workflows/deploy.yml` 自动：
+
+1. 检出代码 → 安装 Node.js 20 → `npm ci` → `npm run build`
+2. 从 GitHub Secrets 注入 `VITE_AMAP_KEY` 和 `VITE_AMAP_SECURITY_JS_CODE`
+3. 将 `dist/` 上传为 Pages artifact 并部署
+
+构建状态可通过仓库顶部的 Actions 徽章查看。
 
 ### 其他静态托管
 
