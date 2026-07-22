@@ -1,20 +1,30 @@
 # 淮海战役红色遗址交互地图
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
-  <img src="https://img.shields.io/github/languages/top/ZhouYinLong-lab/HuaiHai-h5-map" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/ZhouYinLong-lab/HuaiHai-h5-map" alt="Last Commit">
-  <img src="https://img.shields.io/github/stars/ZhouYinLong-lab/HuaiHai-h5-map?style=social" alt="Stars">
+  <a href="https://huaihai.zylatent.com">
+    <img src="https://img.shields.io/badge/在线访问-huaihai.zylatent.com-2563eb?style=flat-square&logo=safari" alt="Website">
+  </a>
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react" alt="React">
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite" alt="Vite">
+  <img src="https://img.shields.io/badge/TypeScript-5.6-3178C6?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind">
+  <img src="https://img.shields.io/badge/PWA-ready-5A0FC8?style=flat-square&logo=pwa" alt="PWA">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/ZhouYinLong-lab/HuaiHai-h5-map?style=flat-square" alt="Top Language">
+  <img src="https://img.shields.io/github/last-commit/ZhouYinLong-lab/HuaiHai-h5-map?style=flat-square" alt="Last Commit">
+  <a href="https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml">
+    <img src="https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml/badge.svg?style=flat-square" alt="Deploy">
+  </a>
+  <img src="https://img.shields.io/github/stars/ZhouYinLong-lab/HuaiHai-h5-map?style=social" alt="Stars">
+</p>
 
 > 淮海战役红色文化数字化传播实践成果
 > 面向手机、平板和电脑的 H5 红色遗址数字展示平台
 
-项目以”泛黄历史地图 + 红色地标事件”为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
-
-[![Deploy to GitHub Pages](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml/badge.svg)](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml)
-🔗 在线访问：[huaihai.zylatent.com](https://huaihai.zylatent.com)
+项目以"泛黄历史地图 + 红色地标事件"为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
 
 ![桌面端地图展示](docs/qa/qa-desktop-map.png)
 
@@ -187,7 +197,7 @@ Get-NetIPAddress -AddressFamily IPv4 |
 4. 检查路由器是否开启了设备隔离；
 5. 确认端口 `5173` 未被其他程序占用。
 
-### 4. 生产构建
+### 5. 生产构建
 
 ```bash
 npm run validate:content
@@ -202,7 +212,7 @@ npm run build
 - Service Worker 离线外壳
 - Azure Static Web Apps 配置
 
-### 5. 本地预览生产包
+### 6. 本地预览生产包
 
 ```bash
 npm run preview -- --host 0.0.0.0
