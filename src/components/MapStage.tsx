@@ -66,7 +66,7 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
         >
           <div className={`map-canvas relative overflow-hidden bg-archive-paper shadow-archive ${activeStage === "全部" ? "is-overview" : "is-filtered"}`}>
             <img
-              src="/archive-map.svg"
+              src="./archive-map.svg"
               alt="依据权威公开资料原创绘制的淮海战役地标与战场态势示意图"
               className="h-full w-full select-none object-cover"
               draggable={false}
