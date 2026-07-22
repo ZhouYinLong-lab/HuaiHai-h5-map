@@ -1,10 +1,10 @@
-const CACHE_NAME = "huaihai-map-v2";
+const CACHE_NAME = "huaihai-map-v3";
 const APP_SHELL = [
-  "/",
-  "/manifest.webmanifest",
-  "/app-icon.svg",
-  "/archive-map.svg",
-  "/site-placeholder.svg"
+  "./",
+  "./manifest.webmanifest",
+  "./app-icon.svg",
+  "./archive-map.svg",
+  "./site-placeholder.svg"
 ];
 
 self.addEventListener("install", (event) => {
@@ -31,7 +31,7 @@ self.addEventListener("fetch", (event) => {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;
-      }).catch(() => caches.match("/"));
+      }).catch(() => caches.match("./"));
     }),
   );
 });
