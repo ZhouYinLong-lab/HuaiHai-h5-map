@@ -14,7 +14,7 @@
 项目以”泛黄历史地图 + 红色地标事件”为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
 
 [![Deploy to GitHub Pages](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml/badge.svg)](https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml)
-🔗 在线访问：[huaihai.zylatent.com](https://huaihai.zylatent.com)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线预览-success)](https://huaihai.zylatent.com)
 
 ![桌面端地图展示](docs/qa/qa-desktop-map.png)
 
