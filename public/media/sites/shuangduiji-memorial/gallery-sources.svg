@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">淮海战役双堆集烈士陵园资料来源卡片</title>
+  <desc id="desc">中期审查用资料来源卡片。</desc>
+  <rect width="1600" height="1000" fill="#2b2119" />
+  <rect x="112" y="96" width="1376" height="808" rx="10" fill="#f7ebce" />
+  <rect x="168" y="150" width="1264" height="700" fill="none" stroke="#9f1d20" stroke-width="5" />
+  <text x="220" y="250" font-family="STKaiti, KaiTi, serif" font-size="78" font-weight="700" fill="#34261c">资料来源摘记</text>
+  <text x="220" y="318" font-family="Noto Serif SC, SimSun, serif" font-size="32" fill="#665445">淮海战役双堆集烈士陵园</text>
+  
+  <g transform="translate(230 430)">
+    <circle cx="0" cy="-10" r="13" fill="#9f1d20" />
+    <text x="34" y="0" font-family="Noto Serif SC, SimSun, serif" font-size="34" fill="#34261c">徐州市人民政府：铭记淮海战役伟大胜利</text>
+  </g>
+  <g transform="translate(230 542)">
+    <circle cx="0" cy="-10" r="13" fill="#9f1d20" />
+    <text x="34" y="0" font-family="Noto Serif SC, SimSun, serif" font-size="34" fill="#34261c">濉溪县人民政府：淮海战役双堆集烈士陵园简介</text>
+  </g>
+  <g transform="translate(230 654)">
+    <circle cx="0" cy="-10" r="13" fill="#9f1d20" />
+    <text x="34" y="0" font-family="Noto Serif SC, SimSun, serif" font-size="34" fill="#34261c">中共中央党史和文献研究院：淮海战役双堆集烈士陵园</text>
+  </g>
+  <text x="220" y="790" font-family="Noto Serif SC, SimSun, serif" font-size="26" fill="#665445">页面“资料来源”区域保留可点击原始链接；本图仅作中期审查视觉补充。</text>
+</svg>

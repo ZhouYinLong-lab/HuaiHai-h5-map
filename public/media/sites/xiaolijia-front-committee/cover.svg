@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">淮海战役总前委旧址（小李家）中期审查档案风格资料图</title>
+  <desc id="desc">项目原创档案风格示意图，不是历史照片，正式上线前需替换为实拍或授权图片。</desc>
+  <defs>
+    <filter id="paperNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="16" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.13" />
+      </feComponentTransfer>
+      <feBlend mode="multiply" in2="SourceGraphic" />
+    </filter>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7ebce" />
+      <stop offset="0.62" stop-color="#ead8ad" />
+      <stop offset="1" stop-color="#d1b678" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#2b2119" />
+  <rect x="86" y="74" width="1428" height="852" rx="18" fill="url(#fade)" filter="url(#paperNoise)" />
+  <path d="M160 235 C360 150 470 315 650 250 S980 118 1190 250 S1380 345 1455 274" fill="none" stroke="#9f1d20" stroke-width="18" stroke-linecap="round" stroke-dasharray="34 26" opacity="0.78" />
+  <path d="M190 680 C390 525 548 735 760 610 S1108 442 1415 612" fill="none" stroke="#ad7c2f" stroke-width="10" stroke-linecap="round" stroke-dasharray="24 22" opacity="0.66" />
+  <g opacity="0.18" stroke="#34261c" stroke-width="2">
+    <path d="M185 172H1405M185 828H1405M250 128V870M1350 128V870" />
+    <path d="M180 355H1420M180 510H1420M180 665H1420" stroke-dasharray="14 18" />
+  </g>
+  <g transform="translate(232 188)">
+    <rect width="176" height="58" fill="#9f1d20" />
+    <text x="88" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#f7ebce">MIDTERM</text>
+  </g>
+  <g transform="translate(250 360)">
+    <text font-family="STKaiti, KaiTi, SimSun, serif" font-size="98" font-weight="700" fill="#34261c">淮海战役总前委旧址</text>
+    
+    <rect y="122" width="520" height="7" fill="#9f1d20" />
+    <text y="190" font-family="Noto Serif SC, SimSun, serif" font-size="34" fill="#665445">安徽淮北濉溪 · 第二阶段 · 总前委旧址</text>
+  </g>
+  <g transform="translate(1120 605)">
+    <path d="M0 0 92 28 0 56Z" fill="#9f1d20" />
+    <rect x="-8" y="0" width="8" height="180" fill="#34261c" />
+    <circle cx="-4" cy="186" r="14" fill="#9f1d20" />
+  </g>
+  <g transform="translate(1125 214)" opacity="0.78">
+    <circle cx="0" cy="0" r="58" fill="none" stroke="#9f1d20" stroke-width="8" />
+    <text x="0" y="15" text-anchor="middle" font-family="STKaiti, KaiTi, serif" font-size="54" fill="#9f1d20">淮</text>
+  </g>
+  <text x="250" y="842" font-family="Noto Serif SC, SimSun, serif" font-size="28" fill="#665445">项目原创资料图｜非历史照片｜正式上线前替换为实拍或授权图片</text>
+</svg>

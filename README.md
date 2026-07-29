@@ -50,9 +50,10 @@
 | 原创战役态势底图 | 已完成 |
 | 公网权威来源链接 | 已补充 |
 | 权威遗址史料细节 | 11/16 已核实 |
-| 历史照片和专题视频 | 待提供 |
+| 中期审查媒体资源 | 6/16 已补原创档案风格图 |
+| 正式历史照片和专题视频 | 待提供 |
 
-完整资料需求见 [资料收集清单](docs/material-checklist.md)，必须实地采集或授权确认的内容见 [实地资料需求表](docs/on-site-materials.md)。
+完整资料需求见 [资料收集清单](docs/material-checklist.md)，中期图片说明见 [中期审查媒体资源说明](docs/midterm-media-pack.md)，必须实地采集或授权确认的内容见 [实地资料需求表](docs/on-site-materials.md)。
 
 ## 核心功能
 
@@ -260,6 +261,7 @@ HuaiHai-h5-map/
 │   ├── archive-map.svg              # 原创战役态势底图
 │   ├── site-placeholder.svg         # 待替换的遗址封面
 │   ├── manifest.webmanifest
+│   ├── media/                        # 中期审查媒体资源与后续正式图片
 │   ├── sw.js
 │   └── staticwebapp.config.json     # Azure 静态站点配置
 ├── src/
@@ -416,6 +418,7 @@ Output directory: dist
 ## 相关文档
 
 - [资料收集清单](docs/material-checklist.md)
+- [中期审查媒体资源说明](docs/midterm-media-pack.md)
 - [实地资料需求表](docs/on-site-materials.md)
 - [地标事件调研与来源说明](docs/research-sources.md)
 - [内容替换指南](docs/content-guide.md)

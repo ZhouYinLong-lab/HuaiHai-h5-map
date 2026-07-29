@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">淮海战役总前委旧址（小李家）战役脉络示意图</title>
+  <desc id="desc">中期审查用原创战役脉络示意图，不是历史地图。</desc>
+  <rect width="1600" height="1000" fill="#ead8ad" />
+  <rect x="84" y="82" width="1432" height="836" fill="none" stroke="#34261c" stroke-width="4" opacity="0.28" />
+  <g opacity="0.12" stroke="#34261c">
+    <path d="M160 130V870" /><path d="M300 130V870" /><path d="M440 130V870" /><path d="M580 130V870" /><path d="M720 130V870" /><path d="M860 130V870" /><path d="M1000 130V870" /><path d="M1140 130V870" /><path d="M1280 130V870" /><path d="M1420 130V870" />
+    <path d="M140 190H1460" /><path d="M140 310H1460" /><path d="M140 430H1460" /><path d="M140 550H1460" /><path d="M140 670H1460" /><path d="M140 790H1460" />
+  </g>
+  <path d="M210 720 C420 344 620 610 815 430 S1200 275 1390 395" fill="none" stroke="#9f1d20" stroke-width="22" stroke-linecap="round" stroke-dasharray="44 30" />
+  <path d="M1390 395 l-92 -32 28 88z" fill="#9f1d20" />
+  <g fill="#9f1d20" stroke="#f7ebce" stroke-width="8">
+    <circle cx="315" cy="640" r="34" />
+    <circle cx="720" cy="470" r="34" />
+    <circle cx="1080" cy="365" r="34" />
+  </g>
+  <text x="160" y="170" font-family="STKaiti, KaiTi, serif" font-size="74" font-weight="700" fill="#34261c">战役脉络</text>
+  <text x="160" y="232" font-family="Noto Serif SC, SimSun, serif" font-size="32" fill="#665445">1948年11月23日至12月30日 · 总前委驻地与指挥活动</text>
+  <text x="160" y="842" font-family="Noto Serif SC, SimSun, serif" font-size="28" fill="#665445">依据公开资料整理的中期展示示意图，坐标和路线不作精确制图用途。</text>
+</svg>
