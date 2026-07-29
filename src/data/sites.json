@@ -16,12 +16,12 @@
     "labelPosition": "right",
     "summary": "淮海战役纪念馆与烈士纪念塔园林共同构成徐州核心纪念空间，是了解战役全貌的重要入口。",
     "history": "淮海战役纪念馆位于徐州市泉山区解放南路2号淮海战役烈士纪念塔园林内，与烈士纪念塔、碑林、总前委群雕等共同构成徐州核心纪念空间。场馆承担淮海战役史实陈列、英烈纪念和爱国主义教育功能；具体开放时间、讲解预约和临时闭馆信息仍以纪念馆现场公告或官方网站为准。",
-    "verificationNote": "地址和纪念空间关系已据公开资料补充；开放时间、预约方式和展陈更新仍需上线前复核。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "地址和纪念空间关系已据公开资料补充；开放时间、预约方式和展陈更新仍需上线前复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "徐州市解放南路2号 淮海战役纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": null,
-    "image": "/media/sites/huaihai-campaign-museum/cover.svg",
-    "imageAlt": "淮海战役纪念馆中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/huaihai-campaign-museum/cover.jpg",
+    "imageAlt": "淮海战役纪念馆公开资料照片",
     "tags": [
       "纪念场馆",
       "徐州",
@@ -30,14 +30,9 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/huaihai-campaign-museum/gallery-route.svg",
-        "alt": "淮海战役纪念馆战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
-      },
-      {
-        "src": "/media/sites/huaihai-campaign-museum/gallery-sources.svg",
-        "alt": "淮海战役纪念馆资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/huaihai-campaign-museum/gallery-01.jpg",
+        "alt": "淮海战役纪念馆展陈或馆区公开资料照片",
+        "caption": "公开资料照片，来源：China Services Info 淮海战役纪念馆相关页面。"
       }
     ],
     "sources": [
@@ -73,12 +68,12 @@
     "labelPosition": "left",
     "summary": "以淮海战役烈士纪念塔为核心的纪念园林，与纪念馆共同承担英烈纪念和红色教育功能。",
     "history": "淮海战役烈士纪念塔园林位于徐州市解放南路2号，园内以淮海战役烈士纪念塔为核心，并包含淮海战役纪念馆、碑林、总前委群雕、国防园等纪念空间。园区承担英烈缅怀、红色教育和战役记忆展示功能，是徐州淮海战役纪念体系的重要组成部分。",
-    "verificationNote": "地址、主体建筑和纪念属性已据公开资料补充；具体开放安排与园区动线需现场复核。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "地址、主体建筑和纪念属性已据公开资料补充；具体开放安排与园区动线需现场复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "徐州市解放南路2号 淮海战役烈士纪念塔园林",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E7%83%88%E5%A3%AB%E7%BA%AA%E5%BF%B5%E5%A1%94%E5%9B%AD%E6%9E%97",
     "videoUrl": null,
-    "image": "/media/sites/xuzhou-memorial-tower/cover.svg",
-    "imageAlt": "淮海战役烈士纪念塔园林中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/xuzhou-memorial-tower/cover.png",
+    "imageAlt": "淮海战役烈士纪念塔园林公开资料照片",
     "tags": [
       "纪念设施",
       "徐州",
@@ -86,14 +81,9 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/xuzhou-memorial-tower/gallery-route.svg",
-        "alt": "淮海战役烈士纪念塔园林战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
-      },
-      {
-        "src": "/media/sites/xuzhou-memorial-tower/gallery-sources.svg",
-        "alt": "淮海战役烈士纪念塔园林资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/xuzhou-memorial-tower/cover.png",
+        "alt": "淮海战役烈士纪念塔园林公开资料照片",
+        "caption": "公开资料照片，来源：《群众》杂志徐州淮海战役烈士纪念塔园林页面。"
       }
     ],
     "sources": [
@@ -180,12 +170,12 @@
     "labelPosition": "right",
     "summary": "碾庄圩是淮海战役第一阶段的核心战场。华东野战军在此完成对黄百韬兵团的围歼。",
     "history": "碾庄圩是淮海战役第一阶段的核心战场之一。公开资料显示，淮海战役碾庄圩战斗纪念馆位于邳州市碾庄镇徐连一级公路南侧，纪念设施始建于1958年，1960年竣工，后经提档升级，形成纪念馆、纪念碑、碑林、烈士安葬区等纪念空间。战役第一阶段主要围绕围歼黄百韬兵团展开。",
-    "verificationNote": "阶段日期、战役主题和馆址已据公开资料补充；具体开放时间和馆区导览需现场核验。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "阶段日期、战役主题和馆址已据公开资料补充；具体开放时间和馆区导览需现场核验。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "邳州市碾庄镇 徐连一级公路南侧 碾庄圩战斗纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E7%A2%BE%E5%BA%84%E5%9C%A9%E6%88%98%E6%96%97%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": null,
-    "image": "/media/sites/nianzhuang-memorial/cover.svg",
-    "imageAlt": "碾庄圩战斗纪念馆中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/nianzhuang-memorial/cover.jpg",
+    "imageAlt": "碾庄圩战斗纪念馆公开资料照片",
     "tags": [
       "战役旧址",
       "邳州",
@@ -194,14 +184,14 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/nianzhuang-memorial/gallery-route.svg",
-        "alt": "碾庄圩战斗纪念馆战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
+        "src": "/media/sites/nianzhuang-memorial/gallery-01.jpg",
+        "alt": "碾庄圩战斗纪念馆公开资料照片",
+        "caption": "公开资料照片，来源：江苏文明网“淮海战役碾庄圩战斗纪念馆”页面。"
       },
       {
-        "src": "/media/sites/nianzhuang-memorial/gallery-sources.svg",
-        "alt": "碾庄圩战斗纪念馆资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/nianzhuang-memorial/gallery-02.jpg",
+        "alt": "碾庄圩战斗纪念馆展陈公开资料照片",
+        "caption": "公开资料照片，来源：江苏文明网“淮海战役碾庄圩战斗纪念馆”页面。"
       }
     ],
     "sources": [
@@ -333,12 +323,12 @@
     "labelPosition": "left",
     "summary": "临涣文昌宫是淮海战役总前委旧址体系的重要组成部分，现为全国重点文物保护单位相关点位。",
     "history": "濉溪县政府资料记载，文昌宫位于临涣镇文昌街北段西侧，1948年11月刘伯承、邓小平率中原野战军指挥部进驻，11月16日淮海战役总前委在此成立。旧址展陈和开放信息仍需以管理单位公告为准。",
-    "verificationNote": "旧址身份、位置和总前委成立叙事有濉溪县政府及国保名录依据；展陈细节仍需现场或管理单位复核。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "旧址身份、位置和总前委成立叙事有濉溪县政府及国保名录依据；展陈细节仍需现场或管理单位复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "濉溪县临涣镇文昌街北段西侧 淮海战役总前委旧址文昌宫",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E4%B8%B4%E6%B6%A3%E6%96%87%E6%98%8C%E5%AE%AB%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%80%BB%E5%89%8D%E5%A7%94%E6%97%A7%E5%9D%80",
     "videoUrl": null,
-    "image": "/media/sites/linhuan-wenchang-palace/cover.svg",
-    "imageAlt": "临涣文昌宫淮海战役总前委旧址中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/linhuan-wenchang-palace/cover.jpg",
+    "imageAlt": "临涣文昌宫淮海战役总前委旧址公开资料照片",
     "tags": [
       "总前委",
       "临涣",
@@ -347,14 +337,9 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/linhuan-wenchang-palace/gallery-route.svg",
-        "alt": "临涣文昌宫淮海战役总前委旧址战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
-      },
-      {
-        "src": "/media/sites/linhuan-wenchang-palace/gallery-sources.svg",
-        "alt": "临涣文昌宫淮海战役总前委旧址资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/linhuan-wenchang-palace/gallery-01.jpg",
+        "alt": "临涣文昌宫总前委旧址公开资料照片",
+        "caption": "公开资料照片，来源：濉溪县人民政府相关红色资源页面。"
       }
     ],
     "sources": [
@@ -390,12 +375,12 @@
     "labelPosition": "right",
     "summary": "小李家是淮海战役总前委旧址的重要点位，被列入文化和旅游部精品线路。",
     "history": "濉溪县政府资料记载，小李家旧址位于韩村镇淮海村小李家。1948年11月23日，刘伯承、邓小平、陈毅三位总前委常委从临涣文昌宫移驻小李家，至12月30日离开，在此多次召开重要军事会议，指挥围歼黄维兵团、阻击援敌以及追击包围杜聿明集团等作战。",
-    "verificationNote": "地点身份、驻留时间和基本指挥活动有濉溪县政府资料依据；具体展陈和建筑复原信息仍需管理单位复核。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "地点身份、驻留时间和基本指挥活动有濉溪县政府资料依据；具体展陈和建筑复原信息仍需管理单位复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "濉溪县韩村镇淮海村小李家 淮海战役总前委旧址",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%80%BB%E5%89%8D%E5%A7%94%E6%97%A7%E5%9D%80%E5%B0%8F%E6%9D%8E%E5%AE%B6",
     "videoUrl": null,
-    "image": "/media/sites/xiaolijia-front-committee/cover.svg",
-    "imageAlt": "淮海战役总前委旧址（小李家）中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/xiaolijia-front-committee/cover.jpg",
+    "imageAlt": "小李家淮海战役总前委旧址公开资料照片",
     "tags": [
       "总前委",
       "小李家",
@@ -404,14 +389,9 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/xiaolijia-front-committee/gallery-route.svg",
-        "alt": "淮海战役总前委旧址（小李家）战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
-      },
-      {
-        "src": "/media/sites/xiaolijia-front-committee/gallery-sources.svg",
-        "alt": "淮海战役总前委旧址（小李家）资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/xiaolijia-front-committee/gallery-01.jpg",
+        "alt": "小李家总前委旧址相关公开资料照片",
+        "caption": "公开资料照片，来源：人民网相关报道。"
       }
     ],
     "sources": [
@@ -585,12 +565,12 @@
     "labelPosition": "right",
     "summary": "双堆集是淮海战役第二阶段核心战场，烈士陵园承担英烈纪念和战役教育功能。",
     "history": "双堆集是淮海战役第二阶段围歼黄维兵团的重要战场。公开资料显示，淮海战役双堆集烈士陵园位于濉溪县双堆集镇南面，始建于1976年，园内建有纪念碑、纪念馆、烈士墓区等纪念设施，并承担英烈纪念和爱国主义教育功能。",
-    "verificationNote": "战役阶段、地点关系和陵园沿革已据公开资料补充；烈士墓区细节、展陈更新和开放安排需现场核验。中期审查图片为项目原创档案风格资料图，非历史照片；正式上线前仍需替换为实拍或授权图片。",
+    "verificationNote": "战役阶段、地点关系和陵园沿革已据公开资料补充；烈士墓区细节、展陈更新和开放安排需现场核验。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
     "navigationQuery": "濉溪县双堆集镇南面 淮海战役双堆集烈士陵园",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E5%8F%8C%E5%A0%86%E9%9B%86%E7%83%88%E5%A3%AB%E9%99%B5%E5%9B%AD",
     "videoUrl": null,
-    "image": "/media/sites/shuangduiji-memorial/cover.svg",
-    "imageAlt": "淮海战役双堆集烈士陵园中期审查用档案风格资料图，非历史照片",
+    "image": "/media/sites/shuangduiji-memorial/cover.jpg",
+    "imageAlt": "淮海战役双堆集烈士陵园公开资料照片",
     "tags": [
       "烈士陵园",
       "双堆集",
@@ -599,14 +579,14 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/shuangduiji-memorial/gallery-route.svg",
-        "alt": "淮海战役双堆集烈士陵园战役脉络示意图",
-        "caption": "中期审查原创示意图：用于表现战役脉络，不作精确历史地图。"
+        "src": "/media/sites/shuangduiji-memorial/gallery-01.jpg",
+        "alt": "双堆集烈士陵园公开资料照片",
+        "caption": "公开资料照片，来源：濉溪县人民政府“双堆集烈士陵园简介”页面。"
       },
       {
-        "src": "/media/sites/shuangduiji-memorial/gallery-sources.svg",
-        "alt": "淮海战役双堆集烈士陵园资料来源摘记卡片",
-        "caption": "中期审查资料来源卡：正式上线前仍需补充实拍或授权历史照片。"
+        "src": "/media/sites/shuangduiji-memorial/gallery-02.jpg",
+        "alt": "双堆集烈士陵园纪念设施公开资料照片",
+        "caption": "公开资料照片，来源：濉溪县人民政府“双堆集烈士陵园简介”页面。"
       }
     ],
     "sources": [
