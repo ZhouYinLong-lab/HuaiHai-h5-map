@@ -2,8 +2,25 @@ import { useEffect, useState } from "react";
 
 const SPLASH_KEY = "huaihai-opening-scroll-seen";
 
+function hasSeenSplash() {
+  try {
+    return window.sessionStorage.getItem(SPLASH_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function rememberSplashSeen() {
+  try {
+    window.sessionStorage.setItem(SPLASH_KEY, "1");
+  } catch {
+    // 某些浏览器隐私模式或 WebView 会禁用 sessionStorage；
+    // 开场动画只是增强项，存储失败不应阻断主页面渲染。
+  }
+}
+
 export function OpeningScroll() {
-  const [visible, setVisible] = useState(() => sessionStorage.getItem(SPLASH_KEY) !== "1");
+  const [visible, setVisible] = useState(() => !hasSeenSplash());
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
@@ -11,7 +28,7 @@ export function OpeningScroll() {
 
     const close = () => {
       setLeaving(true);
-      sessionStorage.setItem(SPLASH_KEY, "1");
+      rememberSplashSeen();
       window.setTimeout(() => setVisible(false), 520);
     };
 
@@ -31,7 +48,7 @@ export function OpeningScroll() {
 
   const close = () => {
     setLeaving(true);
-    sessionStorage.setItem(SPLASH_KEY, "1");
+    rememberSplashSeen();
     window.setTimeout(() => setVisible(false), 520);
   };
 
