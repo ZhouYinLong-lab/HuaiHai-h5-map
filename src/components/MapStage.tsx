@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import {
   TransformComponent,
   TransformWrapper,
@@ -21,6 +21,16 @@ const kindLabels: Record<Site["kind"], string> = {
   uprising: "起义事件",
   memorial: "纪念设施",
 };
+
+const markerRows: Record<Site["kind"], number> = {
+  battlefield: 0,
+  command: 1,
+  uprising: 2,
+  memorial: 3,
+};
+
+const markerTilts = [-3, 2, -1, 1, 4] as const;
+const markerScales = [0.96, 1, 0.93, 1.03, 0.89] as const;
 
 function compactDate(site: Site) {
   if (site.stage === "纪念传承") return "纪念传承";
@@ -73,19 +83,29 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
             />
             {visibleSites.map((site) => {
               const active = site.id === activeSiteId;
+              const kindIndex = sites.filter((item) => item.kind === site.kind).findIndex((item) => item.id === site.id);
+              const markerColumn = kindIndex % 4;
+              const markerStyle = {
+                left: `${site.x}%`,
+                top: `${site.y}%`,
+                "--pixel-marker-x": `${markerColumn * 33.3333}%`,
+                "--pixel-marker-y": `${markerRows[site.kind] * 33.3333}%`,
+                "--pixel-marker-tilt": `${markerTilts[kindIndex % markerTilts.length]}deg`,
+                "--pixel-marker-scale": markerScales[kindIndex % markerScales.length],
+              } as CSSProperties;
               return (
                 <button
                   key={site.id}
                   id={`site-${site.id}`}
                   type="button"
                   className={`site-marker site-marker--${site.kind} site-marker--label-${site.labelPosition} group ${active ? "site-marker--active" : ""}`}
-                  style={{ left: `${site.x}%`, top: `${site.y}%` }}
+                  style={markerStyle}
                   onClick={() => onSelectSite(site)}
                   aria-label={`查看${site.name}`}
                   aria-pressed={active}
                   title={`${site.eventDate}｜${site.eventTitle}`}
                 >
-                  <span className="site-marker__symbol" aria-hidden="true"><span /></span>
+                  <span className="site-marker__symbol" aria-hidden="true" />
                   <span className="site-marker__label">
                     <small>{compactDate(site)}</small>
                     {site.shortName}

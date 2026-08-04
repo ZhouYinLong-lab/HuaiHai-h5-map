@@ -1609,11 +1609,28 @@ a {
 }
 
 .map-canvas {
+  isolation: isolate;
   width: auto;
   min-width: 820px;
   height: 100%;
   min-height: 32rem;
   aspect-ratio: 45 / 28;
+}
+
+.map-canvas::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image:
+    repeating-linear-gradient(0deg, rgb(64 49 32 / 7%) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(90deg, rgb(64 49 32 / 5%) 0 1px, transparent 1px 6px),
+    var(--asset-archive-background);
+  background-position: 0 0, 0 0, center;
+  background-size: auto, auto, cover;
+  content: "";
+  mix-blend-mode: multiply;
+  opacity: 0.13;
+  pointer-events: none;
 }
 
 .site-marker {
@@ -1656,69 +1673,18 @@ a {
 }
 
 .site-marker__symbol {
-  position: relative;
-  display: grid;
-  width: 30px;
-  height: 30px;
-  flex: none;
-  place-items: center;
-  border: 2px solid var(--marker-light);
-  border-radius: 50%;
-  background: var(--marker-color);
-  box-shadow:
-    0 0 0 2px var(--marker-color),
-    0 4px 9px rgb(52 31 18 / 25%);
-}
-
-.site-marker__symbol::after {
-  position: absolute;
-  top: calc(100% + 3px);
-  width: 2px;
-  height: 10px;
-  background: var(--marker-color);
-  content: "";
-}
-
-.site-marker__symbol span {
   display: block;
-  width: 8px;
-  height: 8px;
-  border: 2px solid var(--marker-light);
-  border-radius: 50%;
-}
-
-.site-marker--command .site-marker__symbol {
-  border-radius: 3px;
-  rotate: 45deg;
-}
-
-.site-marker--command .site-marker__symbol span {
-  border-radius: 1px;
-  rotate: -45deg;
-}
-
-.site-marker--uprising .site-marker__symbol {
-  clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 56%, 79% 92%, 50% 70%, 21% 92%, 32% 56%, 2% 35%, 39% 34%);
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.site-marker--uprising .site-marker__symbol span,
-.site-marker--uprising .site-marker__symbol::after {
-  display: none;
-}
-
-.site-marker--memorial .site-marker__symbol::before {
-  width: 3px;
-  height: 15px;
-  background: var(--marker-light);
-  box-shadow: -5px 5px 0 -1px var(--marker-light), 5px 5px 0 -1px var(--marker-light);
-  content: "";
-}
-
-.site-marker--memorial .site-marker__symbol span {
-  display: none;
+  width: 42px;
+  height: 42px;
+  flex: none;
+  background-image: var(--asset-site-marker-atlas);
+  background-position: var(--pixel-marker-x) var(--pixel-marker-y);
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  filter: drop-shadow(0 4px 4px rgb(54 34 19 / 24%));
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: rotate(var(--pixel-marker-tilt, 0deg)) scale(var(--pixel-marker-scale, 1));
 }
 
 .site-marker__label {
@@ -1900,32 +1866,25 @@ a {
 
 .legend-symbol {
   display: block;
-  width: 11px;
-  height: 11px;
-  border: 2px solid #f6e4bf;
-  border-radius: 50%;
-  background: #982528;
-  box-shadow: 0 0 0 1px #982528;
+  width: 25px;
+  height: 25px;
+  background-image: var(--asset-site-marker-atlas);
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .legend-symbol--command {
-  border-radius: 2px;
-  background: #49342c;
-  box-shadow: 0 0 0 1px #49342c;
-  rotate: 45deg;
+  background-position: 0% 33.3333%;
 }
 
 .legend-symbol--uprising {
-  border: 0;
-  border-radius: 0;
-  background: #b67c23;
-  box-shadow: none;
-  clip-path: polygon(50% 0, 61% 34%, 98% 35%, 68% 56%, 79% 92%, 50% 70%, 21% 92%, 32% 56%, 2% 35%, 39% 34%);
+  background-position: 0% 66.6667%;
 }
 
 .legend-symbol--memorial {
-  background: #7a252a;
-  box-shadow: 0 0 0 1px #7a252a;
+  background-position: 0% 100%;
 }
 
 .map-tip {
