@@ -137,12 +137,33 @@
     <text x="30" y="128" fill="#6d5239" font-family="serif" font-size="16" letter-spacing="2">ORIGINAL INTERACTIVE SITUATION MAP · 非导航地图</text>
   </g>
 
-  <!-- 指北针与比例说明 -->
-  <g transform="translate(1600 875)" fill="none" stroke="#4d3829" stroke-width="4" opacity=".75">
-    <circle cx="72" cy="72" r="62"/>
-    <path d="M72 7v130M7 72h130"/>
-    <path d="m72 3 12 32H60Z" fill="#9f2729" stroke="none"/>
-    <text x="72" y="-12" fill="#4d3829" stroke="none" font-family="KaiTi, STKaiti, serif" font-size="27" text-anchor="middle">北</text>
+  <!-- 16-bit 像素罗盘与方位说明 -->
+  <g transform="translate(1586 855)" opacity=".78" font-family="KaiTi, STKaiti, serif" shape-rendering="crispEdges">
+    <path d="M78 8h16v5h14v7h10v10h10v12h6v16h6v16h4v24h-4v16h-6v16h-6v12h-10v10H108v7H94v5H78v-5H64v-7H50v-10H40v-12H30v-16h-6V94h-4V78h4V62h6V46h6V34h10V24h10V16h14v-5h8Z" fill="#efe1ba" fill-opacity=".22" stroke="#4d3829" stroke-width="4"/>
+    <path d="M78 22h16v5h14v8h10v12h8v16h6v23h-6v16h-8v12h-10v8H94v5H78v-5H64v-8H54v-12h-8V86h-4V63h6V47h8V35h10v-8h12Z" fill="none" stroke="#6a4b32" stroke-width="2" stroke-dasharray="5 7"/>
+    <g fill="#4d3829">
+      <rect x="82" y="10" width="8" height="18"/>
+      <rect x="82" y="144" width="8" height="18"/>
+      <rect x="10" y="82" width="18" height="8"/>
+      <rect x="144" y="82" width="18" height="8"/>
+      <rect x="43" y="43" width="8" height="8"/>
+      <rect x="121" y="121" width="8" height="8"/>
+      <rect x="121" y="43" width="8" height="8"/>
+      <rect x="43" y="121" width="8" height="8"/>
+    </g>
+    <path d="M82 18h8v8h4v10h4v10h4v10h4v10h4v8h-8v6H70v-6h-8v-8h4V56h4V46h4V36h4V26h4Z" fill="#9f2729" stroke="#713b2d" stroke-width="2"/>
+    <path d="M82 154h8v-8h4v-10h4v-10h4v-10h4V106h4V98h-8v-6H70v6h-8v8h4v10h4v10h4v10h4v10h4Z" fill="#493528" stroke="#493528" stroke-width="2"/>
+    <path d="M18 82h8v-4h10v-4h10v-4h10v-4h10v-4h8v8h6v16h-6v8h-8v-4H56v-4H46v-4H36v-4H26v-4H18Z" fill="#b28a4d" stroke="#6a4b32" stroke-width="2"/>
+    <path d="M154 82h-8v-4h-10v-4h-10v-4h-10v-4h-10v-4h-8v8h-6v16h6v8h8v-4h10v-4h10v-4h10v-4h10v-4h8Z" fill="#b28a4d" stroke="#6a4b32" stroke-width="2"/>
+    <rect x="78" y="78" width="16" height="16" fill="#d8bd82" stroke="#4d3829" stroke-width="4"/>
+    <rect x="84" y="84" width="4" height="4" fill="#9f2729" stroke="none"/>
+    <g fill="#4d3829" font-size="25" text-anchor="middle">
+      <text x="86" y="-2">北</text>
+      <text x="178" y="94">东</text>
+      <text x="86" y="192">南</text>
+      <text x="-6" y="94">西</text>
+    </g>
+    <text x="86" y="218" fill="#6a4b32" font-size="16" text-anchor="middle" letter-spacing="2">像素罗盘</text>
   </g>
   <g transform="translate(80 1020)" fill="#4d3829" opacity=".68" font-family="KaiTi, STKaiti, serif">
     <text font-size="18">地理关系与作战动线为互动展示示意，不用于精确导航或学术制图。</text>

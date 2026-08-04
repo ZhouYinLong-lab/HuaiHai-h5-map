@@ -2455,7 +2455,11 @@ a {
     border-right: 1px solid rgb(248 235 204 / 12%);
     background:
       linear-gradient(145deg, rgb(255 244 211 / 4%), transparent 40%),
-      var(--color-night);
+      linear-gradient(180deg, rgb(31 23 18 / 86%), rgb(31 23 18 / 68%)),
+      var(--asset-navigation-background);
+    background-position: 0 0, 0 0, left bottom;
+    background-size: auto, auto, cover;
+    background-repeat: no-repeat;
     color: #f8ebcc;
     box-shadow: 10px 0 30px rgb(20 13 8 / 16%);
   }
