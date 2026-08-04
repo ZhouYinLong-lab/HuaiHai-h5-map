@@ -25,7 +25,9 @@ export function AppNavigation({ activeView, onChange, siteCount }: AppNavigation
     <>
       <nav className="desktop-nav" aria-label="主要导航">
         <div className="desktop-nav__brand">
-          <span className="desktop-nav__seal" aria-hidden="true">淮</span>
+          <span className="desktop-nav__seal" aria-hidden="true">
+            <PixelIcon name="seal" />
+          </span>
           <div>
             <p>红色文化数字化传播实践</p>
             <strong>淮海战役遗址地图</strong>

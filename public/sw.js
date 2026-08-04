@@ -1,10 +1,13 @@
-const CACHE_NAME = "huaihai-map-v4";
+const CACHE_NAME = "huaihai-map-v5";
 const APP_SHELL = [
   "./",
   "./manifest.webmanifest",
   "./app-icon.svg",
+  "./favicon-pixel.png",
   "./archive-map.svg",
-  "./site-placeholder.svg"
+  "./site-placeholder.svg",
+  "./media/pixel/icon-atlas-v1.png",
+  "./media/pixel/archive-background-v1.png"
 ];
 
 self.addEventListener("install", (event) => {

@@ -48,7 +48,7 @@
 | PWA 离线应用外壳 | 已完成 |
 | Azure Static Web Apps 配置 | 已完成 |
 | 原创战役态势底图 | 已完成 |
-| 像素风导航图标与档案背景 | 已完成，资源位于 `public/media/pixel/` |
+| 像素风导航图标、全站档案背景与 favicon | 已完成，资源位于 `public/media/pixel/` 与 `public/favicon-pixel.png` |
 | 公网权威来源链接 | 已补充 |
 | 权威遗址史料细节 | 11/16 已核实 |
 | 中期审查媒体资源 | 6/16 已补公开资料照片 |
@@ -260,6 +260,7 @@ npm run validate:content -- --strict
 HuaiHai-h5-map/
 ├── public/
 │   ├── archive-map.svg              # 原创战役态势底图
+│   ├── favicon-pixel.png            # 像素风 PWA / 浏览器图标
 │   ├── site-placeholder.svg         # 待替换的遗址封面
 │   ├── manifest.webmanifest
 │   ├── media/                        # 中期审查媒体资源与后续正式图片

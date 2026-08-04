@@ -484,11 +484,30 @@ a {
 }
 
 .view-shell {
+  position: relative;
   display: flex;
   min-width: 0;
   min-height: 0;
   flex: 1;
   overflow: hidden;
+  background: #ead8ad;
+}
+
+.view-shell::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(135deg, rgb(239 224 189 / 88%), rgb(239 224 189 / 73%)),
+    url("/media/pixel/archive-background-v1.png") center / cover;
+  content: "";
+  opacity: 0.82;
+  pointer-events: none;
+}
+
+.view-shell > * {
+  position: relative;
+  z-index: 1;
 }
 
 .view-shell--directory,
@@ -496,10 +515,7 @@ a {
 .view-shell--amap,
 .view-shell--about {
   overflow-y: auto;
-  background:
-    radial-gradient(circle at 75% 5%, rgb(159 29 32 / 8%), transparent 30rem),
-    repeating-linear-gradient(0deg, transparent 0 5px, rgb(63 42 24 / 2%) 5px 6px),
-    #efe0bd;
+  background: #efe0bd;
 }
 
 .desktop-nav {
@@ -2485,8 +2501,11 @@ a {
     place-items: center;
     border: 1px solid #bd3b3b;
     color: #e1b27e;
-    font-family: STKaiti, KaiTi, serif;
-    font-size: 1.35rem;
+  }
+
+  .desktop-nav__seal .pixel-icon {
+    width: 40px;
+    height: 40px;
   }
 
   .desktop-nav__brand p {
