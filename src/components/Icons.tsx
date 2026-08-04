@@ -73,3 +73,14 @@ export function ExternalIcon(props: IconProps) {
 export function TimelineIcon(props: IconProps) {
   return <svg {...baseProps} {...props}><path d="M6 3v18" /><circle cx="6" cy="6" r="2" /><circle cx="6" cy="12" r="2" /><circle cx="6" cy="18" r="2" /><path d="M10 6h10M10 12h7M10 18h10" /></svg>;
 }
+
+export type PixelIconName = "map" | "flag" | "folder" | "clock" | "photo" | "film" | "compass" | "seal";
+
+interface PixelIconProps {
+  name: PixelIconName;
+  className?: string;
+}
+
+export function PixelIcon({ name, className = "" }: PixelIconProps) {
+  return <span className={`pixel-icon pixel-icon--${name} ${className}`.trim()} aria-hidden="true" />;
+}

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { Site } from "../types/site";
-import { CheckIcon, ImageIcon, MapIcon, PlayIcon } from "./Icons";
+import { PixelIcon, type PixelIconName } from "./Icons";
 
 interface ProjectAboutProps {
   sites: Site[];
@@ -57,10 +57,10 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
           <h3>当前只等待权威资料与媒体素材</h3>
         </div>
         <div className="readiness-grid">
-          <ReadinessItem icon={MapIcon} label="地标事件" value={sites.length} total={sites.length} suffix="处已建档" />
-          <ReadinessItem icon={CheckIcon} label="史实核验" value={readyHistory} total={sites.length} suffix="处已完成" />
-          <ReadinessItem icon={ImageIcon} label="历史图片" value={readyImages} total={sites.length} suffix="处已补充" />
-          <ReadinessItem icon={PlayIcon} label="视频资料" value={readyVideos} total={sites.length} suffix="处已补充" />
+          <ReadinessItem icon="map" label="地标事件" value={sites.length} total={sites.length} suffix="处已建档" />
+          <ReadinessItem icon="clock" label="史实核验" value={readyHistory} total={sites.length} suffix="处已完成" />
+          <ReadinessItem icon="photo" label="历史图片" value={readyImages} total={sites.length} suffix="处已补充" />
+          <ReadinessItem icon="film" label="视频资料" value={readyVideos} total={sites.length} suffix="处已补充" />
         </div>
       </div>
 
@@ -79,18 +79,18 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
 }
 
 interface ReadinessItemProps {
-  icon: typeof MapIcon;
+  icon: PixelIconName;
   label: string;
   value: number;
   total: number;
   suffix: string;
 }
 
-function ReadinessItem({ icon: Icon, label, value, total, suffix }: ReadinessItemProps) {
+function ReadinessItem({ icon, label, value, total, suffix }: ReadinessItemProps) {
   const progress = total === 0 ? 0 : Math.round((value / total) * 100);
   return (
     <article className="readiness-item">
-      <Icon />
+      <PixelIcon name={icon} />
       <div>
         <span>{label}</span>
         <strong>{value}<small> / {total}</small></strong>

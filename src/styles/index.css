@@ -33,6 +33,27 @@ a {
   touch-action: manipulation;
 }
 
+.pixel-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex: none;
+  background-image: url("/media/pixel/icon-atlas-v1.png");
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-icon--map { background-position: 0% 0%; }
+.pixel-icon--flag { background-position: 33.3333% 0%; }
+.pixel-icon--folder { background-position: 66.6667% 0%; }
+.pixel-icon--clock { background-position: 100% 0%; }
+.pixel-icon--photo { background-position: 0% 100%; }
+.pixel-icon--film { background-position: 33.3333% 100%; }
+.pixel-icon--compass { background-position: 66.6667% 100%; }
+.pixel-icon--seal { background-position: 100% 100%; }
+
 .app-shell {
   position: relative;
   display: grid;
@@ -515,6 +536,11 @@ a {
 .mobile-nav__item svg {
   width: 21px;
   height: 21px;
+}
+
+.mobile-nav__item .pixel-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .mobile-nav__item.is-active {
@@ -1139,9 +1165,14 @@ a {
 }
 
 .about-hero {
+  position: relative;
+  overflow: hidden;
   display: grid;
   gap: 1.5rem;
   border-bottom: 1px solid rgb(52 38 28 / 18%);
+  background:
+    linear-gradient(105deg, rgb(255 248 229 / 94%), rgb(255 248 229 / 77%)),
+    url("/media/pixel/archive-background-v1.png") center / cover;
   padding-bottom: 2rem;
 }
 
@@ -1230,8 +1261,9 @@ a {
   padding: 0.9rem 0.9rem 1rem;
 }
 
-.readiness-item > svg {
-  width: 26px;
+.readiness-item > .pixel-icon {
+  width: 34px;
+  height: 34px;
   color: var(--color-red);
 }
 
@@ -2502,6 +2534,11 @@ a {
     color: #8f7e63;
     font: 700 0.58rem/1 system-ui, sans-serif;
     letter-spacing: 0.16em;
+  }
+
+  .desktop-nav__item .pixel-icon {
+    width: 30px;
+    height: 30px;
   }
 
   .desktop-nav__foot {
