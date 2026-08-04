@@ -76,9 +76,16 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
         >
           <div className={`map-canvas relative overflow-hidden bg-archive-paper shadow-archive ${activeStage === "全部" ? "is-overview" : "is-filtered"}`}>
             <img
+              src="./media/pixel/map-base-v2.png"
+              alt=""
+              aria-hidden="true"
+              className="map-canvas__pixel-base"
+              draggable={false}
+            />
+            <img
               src="./archive-map.svg"
               alt="依据权威公开资料原创绘制的淮海战役地标与战场态势示意图"
-              className="h-full w-full select-none object-cover"
+              className="map-canvas__annotation-layer h-full w-full select-none"
               draggable={false}
             />
             {visibleSites.map((site) => {

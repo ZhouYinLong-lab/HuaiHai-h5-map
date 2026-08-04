@@ -37,19 +37,20 @@
     </marker>
   </defs>
 
-  <rect width="1800" height="1120" fill="url(#paper)"/>
-  <rect width="1800" height="1120" fill="url(#smallGrid)"/>
-  <rect width="1800" height="1120" fill="url(#largeGrid)"/>
+  <rect display="none" width="1800" height="1120" fill="url(#paper)"/>
+  <rect display="none" width="1800" height="1120" fill="url(#smallGrid)"/>
+  <rect display="none" width="1800" height="1120" fill="url(#largeGrid)"/>
+  <image href="./media/pixel/map-base-v2.png" x="0" y="0" width="1800" height="1120" preserveAspectRatio="none"/>
 
   <!-- 三阶段态势区域：像素折角边界 -->
-  <g shape-rendering="crispEdges" stroke-linejoin="miter">
+  <g display="none" shape-rendering="crispEdges" stroke-linejoin="miter">
     <path d="M980 92h140V75h160v17h150v26h130v42h90v68h70v120h-25v90h-95v60h-145v40h-175v15h-155v-25H995v-30h-85v-50h-40v-60h25v-75h35V210h30v-70h20Z" fill="#9c3030" fill-opacity=".055" stroke="#9c3030" stroke-opacity=".25" stroke-dasharray="16 12" stroke-width="3"/>
     <path d="M490 480h130v-30h160v20h150v30h100v60h60v115h30v80h-25v95h-65v75H930v65H780v35H620v-15H520v-30h-90v-50h-80v-70h-35v-90h15v-90h30v-85h50v-55h80Z" fill="#9c3030" fill-opacity=".06" stroke="#9c3030" stroke-opacity=".25" stroke-dasharray="16 12" stroke-width="3"/>
     <path d="M40 405h140v-45h140v-15h150v20h120v45h80v85h50v70h-20v95h-50v80h-90v60H440v35H300v5H210v-25h-80v-35H60v-50H10v-90h-30V540H0v-80h40Z" fill="#4e392b" fill-opacity=".045" stroke="#4e392b" stroke-opacity=".22" stroke-dasharray="16 12" stroke-width="3"/>
   </g>
 
   <!-- 等高线与山地纹理：阶梯折线 -->
-  <g fill="none" stroke="#795c38" stroke-opacity=".14" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+  <g display="none" fill="none" stroke="#795c38" stroke-opacity=".14" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
     <path d="M-60 120h120v-15h120v7h125v23h125v25h140v15h120v-25h120v-30h120v-8h120v18h120v25h120v-15h120v-20h130v10h80v30h80"/>
     <path d="M-70 180h140v-15h135v12h125v28h120v18h135v-20h125v-35h135v-20h140v25h130v28h150v-18h120v-25h140v18h120v20h80"/>
     <path d="M-50 930h145v-20h130v12h125v-25h145v-20h135v-38h145v-27h135v18h130v38h130v28h155v-15h140v-35h140v-20h140"/>
@@ -57,14 +58,14 @@
     <path d="M110 360h80v-28h120v-20h125v18h105v35h110v20h125v-25h110v-32h120v-18h110"/>
     <path d="M1160 660h125v-35h125v-18h105v22h120v38h125v20h120v-20h100"/>
   </g>
-  <g fill="#6f5738" fill-opacity=".12" shape-rendering="crispEdges">
+  <g display="none" fill="#6f5738" fill-opacity=".12" shape-rendering="crispEdges">
     <path d="M120 315h18v-12h12v-20h12v-28h12v28h12v20h12v12h22v12h-100Z"/>
     <path d="M1440 570h18v-15h12v-25h12v-35h12v35h12v25h12v15h24v12h-102Z"/>
     <path d="M470 910h20v-18h12v-25h12v-38h14v38h12v25h12v18h24v12H470Z"/>
   </g>
 
   <!-- 河流：方形端点与阶梯河道 -->
-  <g fill="none" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+  <g display="none" fill="none" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
     <path d="M-50 235h120v-15h85v10h95v40h100v25h110v-25h115v-40h115v-32h125v-23h115v5h115v24h110v34h115v17h115v-5h110v-18h115v-10h115v18h125" stroke="#617c78" stroke-opacity=".6" stroke-width="20"/>
     <path d="M-50 235h120v-15h85v10h95v40h100v25h110v-25h115v-40h115v-32h125v-23h115v5h115v24h110v34h115v17h115v-5h110v-18h115v-10h115v18h125" stroke="#9aa99b" stroke-opacity=".35" stroke-width="3" stroke-dasharray="4 12"/>
     <path d="M-40 850h120v-25h100v-20h110v20h120v-10h110v-40h130v-45h110v-10h100v22h110v38h105v45h105v25h120v-5h115v-35h115v-25h110v15h110v-20h120" stroke="#63817d" stroke-opacity=".54" stroke-width="15"/>
@@ -78,7 +79,7 @@
   </g>
 
   <!-- 铁路交通：像素折线 -->
-  <g fill="none" stroke="#42352b" stroke-opacity=".52" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+  <g display="none" fill="none" stroke="#42352b" stroke-opacity=".52" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
     <path d="M80 470h120v-10h120v-10h120v-15h120v-20h120v-25h130v-25h120v-5h125v-10h125v-8h130v-5h120v-5h130" stroke-width="6"/>
     <path d="M82 470h120v-10h120v-10h120v-15h120v-20h120v-25h130v-25h120v-5h125v-10h125v-8h130v-5h120v-5h130" stroke="#d8bd82" stroke-width="2" stroke-dasharray="12 11"/>
     <path d="M920 40v120h-5v130h10v150h-20v180h10v150h20v150h18v120" stroke-width="6"/>
@@ -90,7 +91,7 @@
   </g>
 
   <!-- 作战动线：像素折线与方块箭头 -->
-  <g fill="none" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
+  <g display="none" fill="none" stroke-linecap="square" stroke-linejoin="miter" shape-rendering="crispEdges">
     <path d="M1590 280h-100v14h-100v16h-100v16h-105v14h-105v-5H975" stroke="#9f2729" stroke-width="13" stroke-dasharray="26 17" marker-end="url(#redArrow)"/>
     <path d="M1530 185h-140v15h-120v25h-105v30h-105" stroke="#9f2729" stroke-width="9" stroke-dasharray="20 14" marker-end="url(#redArrow)"/>
     <path d="M640 950v-70h15v-60h20v-55h25v-60h30v-60h30v-70h25v-55" stroke="#9f2729" stroke-width="13" stroke-dasharray="26 17" marker-end="url(#redArrow)"/>

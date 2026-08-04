@@ -48,7 +48,7 @@
 | PWA 离线应用外壳 | 已完成 |
 | Azure Static Web Apps 配置 | 已完成 |
 | 原创战役态势底图 | 已完成 |
-| 河流、山地、区域边界与作战箭头像素化 | 已完成 |
+| 河流、山地、区域边界与作战箭头像素化 | 已完成，使用 `map-base-v2.png` 低分辨率像素底稿并叠加可读史实标注 |
 | 像素风导航图标、全站档案背景、导航推车背景、地图节点图集与 favicon | 已完成，资源位于 `public/media/pixel/` 与 `public/favicon-pixel.png` |
 | 公网权威来源链接 | 已补充 |
 | 权威遗址史料细节 | 11/16 已核实 |
@@ -260,12 +260,12 @@ npm run validate:content -- --strict
 ```text
 HuaiHai-h5-map/
 ├── public/
-│   ├── archive-map.svg              # 原创战役态势底图
+│   ├── archive-map.svg              # 史实标注、阶段框和像素罗盘图层
 │   ├── favicon-pixel.png            # 像素风 PWA / 浏览器图标
 │   ├── site-placeholder.svg         # 待替换的遗址封面
 │   ├── manifest.webmanifest
 │   ├── media/                        # 中期审查媒体资源与后续正式图片
-│   │   └── pixel/                    # 像素风图标、地图节点图集与档案背景
+│   │   └── pixel/                    # 像素图标、节点图集、页面背景与地图底稿
 │   ├── sw.js
 │   └── staticwebapp.config.json     # Azure 静态站点配置
 ├── src/
