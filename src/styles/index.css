@@ -2499,8 +2499,6 @@ a {
     height: 52px;
     flex: none;
     place-items: center;
-    border: 1px solid #bd3b3b;
-    color: #e1b27e;
   }
 
   .desktop-nav__seal .pixel-icon {
