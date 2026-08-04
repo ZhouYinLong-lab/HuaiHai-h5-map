@@ -64,6 +64,19 @@ a {
   background:
     radial-gradient(circle at 20% 10%, rgb(255 244 211 / 10%), transparent 28%),
     var(--color-night);
+  isolation: isolate;
+}
+
+.app-shell::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(135deg, rgb(239 224 189 / 88%), rgb(239 224 189 / 73%)),
+    var(--asset-archive-background) center / cover;
+  content: "";
+  opacity: 0.82;
+  pointer-events: none;
 }
 
 .opening-scroll {
@@ -407,6 +420,8 @@ a {
 }
 
 .app-main {
+  position: relative;
+  z-index: 1;
   display: flex;
   min-width: 0;
   min-height: 0;
@@ -490,19 +505,7 @@ a {
   min-height: 0;
   flex: 1;
   overflow: hidden;
-  background: #ead8ad;
-}
-
-.view-shell::before {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background:
-    linear-gradient(135deg, rgb(239 224 189 / 88%), rgb(239 224 189 / 73%)),
-    url("/media/pixel/archive-background-v1.png") center / cover;
-  content: "";
-  opacity: 0.82;
-  pointer-events: none;
+  background: transparent;
 }
 
 .view-shell > * {
@@ -515,7 +518,7 @@ a {
 .view-shell--amap,
 .view-shell--about {
   overflow-y: auto;
-  background: #efe0bd;
+  background: transparent;
 }
 
 .desktop-nav {
@@ -1188,7 +1191,7 @@ a {
   border-bottom: 1px solid rgb(52 38 28 / 18%);
   background:
     linear-gradient(105deg, rgb(255 248 229 / 94%), rgb(255 248 229 / 77%)),
-    url("/media/pixel/archive-background-v1.png") center / cover;
+    var(--asset-archive-background) center / cover;
   padding-bottom: 2rem;
 }
 
