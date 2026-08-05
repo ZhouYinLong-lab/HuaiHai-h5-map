@@ -144,7 +144,7 @@
   </g>
 
   <!-- 标题牌 -->
-  <g transform="translate(55 52)" filter="url(#inkShadow)">
+  <g transform="translate(410 225)" filter="url(#inkShadow)">
     <path d="M0 0h520l28 28v122H0Z" fill="#efe1ba" fill-opacity=".92" stroke="#5e432e" stroke-opacity=".72" stroke-width="3"/>
     <path d="M520 0v28h28" fill="none" stroke="#5e432e" stroke-width="3"/>
     <text x="28" y="54" fill="#1d1814" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="5">淮海战役地标与事件图</text>
