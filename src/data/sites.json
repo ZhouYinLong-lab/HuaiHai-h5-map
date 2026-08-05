@@ -494,43 +494,57 @@
   },
   {
     "id": "xiaozhuzhuang-battlefield",
-    "name": "小朱庄淮海战役战场旧址",
+    "name": "小朱庄战场（含烈士陵园）",
     "shortName": "小朱庄",
     "province": "安徽",
-    "region": "安徽淮北濉溪",
+    "region": "安徽淮北杜集",
     "address": "安徽省淮北市杜集区矿山集街道朱北村小朱庄一带",
     "x": 41,
     "y": 79,
-    "category": "战场旧址",
-    "stage": "第二阶段",
+    "category": "烈士纪念设施",
+    "stage": "纪念传承",
     "kind": "battlefield",
-    "eventDate": "近现代革命史迹",
-    "eventTitle": "小朱庄战场与烈士陵园",
+    "eventDate": "1944年",
+    "eventTitle": "小朱庄战斗烈士纪念",
     "labelPosition": "left",
-    "summary": "小朱庄战场（含烈士陵园）是淮北市公布的近现代重要史迹及代表性建筑，位于杜集区矿山集街道朱北村一带。",
-    "history": "淮北市文化旅游体育局公布的文物名录将小朱庄战场（含烈士陵园）列为近现代重要史迹及代表性建筑，地点位于杜集区矿山集街道朱北村。这里以战场遗存和烈士纪念空间为主要内容，承载着淮北地区革命历史记忆。",
-    "verificationNote": "公开规划能证明小朱庄进入淮北红色文化资源范围，但与淮海战役具体战场旧址的对应关系仍偏弱，正式展示前建议重点复核或替换为更明确点位。",
-    "navigationQuery": "淮北市杜集区矿山集街道朱北村 小朱庄战场",
-    "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%9C%B1%E5%BA%84%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%88%98%E5%9C%BA%E6%97%A7%E5%9D%80",
+    "summary": "小朱庄战场（含烈士陵园）位于淮北市杜集区矿山集街道朱北村，是淮北市公布的近现代重要史迹及代表性建筑。",
+    "history": "小朱庄战场（含烈士陵园）位于淮北市杜集区矿山集街道朱北村，公布年代为1944年。烈士陵园内设有小朱庄战斗烈士公墓和纪念碑，松柏、墓区与纪念设施共同构成庄严肃穆的纪念空间，记录淮北地区革命先烈的战斗与牺牲。",
+    "verificationNote": "淮北市文化旅游体育局文物名录和市住建部门公开报道均收录小朱庄战场与烈士陵园。",
+    "navigationQuery": "淮北市杜集区矿山集街道朱北村 小朱庄战场烈士陵园",
+    "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%B0%8F%E6%9C%B1%E5%BA%84%E6%88%98%E5%9C%BA%E7%83%88%E5%A3%AB%E9%99%B5%E5%9B%AD",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "小朱庄战场旧址相关资料图片",
+    "image": "/media/sites/xiaozhuzhuang-battlefield/cover-clean.jpg",
+    "imageAlt": "小朱庄烈士纪念碑公开资料照片",
     "tags": [
       "战场旧址",
       "小朱庄",
-      "双堆集",
-      "第二阶段"
+      "烈士陵园",
+      "纪念传承"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/xiaozhuzhuang-battlefield/cover-clean.jpg",
+        "alt": "小朱庄烈士纪念碑公开资料照片",
+        "caption": "小朱庄烈士纪念碑"
+      }
+    ],
     "sources": [
       {
         "title": "淮北市发展改革委：淮北市国民经济和社会发展第十四个五年规划和2035年远景目标纲要",
         "url": "https://fgw.huaibei.gov.cn/group3/M00/05/C4/rBIoImCKFFyAEYXTAEN_5Uwtn4s142.pdf"
+      },
+      {
+        "title": "淮北市文化旅游体育局：淮北市市级文物保护单位实有名录",
+        "url": "https://wlt.huaibei.gov.cn/zwgk/public/64/64637754.html"
+      },
+      {
+        "title": "淮北市住房和城乡建设局：缅怀先烈守初心 砥砺奋进担使命",
+        "url": "https://hbzjj.huaibei.gov.cn/xwzx/zxzx/58028695.html"
       }
     ],
     "contentStatus": {
-      "history": "待核实",
-      "images": "待补充",
+      "history": "已核实",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -544,30 +558,30 @@
     "x": 37,
     "y": 63,
     "category": "红色文化博物馆",
-    "stage": "第二阶段",
+    "stage": "纪念传承",
     "kind": "command",
     "eventDate": "红色文化展陈",
     "eventTitle": "淮海战役相关红色文化展陈点",
     "labelPosition": "top",
-    "summary": "钟源阁红色文化博物馆位于淮北市相山区渠沟镇钟楼村，馆内集中展示淮北地方红色文化和革命文物。",
-    "history": "钟源阁红色文化博物馆位于淮北市相山区渠沟镇钟楼村钟楼孔雀园内。公开研学线路资料介绍，馆内展陈包含淮海战役时期的军服、武器、书信等文物，并通过实物、图片和文字资料呈现淮北地区的革命历史与红色记忆。",
-    "verificationNote": "当前资料更能证明其为红色文化博物馆/研学点，而非明确战役旧址；正式上线前建议核定名称为“钟源阁红色文化博物馆”或补充旧址证据。",
+    "summary": "钟源阁红色文化博物馆位于淮北市相山区渠沟镇钟楼村，集中展示淮北地方红色文化、革命文物和战地记忆。",
+    "history": "钟源阁红色文化博物馆位于淮北市相山区渠沟镇钟楼村钟楼孔雀园内，2013年7月1日开馆。馆内以图文、革命历史油画、宣传画、电影海报、连环画、纪念章、老报纸和战场遗留物品为主要展陈，通过声光电和多媒体技术，分主题展示中国共产党创建、长征、抗日战争、淮海大决战以及社会主义建设等历史内容。其中淮海大决战展区集中呈现淮北人民支前、作战和革命建设的红色记忆。",
+    "verificationNote": "淮北市文化旅游体育局、淮北市教育局公开报道均收录钟源阁红色文化博物馆及其红色展陈。",
     "navigationQuery": "淮北市相山区渠沟镇钟楼村 钟源阁红色文化博物馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E9%92%9F%E6%BA%90%E9%98%81%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%97%A7%E5%9D%80",
     "videoUrl": null,
-    "image": "/media/sites/zhongyuange-site/cover.jpg",
-    "imageAlt": "钟源阁红色文化博物馆展厅公开资料照片",
+    "image": "/media/sites/zhongyuange-site/cover-clean.jpg",
+    "imageAlt": "钟源阁红色文化博物馆展陈公开资料照片",
     "tags": [
       "钟源阁",
-      "临涣",
-      "革命旧址",
-      "第二阶段"
+      "红色博物馆",
+      "淮北",
+      "纪念传承"
     ],
     "gallery": [
       {
-        "src": "/media/sites/zhongyuange-site/cover.jpg",
-        "alt": "钟源阁红色文化博物馆展厅公开资料照片",
-        "caption": "钟源阁红色文化博物馆展厅"
+        "src": "/media/sites/zhongyuange-site/cover-clean.jpg",
+        "alt": "钟源阁红色文化博物馆展陈公开资料照片",
+        "caption": "钟源阁红色文化博物馆展陈"
       }
     ],
     "sources": [
@@ -582,10 +596,14 @@
       {
         "title": "淮北市文化旅游体育局：市国有博物馆助力市非国有博物馆建设",
         "url": "https://wlt.huaibei.gov.cn/gzdt/bmdt/56275111.html"
+      },
+      {
+        "title": "淮北市教育局：烈山区教育局机关党支部参观红色教育基地",
+        "url": "https://hbjy.huaibei.gov.cn/xwzx/jyyw/57722618.html"
       }
     ],
     "contentStatus": {
-      "history": "待核实",
+      "history": "已核实",
       "images": "已补充",
       "video": "待补充"
     }
