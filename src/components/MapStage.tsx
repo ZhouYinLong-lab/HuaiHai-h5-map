@@ -14,6 +14,18 @@ interface MapStageProps {
 }
 
 const stageOptions = ["全部", "第一阶段", "第二阶段", "第三阶段", "纪念传承"] as const;
+const stageMeta: Record<(typeof stageOptions)[number], string> = {
+  全部: "OVERVIEW",
+  第一阶段: "PHASE 01",
+  第二阶段: "PHASE 02",
+  第三阶段: "PHASE 03",
+  纪念传承: "MEMORY",
+};
+const phaseCards = [
+  { key: "phase-one", stage: "第一阶段", code: "PHASE 01", direction: "徐东 · 碾庄圩方向", left: "83.6%", top: "11.6%", tilt: "3deg" },
+  { key: "phase-two", stage: "第二阶段", code: "PHASE 02", direction: "宿县 · 双堆集方向", left: "43.6%", top: "79%", tilt: "-2deg" },
+  { key: "phase-three", stage: "第三阶段", code: "PHASE 03", direction: "永城 · 陈官庄方向", left: "12.8%", top: "40.2%", tilt: "-3deg" },
+] as const;
 
 const kindLabels: Record<Site["kind"], string> = {
   battlefield: "战场与战斗",
@@ -53,8 +65,8 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
   const [activeStage, setActiveStage] = useState<(typeof stageOptions)[number]>("全部");
   const [currentScale, setCurrentScale] = useState<number>(zoomLevels[0]);
   const visibleSites = useMemo(
-    () => sites.filter((site) => activeStage === "全部" || site.stage === activeStage || site.id === activeSiteId),
-    [activeSiteId, activeStage, sites],
+    () => sites.filter((site) => activeStage === "全部" || site.stage === activeStage),
+    [activeStage, sites],
   );
 
   useEffect(() => {
@@ -125,6 +137,23 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
               className="map-canvas__annotation-layer h-full w-full select-none"
               draggable={false}
             />
+            {phaseCards
+              .filter((phase) => activeStage === "全部" || activeStage === phase.stage)
+              .map((phase) => (
+                <button
+                  key={phase.key}
+                  type="button"
+                  className={`map-phase-card map-phase-card--${phase.key} ${activeStage === phase.stage ? "is-active" : ""}`}
+                  style={{ left: phase.left, top: phase.top, "--phase-card-tilt": phase.tilt } as CSSProperties}
+                  onClick={() => setActiveStage(phase.stage)}
+                  aria-pressed={activeStage === phase.stage}
+                  aria-label={`只显示${phase.stage}遗址`}
+                >
+                  <small>{phase.code}</small>
+                  <strong>{phase.stage}</strong>
+                  <span>{phase.direction}</span>
+                </button>
+              ))}
             {visibleSites.map((site) => {
               const active = site.id === activeSiteId;
               const kindIndex = sites.filter((item) => item.kind === site.kind).findIndex((item) => item.id === site.id);
@@ -166,11 +195,12 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
           <button
             key={stage}
             type="button"
-            className={activeStage === stage ? "is-active" : ""}
+            className={`map-stage-filter__item ${activeStage === stage ? "is-active" : ""}`}
             onClick={() => setActiveStage(stage)}
             aria-pressed={activeStage === stage}
           >
-            {stage}
+            <small>{stageMeta[stage]}</small>
+            <strong>{stage}</strong>
             <span>{stage === "全部" ? sites.length : sites.filter((site) => site.stage === stage).length}</span>
           </button>
         ))}

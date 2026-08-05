@@ -1701,6 +1701,75 @@ a {
   object-fit: fill;
 }
 
+.map-phase-card {
+  position: absolute;
+  z-index: 7;
+  display: grid;
+  width: 15%;
+  min-width: 124px;
+  min-height: 58px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  align-items: end;
+  gap: 0.18rem 0.45rem;
+  transform: translate(-50%, -50%) rotate(var(--phase-card-tilt));
+  border: 2px solid rgb(145 35 34 / 78%);
+  border-radius: 2px;
+  background: rgb(246 229 190 / 92%);
+  padding: 0.42rem 0.55rem 0.48rem;
+  color: #1d1814;
+  box-shadow: 0 8px 15px rgb(51 30 16 / 19%);
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
+  text-align: left;
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+
+.map-phase-card::before {
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgb(93 55 30 / 18%);
+  content: "";
+  pointer-events: none;
+}
+
+.map-phase-card small {
+  grid-column: 1 / -1;
+  color: var(--color-red);
+  font-family: system-ui, sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.map-phase-card strong {
+  font-size: clamp(13px, 1.2vw, 20px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.map-phase-card span {
+  grid-column: 1 / -1;
+  color: #49382a;
+  font-size: clamp(8px, 0.82vw, 12px);
+  font-weight: 800;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.map-phase-card.is-active,
+.map-phase-card:hover,
+.map-phase-card:focus-visible {
+  z-index: 12;
+  transform: translate(-50%, -50%) rotate(var(--phase-card-tilt)) scale(1.04);
+  background: #fff0c7;
+  box-shadow: 0 11px 22px rgb(51 30 16 / 28%), 0 0 0 3px rgb(159 29 32 / 16%);
+}
+
+.map-phase-card:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 3px;
+}
+
 .map-canvas::after {
   position: absolute;
   inset: 0;
@@ -1892,33 +1961,81 @@ a {
 }
 
 .map-stage-filter button {
-  display: flex;
-  min-height: 36px;
-  min-width: max-content;
-  align-items: center;
-  gap: 0.4rem;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  padding: 0 0.65rem;
-  color: #d4c09a;
-  font-size: 11px;
+  position: relative;
+  display: grid;
+  min-width: 7.3rem;
+  min-height: 58px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  align-items: end;
+  gap: 0.15rem 0.45rem;
+  border: 1px solid rgb(255 239 204 / 14%);
+  border-radius: 3px;
+  padding: 0.45rem 0.6rem 0.5rem;
+  background: rgb(255 243 208 / 5%);
+  color: #d9c49a;
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: left;
   white-space: nowrap;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.map-stage-filter button small {
+  grid-column: 1 / -1;
+  color: #a99675;
+  font-family: system-ui, sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1;
+}
+
+.map-stage-filter button strong {
+  line-height: 1.15;
 }
 
 .map-stage-filter button span {
   display: grid;
-  min-width: 18px;
-  height: 18px;
+  min-width: 24px;
+  height: 24px;
   place-items: center;
   border-radius: 50%;
-  background: rgb(255 255 255 / 8%);
-  font: 700 9px/1 system-ui, sans-serif;
+  background: rgb(255 255 255 / 10%);
+  font: 800 10px/1 system-ui, sans-serif;
 }
 
 .map-stage-filter button.is-active {
-  border-color: rgb(255 231 191 / 25%);
+  transform: translateY(-2px);
+  border-color: rgb(255 231 191 / 52%);
   background: var(--color-red);
+  box-shadow: 0 8px 18px rgb(31 17 9 / 24%), inset 0 0 0 1px rgb(255 238 204 / 12%);
   color: #fff0ce;
+}
+
+.map-stage-filter button.is-active small {
+  color: #f6d6a4;
+}
+
+.map-stage-filter button.is-active span {
+  background: rgb(40 16 12 / 24%);
+}
+
+.map-stage-filter button:nth-child(3):not(.is-active) {
+  border-color: rgb(195 139 47 / 30%);
+}
+
+.map-stage-filter button:nth-child(2):not(.is-active) {
+  border-color: rgb(159 39 41 / 42%);
+}
+
+.map-stage-filter button:nth-child(4):not(.is-active) {
+  border-color: rgb(133 92 56 / 34%);
+}
+
+.map-stage-filter button:nth-child(5):not(.is-active) {
+  border-color: rgb(196 165 101 / 25%);
 }
 
 .map-stage-filter button:focus-visible {
