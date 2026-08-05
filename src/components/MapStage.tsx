@@ -31,6 +31,13 @@ const markerRows: Record<Site["kind"], number> = {
 
 const markerTilts = [-3, 2, -1, 1, 4] as const;
 const markerScales = [0.96, 1, 0.93, 1.03, 0.89] as const;
+const zoomLevels = [1, 2, 3] as const;
+
+function nearestZoomLevel(scale: number) {
+  return zoomLevels.reduce((nearest, level) =>
+    Math.abs(level - scale) < Math.abs(nearest - scale) ? level : nearest,
+  zoomLevels[0]);
+}
 
 function compactDate(site: Site) {
   if (site.stage === "纪念传承") return "纪念传承";
@@ -44,6 +51,7 @@ function compactDate(site: Site) {
 export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
   const transformRef = useRef<ReactZoomPanPinchContentRef>(null);
   const [activeStage, setActiveStage] = useState<(typeof stageOptions)[number]>("全部");
+  const [currentScale, setCurrentScale] = useState<number>(zoomLevels[0]);
   const visibleSites = useMemo(
     () => sites.filter((site) => activeStage === "全部" || site.stage === activeStage || site.id === activeSiteId),
     [activeSiteId, activeStage, sites],
@@ -52,23 +60,46 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
   useEffect(() => {
     if (!activeSiteId) return;
     const timer = window.setTimeout(() => {
-      transformRef.current?.zoomToElement(`site-${activeSiteId}`, 1.65, 350);
+      transformRef.current?.zoomToElement(`site-${activeSiteId}`, 2, 350);
     }, 100);
     return () => window.clearTimeout(timer);
   }, [activeSiteId]);
+
+  const zoomToLevel = (level: (typeof zoomLevels)[number]) => {
+    transformRef.current?.centerView(level, 260);
+  };
+
+  const zoomInToNextLevel = () => {
+    const nextLevel = zoomLevels.find((level) => level > currentScale + 0.05) ?? zoomLevels[zoomLevels.length - 1];
+    zoomToLevel(nextLevel);
+  };
+
+  const zoomOutToPreviousLevel = () => {
+    const previousLevel = [...zoomLevels].reverse().find((level) => level < currentScale - 0.05) ?? zoomLevels[0];
+    zoomToLevel(previousLevel);
+  };
 
   return (
     <section className="relative min-h-0 min-w-0 w-full flex-1 overflow-hidden" aria-label="淮海战役遗址交互地图">
       <TransformWrapper
         ref={transformRef}
         initialScale={1}
-        minScale={0.85}
-        maxScale={4}
+        minScale={1}
+        maxScale={3}
         centerOnInit
-        limitToBounds={false}
-        wheel={{ step: 0.12 }}
+        centerZoomedOut
+        disablePadding
+        limitToBounds
+        wheel={{ step: 1, smoothStep: 1 }}
+        pinch={{ step: 1 }}
+        alignmentAnimation={{ animationTime: 220, velocityAlignmentTime: 220 }}
         doubleClick={{ disabled: true }}
         panning={{ velocityDisabled: true }}
+        onTransformed={(_, state) => setCurrentScale(state.scale)}
+        onPinchingStop={(ref) => {
+          const level = nearestZoomLevel(ref.state.scale);
+          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 220);
+        }}
       >
         <TransformComponent
           wrapperClass="map-transform-wrapper"
@@ -146,19 +177,19 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
       </div>
 
       <div className="map-controls">
-        <button className="map-control" type="button" onClick={() => transformRef.current?.zoomIn()} aria-label="放大地图">
+        <button className="map-control" type="button" onClick={zoomInToNextLevel} aria-label="放大地图到下一级">
           <PlusIcon />
         </button>
-        <button className="map-control" type="button" onClick={() => transformRef.current?.zoomOut()} aria-label="缩小地图">
+        <button className="map-control" type="button" onClick={zoomOutToPreviousLevel} aria-label="缩小地图到上一级">
           <MinusIcon />
         </button>
-        <button className="map-control" type="button" onClick={() => transformRef.current?.resetTransform()} aria-label="重置地图">
+        <button className="map-control" type="button" onClick={() => zoomToLevel(zoomLevels[0])} aria-label="重置地图视角">
           <ResetIcon />
         </button>
       </div>
 
       <div className="map-tip">
-        拖拽地图 · 双指缩放 · 点击地标
+        边界内拖动 · 三级缩放 · 点击地标
       </div>
     </section>
   );
