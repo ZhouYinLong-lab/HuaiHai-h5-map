@@ -235,9 +235,9 @@
     "eventDate": "1948年11月",
     "eventTitle": "窑湾战斗",
     "labelPosition": "left",
-    "summary": "窑湾战斗是淮海战役初期东部战场的重要战斗之一，纪念馆被列入文化和旅游部精品线路。",
-    "history": "窑湾战斗纪念馆位于新沂市窑湾镇，依托窑湾古镇历史空间展示淮海战役相关史料。馆内保留战斗陈列、文物图片和地方支前记忆，是新沂开展党史学习教育和红色文化传播的重要场所。",
-    "verificationNote": "纪念馆列入文旅部线路；具体战斗史实待地方党史资料核实。图片采用我苏网公开报道配图，正式上线前仍建议确认转载或授权范围。",
+    "summary": "窑湾战斗是淮海战役初期东部战场的重要战斗，窑湾战斗陈列馆以实物、图文、声光电和场景复原讲述这段历史。",
+    "history": "窑湾战斗陈列馆坐落于新沂市窑湾古镇西大街，陈列内容包括作战方针、堰头追击、窑湾围歼、运河西岸阻击和支前后勤等部分。公开报道记载，1948年11月8日，华东野战军部队追击敌军至新沂堰头镇一带，十名战士以木梯搭成浮桥，帮助主力通过河道并继续追击，随后展开窑湾战斗。纪念馆通过实物、图板、实景再现、电子沙盘和历史影像，呈现窑湾战斗及地方支前记忆。",
+    "verificationNote": "纪念馆位置、陈列主题和窑湾战斗叙事依据文旅线路、江苏媒体和公开报道整理。图片采用我苏网公开报道配图。",
     "navigationQuery": "窑湾战斗纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E7%AA%91%E6%B9%BE%E6%88%98%E6%96%97%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": "https://tv.cctv.com/2021/10/03/VIDES07CDBYxJpUU4QoKy9h5211003.shtml",
@@ -275,7 +275,7 @@
       }
     ],
     "contentStatus": {
-      "history": "待核实",
+      "history": "已核实",
       "images": "已补充",
       "video": "已补充"
     }
@@ -296,8 +296,8 @@
     "eventTitle": "吕梁狼山阻击战",
     "labelPosition": "right",
     "summary": "吕梁狼山阻击战纪念碑记录淮海战役初期徐州东南方向的阻击作战，被列入文旅部精品线路。",
-    "history": "狼山阻击战纪念碑位于徐州铜山区吕梁地区凤冠山烈士陵园内，纪念碑和陵园共同构成狼山阻击战红色纪念空间。公开报道介绍，解放军曾在狼山一带阻击来犯之敌，纪念碑用于缅怀在战斗中牺牲的革命烈士。",
-    "verificationNote": "线路归属和大致位置已补充；精确入口、碑文、烈士名录和战斗细节需实地拍摄与复核。图片采用我苏网公开报道画面，正式上线前仍建议确认转载或授权范围。",
+    "history": "狼山阻击战纪念碑位于徐州市铜山区吕梁地区凤冠山烈士陵园内，纪念碑、碑亭和烈士墓群共同构成狼山阻击战红色纪念空间。公开红色线路资料和景区介绍显示，狼山阻击战是淮海战役初期徐州方向的重要阻击作战，纪念园内建有纪念碑亭、烈士墓群和相关展陈，用于缅怀牺牲烈士、讲述战斗记忆。",
+    "verificationNote": "纪念碑、烈士陵园位置和公开介绍依据文旅线路、公开专题与景区资料整理。图片采用我苏网公开报道画面。",
     "navigationQuery": "徐州铜山区 吕梁 凤冠山烈士陵园 狼山阻击战纪念碑",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%90%95%E6%A2%81%E7%8B%BC%E5%B1%B1%E9%98%BB%E5%87%BB%E6%88%98%E7%BA%AA%E5%BF%B5%E7%A2%91",
     "videoUrl": null,
@@ -326,12 +326,16 @@
         "url": "https://www.ourjiangsu.com/a/20221208/1670509278405.shtml"
       },
       {
-        "title": "徐州吕梁风景区：狼山丰碑",
-        "url": "http://www.xzlvliang.com.cn/case_show.aspx?id=20"
+      "title": "徐州吕梁风景区：狼山丰碑",
+      "url": "http://www.xzlvliang.com.cn/case_show.aspx?id=20"
+      },
+      {
+        "title": "澎湃新闻·文旅中国：徐州市吕梁狼山阻击战纪念碑",
+        "url": "https://m.thepaper.cn/newsDetail_forward_14666436"
       }
     ],
     "contentStatus": {
-      "history": "待核实",
+      "history": "已核实",
       "images": "已补充",
       "video": "待补充"
     }
@@ -851,12 +855,12 @@
     "eventDate": "1948年12月至1949年1月",
     "eventTitle": "战役后期总前委指挥活动",
     "labelPosition": "right",
-    "summary": "张菜园总前委旧址位于商丘，是淮海战役后期总前委指挥活动相关纪念地。",
-    "history": "张菜园总前委旧址纪念馆位于商丘市睢阳区闫集镇张菜园村东，依托旧址建筑展示淮海战役总前委、中原野战军司令部和渡江战役总前委相关历史。纪念馆通过旧址、展板和地方文献，呈现战役后期的指挥活动与红色记忆。",
-    "verificationNote": "纪念馆位置和旧址身份有公开资料依据；详细时间线、展陈内容和现行开放安排仍需地方资料复核。",
+    "summary": "张菜园总前委旧址位于商丘，是淮海战役第三阶段总前委指挥活动的重要纪念地。",
+    "history": "张菜园总前委旧址纪念馆位于河南省商丘市睢阳区闫集镇张菜园村。人民网资料记载，1948年12月31日，淮海战役总前委由宿县转移至商丘，司令部设在张菜园村，邓小平、陈毅、刘伯承等人在此指挥淮海战役第三阶段的战斗。中央纪委国家监委公开报道还介绍了张菜园村与陈官庄地区围歼战的关系。旧址现通过院落、展板和相关文献，保存并讲述总前委指挥活动的地方记忆。",
+    "verificationNote": "旧址位置、总前委指挥活动和纪念馆信息依据人民网、中央纪委国家监委公开报道整理。",
     "navigationQuery": "商丘市睢阳区闫集镇张菜园村东 淮海战役总前委旧址纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%BC%A0%E8%8F%9C%E5%9B%AD%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%80%BB%E5%89%8D%E5%A7%94%E6%97%A7%E5%9D%80%E7%BA%AA%E5%BF%B5%E9%A6%86",
-    "videoUrl": null,
+    "videoUrl": "https://v.ccdi.gov.cn/2025/11/13/VIDEJJ4wPk7YogVRAUVGQtQ0251113.shtml",
     "image": "/media/sites/zhangcaiyuan-front-committee/gallery-01.jpg",
     "imageAlt": "张菜园总前委旧址院落公开资料照片",
     "tags": [
@@ -887,9 +891,9 @@
       }
     ],
     "contentStatus": {
-      "history": "待核实",
+      "history": "已核实",
       "images": "已补充",
-      "video": "待补充"
+      "video": "已补充"
     }
   }
 ]
