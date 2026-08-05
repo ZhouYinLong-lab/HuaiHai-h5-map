@@ -123,12 +123,12 @@
     "labelPosition": "right",
     "summary": "淮海战役初期，第三绥靖区所属部队在贾汪、台儿庄地区举行起义，改变了徐州东北方向战场态势。",
     "history": "中央党史和文献研究院资料记载，1948年11月8日，第三绥靖区副司令官何基沣、张克侠率部约2.3万人起义。纪念馆展陈和旧址沿革待进一步补充。",
-    "verificationNote": "起义日期和规模有中央党史资料依据；公开报道指向贾汪区将军大道一带，精确门牌和展陈仍需官方或实地核实。",
+    "verificationNote": "起义日期和规模有中央党史资料依据；公开报道指向贾汪区将军大道一带，精确门牌和展陈仍需官方或实地核实。图片采用人民网江苏公开报道中的旧址庭院照片，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "徐州市贾汪区将军大道 贾汪起义纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E8%B4%BE%E6%B1%AA%E8%B5%B7%E4%B9%89%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "贾汪起义纪念馆相关资料图片",
+    "image": "/media/sites/jiawang-uprising-memorial/gallery-01.jpg",
+    "imageAlt": "贾汪起义旧址庭院公开资料照片",
     "tags": [
       "起义",
       "贾汪",
@@ -136,7 +136,13 @@
       "张克侠",
       "第一阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/jiawang-uprising-memorial/gallery-01.jpg",
+        "alt": "贾汪起义旧址庭院公开资料照片",
+        "caption": "公开资料照片，来源：人民网江苏《革命旧址寻访｜打赢新时代“淮海战役”》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "人民网：中国共产党新闻·毛泽东、朱德电贺何基沣、张克侠起义",
@@ -145,11 +151,15 @@
       {
         "title": "中国江苏网：贾汪起义旧址，收获淮海战役第一捷",
         "url": "https://jsnews.jschina.com.cn/shms/202109/t20210901_2845608.shtml"
+      },
+      {
+        "title": "人民网江苏：革命旧址寻访｜打赢新时代“淮海战役”",
+        "url": "https://js.people.com.cn/n2/2024/1106/c358232-41032680.html"
       }
     ],
     "contentStatus": {
       "history": "已核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -227,19 +237,25 @@
     "labelPosition": "left",
     "summary": "窑湾战斗是淮海战役初期东部战场的重要战斗之一，纪念馆被列入文化和旅游部精品线路。",
     "history": "战斗经过、参战部队和准确日期仍需依据纪念馆及地方党史资料补充，当前仅保留权威线路确认的地点关系。",
-    "verificationNote": "纪念馆列入文旅部线路；具体战斗史实待地方党史资料核实。",
+    "verificationNote": "纪念馆列入文旅部线路；具体战斗史实待地方党史资料核实。图片采用我苏网公开报道配图，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "窑湾战斗纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E7%AA%91%E6%B9%BE%E6%88%98%E6%96%97%E7%BA%AA%E5%BF%B5%E9%A6%86",
-    "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "窑湾战斗纪念馆相关资料图片",
+    "videoUrl": "https://tv.cctv.com/2021/10/03/VIDES07CDBYxJpUU4QoKy9h5211003.shtml",
+    "image": "/media/sites/yaowan-battle-memorial/cover.png",
+    "imageAlt": "窑湾战斗陈列馆入口公开资料照片",
     "tags": [
       "战斗纪念地",
       "新沂",
       "窑湾",
       "第一阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/yaowan-battle-memorial/gallery-01.jpg",
+        "alt": "窑湾战斗陈列馆入口公开资料照片",
+        "caption": "公开资料照片，来源：我苏网《党史学习教育热捧打卡点！央视走进江苏新沂淮海战役窑湾战斗陈列馆》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "文化和旅游部等四部门：建党百年红色旅游百条精品线路",
@@ -248,12 +264,20 @@
       {
         "title": "澎湃新闻：百条红色精品线路·新沂市窑湾战斗纪念馆",
         "url": "https://m.thepaper.cn/newsDetail_forward_14666436"
+      },
+      {
+        "title": "我苏网：党史学习教育热捧打卡点！央视走进江苏新沂淮海战役窑湾战斗陈列馆",
+        "url": "https://www.ourjiangsu.com/a/20211005/1633415734402.shtml"
+      },
+      {
+        "title": "央视网：窑湾战斗纪念馆相关视频",
+        "url": "https://tv.cctv.com/2021/10/03/VIDES07CDBYxJpUU4QoKy9h5211003.shtml"
       }
     ],
     "contentStatus": {
       "history": "待核实",
-      "images": "待补充",
-      "video": "待补充"
+      "images": "已补充",
+      "video": "已补充"
     }
   },
   {
@@ -273,19 +297,25 @@
     "labelPosition": "right",
     "summary": "吕梁狼山阻击战纪念碑记录淮海战役初期徐州东南方向的阻击作战，被列入文旅部精品线路。",
     "history": "吕梁狼山阻击战纪念碑被列入文化和旅游部红色旅游精品线路。公开报道显示，纪念碑位于徐州铜山区吕梁地区凤冠山烈士陵园内，相关纪念空间用于缅怀狼山阻击战中牺牲的革命烈士。战斗经过、参战部队、纪念碑碑文和烈士名录仍需地方党史资料或现场展陈核验。",
-    "verificationNote": "线路归属和大致位置已补充；精确入口、碑文、烈士名录和战斗细节需实地拍摄与复核。",
+    "verificationNote": "线路归属和大致位置已补充；精确入口、碑文、烈士名录和战斗细节需实地拍摄与复核。图片采用我苏网公开报道画面，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "徐州铜山区 吕梁 凤冠山烈士陵园 狼山阻击战纪念碑",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%90%95%E6%A2%81%E7%8B%BC%E5%B1%B1%E9%98%BB%E5%87%BB%E6%88%98%E7%BA%AA%E5%BF%B5%E7%A2%91",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "吕梁狼山阻击战纪念碑相关资料图片",
+    "image": "/media/sites/lvliang-langshan-memorial/cover.jpg",
+    "imageAlt": "狼山阻击战纪念碑公开资料照片",
     "tags": [
       "阻击战",
       "铜山",
       "狼山",
       "第一阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/lvliang-langshan-memorial/cover.jpg",
+        "alt": "狼山阻击战纪念碑公开资料照片",
+        "caption": "公开资料照片，来源：我苏网《狼山阻击战解放军英勇拒敌21天》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "文化和旅游部等四部门：建党百年红色旅游百条精品线路",
@@ -302,7 +332,7 @@
     ],
     "contentStatus": {
       "history": "待核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -427,19 +457,25 @@
     "labelPosition": "left",
     "summary": "草庙圩子是淮海战役华东野战军指挥部旧址体系中的重要点位。",
     "history": "烈山区政府资料记载，草庙圩子淮海战役华东野战军指挥部旧址位于安徽省淮北市烈山区古饶镇草庙行政村草庙自然村东北部。公开党史资料显示，1948年12月2日，总前委成员、华东野战军代司令员、代政委粟裕率华野指挥部进驻草庙圩子一带，是淮海战役第二阶段华东野战军指挥部重要驻地之一。具体布展、修复范围和开放状态仍需地方管理单位复核。",
-    "verificationNote": "旧址名称、位置和驻地属性有烈山区政府资料依据；详细开放状态和展陈范围待复核。",
+    "verificationNote": "旧址名称、位置和驻地属性有烈山区政府资料依据；详细开放状态和展陈范围待复核。图片采用安徽省级媒体与公开政务报道配图，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "淮北市烈山区古饶镇草庙村 淮海战役华东野战军指挥部旧址",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E8%8D%89%E5%BA%99%E5%9C%A9%E5%AD%90%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E5%8D%8E%E4%B8%9C%E9%87%8E%E6%88%98%E5%86%9B%E6%8C%87%E6%8C%A5%E9%83%A8%E6%97%A7%E5%9D%80",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "草庙圩子华野指挥部旧址相关资料图片",
+    "image": "/media/sites/caomiao-command-post/cover.png",
+    "imageAlt": "草庙圩子华野指挥部旧址公开资料照片",
     "tags": [
       "华东野战军",
       "指挥部",
       "草庙圩子",
       "第二阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/caomiao-command-post/gallery-01.jpg",
+        "alt": "草庙圩子华野指挥部旧址院落公开资料照片",
+        "caption": "公开资料照片，来源：澎湃政务号“淮北发布”《淮北这处景点，重大升级！》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "烈山区人民政府：参观红色基地·草庙圩子华野指挥部旧址",
@@ -452,7 +488,7 @@
     ],
     "contentStatus": {
       "history": "已核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -519,15 +555,21 @@
     "navigationQuery": "淮北市相山区渠沟镇钟楼村 钟源阁红色文化博物馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E9%92%9F%E6%BA%90%E9%98%81%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%97%A7%E5%9D%80",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "钟源阁红色文化博物馆相关资料图片",
+    "image": "/media/sites/zhongyuange-site/cover.jpg",
+    "imageAlt": "钟源阁红色文化博物馆展厅公开资料照片",
     "tags": [
       "钟源阁",
       "临涣",
       "革命旧址",
       "第二阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/zhongyuange-site/cover.jpg",
+        "alt": "钟源阁红色文化博物馆展厅公开资料照片",
+        "caption": "公开资料照片，来源：淮北市文化旅游体育局《市国有博物馆助力市非国有博物馆建设》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "淮北市发展改革委：淮北市国民经济和社会发展第十四个五年规划和2035年远景目标纲要",
@@ -544,7 +586,7 @@
     ],
     "contentStatus": {
       "history": "待核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -626,18 +668,24 @@
     "labelPosition": "right",
     "summary": "以双堆集地区战斗为主题的纪念场馆，用于承载第二阶段战役叙事和地方红色教育。",
     "history": "濉溪县政府资料记载，淮海战役双堆集歼灭战纪念馆位于烈士陵园东南部，1988年10月建成开放，并于2013年纪念淮海战役胜利65周年时批准重建。由于该馆属于双堆集烈士陵园体系，是否作为独立节点展示仍需项目层面确认。",
-    "verificationNote": "场馆位置和沿革有濉溪县政府资料依据；需确认是否与双堆集烈士陵园合并展示。",
+    "verificationNote": "场馆位置和沿革有濉溪县政府资料依据；需确认是否与双堆集烈士陵园合并展示。图片采用濉溪县政府公开资料图片，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "濉溪县双堆集镇南面 双堆集歼灭战纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%8F%8C%E5%A0%86%E9%9B%86%E6%AD%BC%E7%81%AD%E6%88%98%E7%BA%AA%E5%BF%B5%E9%A6%86",
-    "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "双堆集歼灭战纪念馆相关资料图片",
+    "videoUrl": "https://tv.cctv.com/2025/03/28/VIDEQzOfIR9FVGHSxjKXFASS250328.shtml",
+    "image": "/media/sites/shuangduiji-annihilation-museum/cover.jpg",
+    "imageAlt": "双堆集歼灭战纪念馆外景公开资料照片",
     "tags": [
       "纪念场馆",
       "双堆集",
       "第二阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/shuangduiji-annihilation-museum/gallery-01.jpg",
+        "alt": "双堆集歼灭战纪念馆展厅公开资料照片",
+        "caption": "公开资料照片，来源：濉溪县人民政府《淮海战役双堆集歼灭战纪念馆简介》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "濉溪县人民政府：淮海战役双堆集歼灭战纪念馆简介",
@@ -646,12 +694,16 @@
       {
         "title": "安徽文明网：双堆集赓续红色基因传承“小推车”精神",
         "url": "http://ah.wenming.cn/xcdt/202606/t20260616_6997106.shtml"
+      },
+      {
+        "title": "央视网：双堆集歼灭战相关视频",
+        "url": "https://tv.cctv.com/2025/03/28/VIDEQzOfIR9FVGHSxjKXFASS250328.shtml"
       }
     ],
     "contentStatus": {
       "history": "已核实",
-      "images": "待补充",
-      "video": "待补充"
+      "images": "已补充",
+      "video": "已补充"
     }
   },
   {
@@ -671,19 +723,25 @@
     "labelPosition": "left",
     "summary": "蔡洼旧址兼具总前委会议和华东野战军指挥部旧址属性，被列入文化和旅游部精品线路。",
     "history": "宿州市政府资料记载，蔡洼淮海战役红色旅游景区曾是华东野战军指挥部驻地，完整保留淮海战役总前委会议旧址；公开报道显示，蔡洼位于萧县丁里镇，1948年12月17日前后在此召开总前委会议。景区核心景点包括淮海战役总前委旧址、华东野战军指挥部旧址等，具体会议纪要、参会人员细节和展陈版本仍需结合党史资料核对。",
-    "verificationNote": "旧址身份、位置和会议时间线已据公开资料补充；具体会议内容建议继续引用党史或纪念馆资料。",
+    "verificationNote": "旧址身份、位置和会议时间线已据公开资料补充；具体会议内容建议继续引用党史或纪念馆资料。图片采用宿州市政府公开资料图片，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "萧县丁里镇蔡洼村 淮海战役总前委会议旧址 华野指挥部旧址",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E8%94%A1%E6%B4%BC%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%80%BB%E5%89%8D%E5%A7%94%E4%BC%9A%E8%AE%AE%E6%97%A7%E5%9D%80",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "蔡洼总前委会议暨华野指挥部旧址相关资料图片",
+    "image": "/media/sites/caiwa-front-committee/cover.jpg",
+    "imageAlt": "蔡洼旧址总前委群雕公开资料照片",
     "tags": [
       "总前委会议",
       "华东野战军",
       "蔡洼",
       "第三阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/caiwa-front-committee/gallery-01.jpg",
+        "alt": "蔡洼淮海战役旧址航拍公开资料照片",
+        "caption": "公开资料照片，来源：宿州市人民政府《红色经典——萧县蔡洼淮海战役红色旅游景区》；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "宿州市人民政府：红色经典——萧县蔡洼淮海战役红色旅游景区",
@@ -696,7 +754,7 @@
     ],
     "contentStatus": {
       "history": "已核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   },
@@ -717,19 +775,25 @@
     "labelPosition": "right",
     "summary": "陈官庄地区是淮海战役第三阶段决战的核心区域，战役在此取得最终胜利。",
     "history": "陈官庄地区是淮海战役第三阶段围歼杜聿明集团的核心区域。中央党史资料记载，第三阶段自1948年12月16日至1949年1月10日，主要作战为围歼杜聿明集团。高德公开地点信息显示，淮海战役陈官庄地区歼灭战纪念馆位于商丘市永城市004乡道附近，园区承担纪念、陈列和爱国主义教育功能。",
-    "verificationNote": "阶段日期、核心事件和地图地点已补充；正式门牌、开放信息和馆藏细节需管理单位或现场复核。",
+    "verificationNote": "阶段日期、核心事件和地图地点已补充；正式门牌、开放信息和馆藏细节需管理单位或现场复核。图片采用公开场馆照片，正式上线前仍建议确认转载或授权范围。",
     "navigationQuery": "商丘市永城市004乡道 淮海战役陈官庄地区歼灭战纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E9%99%88%E5%AE%98%E5%BA%84%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E7%BA%AA%E5%BF%B5%E9%A6%86",
-    "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "陈官庄淮海战役纪念馆相关资料图片",
+    "videoUrl": "https://tv.cctv.com/2017/07/07/VIDEgjrwsUsYWG4VSgpme1PN170707.shtml",
+    "image": "/media/sites/chenguanzhuang-memorial/cover.jpg",
+    "imageAlt": "陈官庄淮海战役纪念馆入口公开资料照片",
     "tags": [
       "陈官庄",
       "杜聿明集团",
       "决战",
       "第三阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/chenguanzhuang-memorial/cover.jpg",
+        "alt": "陈官庄淮海战役纪念馆入口公开资料照片",
+        "caption": "公开资料照片，来源：去哪儿攻略陈官庄纪念馆页面；正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "徐州市人民政府：铭记淮海战役伟大胜利",
@@ -742,12 +806,16 @@
       {
         "title": "新华网：陈官庄烈士陵园，永远崇高的精神课堂",
         "url": "https://www.news.cn/local/2023-04/04/c_1129494373.htm"
+      },
+      {
+        "title": "央视网：陈官庄地区歼灭战相关视频",
+        "url": "https://tv.cctv.com/2017/07/07/VIDEgjrwsUsYWG4VSgpme1PN170707.shtml"
       }
     ],
     "contentStatus": {
       "history": "已核实",
-      "images": "待补充",
-      "video": "待补充"
+      "images": "已补充",
+      "video": "已补充"
     }
   },
   {
@@ -771,15 +839,21 @@
     "navigationQuery": "商丘市睢阳区闫集镇张菜园村东 淮海战役总前委旧址纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E5%BC%A0%E8%8F%9C%E5%9B%AD%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E6%80%BB%E5%89%8D%E5%A7%94%E6%97%A7%E5%9D%80%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": null,
-    "image": "/site-placeholder.svg",
-    "imageAlt": "张菜园总前委旧址纪念馆相关资料图片",
+    "image": "/media/sites/zhangcaiyuan-front-committee/gallery-01.jpg",
+    "imageAlt": "张菜园总前委旧址院落公开资料照片",
     "tags": [
       "总前委",
       "商丘",
       "张菜园",
       "第三阶段"
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "src": "/media/sites/zhangcaiyuan-front-committee/gallery-01.jpg",
+        "alt": "张菜园总前委旧址院落公开资料照片",
+        "caption": "公开资料照片，来源：忆起追迹《商丘淮海战役总前委旧址纪念馆参观指南》；图片带有原发布平台标识，正式上线前仍需确认转载或授权范围。"
+      }
+    ],
     "sources": [
       {
         "title": "中共中央纪委国家监委：商丘文脉清风浩荡",
@@ -796,7 +870,7 @@
     ],
     "contentStatus": {
       "history": "待核实",
-      "images": "待补充",
+      "images": "已补充",
       "video": "待补充"
     }
   }
