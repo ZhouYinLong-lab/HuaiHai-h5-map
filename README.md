@@ -1,96 +1,52 @@
 # 淮海战役红色遗址交互地图
 
 <p align="center">
-  <a href="https://huaihai.zylatent.com">
-    <img src="https://img.shields.io/badge/在线访问-huaihai.zylatent.com-2563eb?style=flat-square&logo=safari" alt="Website">
-  </a>
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react" alt="React">
   <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite" alt="Vite">
   <img src="https://img.shields.io/badge/TypeScript-5.6-3178C6?style=flat-square&logo=typescript" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/PWA-ready-5A0FC8?style=flat-square&logo=pwa" alt="PWA">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/languages/top/ZhouYinLong-lab/HuaiHai-h5-map?style=flat-square" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/ZhouYinLong-lab/HuaiHai-h5-map?style=flat-square" alt="Last Commit">
-  <a href="https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml">
-    <img src="https://github.com/ZhouYinLong-lab/HuaiHai-h5-map/actions/workflows/deploy.yml/badge.svg?style=flat-square" alt="Deploy">
-  </a>
-  <img src="https://img.shields.io/github/stars/ZhouYinLong-lab/HuaiHai-h5-map?style=social" alt="Stars">
 </p>
 
 > 淮海战役红色文化数字化传播实践成果
 > 面向手机、平板和电脑的 H5 红色遗址数字展示平台
 
-
-项目以"泛黄历史地图 + 红色地标事件"为核心视觉，通过地图探索、战役时间线、遗址档案和图文资料传播淮海战役红色文化。它是社会实践成果展示平台，不是专业旅游导航或历史数据库。
+项目以“泛黄历史地图＋红色地标事件”为核心视觉，通过地图探索、战役脉络、遗址档案和图文资料传播淮海战役红色文化。项目定位为社会实践成果展示平台，不是专业旅游导航或历史数据库。
 
 ![桌面端地图展示](docs/qa/qa-desktop-map.png)
 
-## 项目状态
+## 当前内容
 
-页面、交互、多端适配、档案地图开场动画、像素风 UI 资源、离线外壳和部署配置均已完成。当前已建立 16 处节点档案并接入公网来源、主要地址和基础史实；项目当前为公开资料展示版，图片授权、专题视频、精确高德定位和正式底图授权仍可继续扩充。
-
-| 模块 | 状态 |
-|---|---|
-| React H5 基础工程 | 已完成 |
-| 手机、平板、电脑适配 | 已完成 |
-| 16 处地标事件结构 | 已完成 |
-| 三阶段战役时间线 | 已完成 |
-| 地图拖拽、滚轮和双指缩放 | 已完成 |
-| 遗址搜索与地区筛选 | 已完成 |
-| 遗址图文档案和媒体槽位 | 已完成 |
-| 卷轴式红色文化开场动画 | 已完成 |
-| B站视频和高德地图 URI 跳转 | 已完成 |
-| 高德开放平台 JS API 页面 | 已接入，部署时预置 Key |
-| PWA 离线应用外壳 | 已完成 |
-| Azure Static Web Apps 配置 | 已完成 |
-| 原创战役态势底图 | 已完成 |
-| 河流、山地、区域边界与作战箭头像素化 | 已完成，使用 `map-base-v2.png` 低分辨率像素底稿并叠加可读史实标注 |
-| 像素风导航图标、全站档案背景、导航推车背景、地图节点图集与 favicon | 已完成，资源位于 `public/media/pixel/` 与 `public/favicon-pixel.png` |
-| 公网权威来源链接 | 已补充 |
-| 权威遗址史料细节 | 13/16 已核实 |
-| 中期审查媒体资源 | 16/16 已补公开资料照片 |
-| 正式历史照片和专题视频 | 图片已收录 16/16；3 个点位已接入央视网专题视频，其余保留检索入口 |
-
-完整资料需求见 [资料收集清单](docs/material-checklist.md)，中期图片说明见 [中期审查媒体资源说明](docs/midterm-media-pack.md)，必须实地采集或授权确认的内容见 [实地资料需求表](docs/on-site-materials.md)。
+- 收录 16 处淮海战役相关地标事件。
+- 覆盖第一阶段、第二阶段、第三阶段和纪念传承四类内容。
+- 战役脉络按“东线合围—双堆集攻坚—陈官庄决胜—纪念传承”展开。
+- 各阶段包含关键时间节点、战局转折、官方来源和可返回地图的像素态势卡片。
+- 遗址档案包含历史正文、图片、图集、资料来源、视频入口和地图定位。
 
 ## 核心功能
 
-- 旧纸档案风格的淮海战役区域地图
-- 首次进入的卷轴打开式红色文化开场动画
-- 三阶段战役时间线与关键事件叙事
-- 16 个地标事件节点，覆盖战场、指挥旧址、起义事件和纪念设施
-- 第一、第二、第三阶段及纪念传承筛选
-- 边界内单指拖拽、双指/鼠标滚轮三级缩放和视角重置
-- 点击节点自动聚焦并打开遗址档案
-- 遗址名称、地区和类型搜索
-- 江苏、安徽、河南地区筛选
-- 封面、历史正文、图集、来源和视频内容槽位
-- B站或权威平台视频外链
-- 高德地图地点检索
-- 高德开放平台 JS API 辅助页，部署方预置 Key 后访问者可直接使用
-- 手机底部导航、平板网格、桌面档案侧栏
-- Web App Manifest、Service Worker 和离线应用外壳
+- 泛黄档案风格的淮海战役区域地图。
+- 像素风河流、山地、区域边界、路线箭头、地图节点和导航图标。
+- 地图边界内拖拽、双指缩放、滚轮缩放和视角重置。
+- 地图节点点击、自动聚焦和遗址档案侧栏。
+- 遗址名称、地区、类型搜索与筛选。
+- 战役脉络时间线和关键事件叙事。
+- 遗址名录、分类卡片和详情档案。
+- 高德地图 URI 检索与导航跳转。
+- 高德地图辅助核验页面，项目配置完成后用户无需填写 Key。
+- B 站或其他权威平台视频外链。
+- 手机底部导航、平板网格布局和桌面档案侧栏。
+- PWA Manifest、Service Worker 和离线应用外壳。
 
-## 多端展示
+## 页面结构
 
-| 手机端 | 桌面端 |
+| 页面 | 内容 |
 |---|---|
-| ![手机端遗址名录](docs/qa/qa-mobile-directory.png) | ![桌面端遗址名录](docs/qa/qa-desktop-directory.png) |
-
-已自动验证以下代表视口：
-
-- 320 × 700
-- 375 × 812
-- 768 × 1024
-- 1024 × 768
-- 1440 × 900
-- 812 × 375 横屏
-
-上述视口均无页面级水平溢出。详细结果见 [QA 报告](docs/qa-report.md)。
+| 地图探索 | 交互式历史地图、阶段筛选和遗址节点 |
+| 战役脉络 | 三个战役阶段、关键转折、态势卡片和纪念传承尾声 |
+| 遗址名录 | 16 处地标的搜索、筛选和档案入口 |
+| 高德辅助 | 高德地图检索、位置核验和导航跳转 |
+| 项目说明 | 项目定位、内容范围和制作说明 |
 
 ## 技术栈
 
@@ -99,160 +55,31 @@
 - TypeScript
 - Tailwind CSS
 - react-zoom-pan-pinch
-- 高德开放平台 JS API 2.0，可选增强
+- 高德开放平台 JS API
 - PWA Service Worker
-- Azure Static Web Apps
 
 项目为纯静态前端，不使用数据库、后台、用户系统或权限系统。
 
-## 本地部署与预览
+## 本地运行
 
-### 环境要求
-
-- Node.js 20.19 或更高版本
-- npm 10 或更高版本
-
-确认环境：
-
-```bash
-node --version
-npm --version
-```
-
-### 1. 安装依赖
-
-在项目根目录执行：
+环境要求：Node.js 20.19 或更高版本，npm 10 或更高版本。
 
 ```bash
 npm install
-```
-
-### 2. 配置高德开放平台 Key
-
-高德地图分两种能力：
-
-- 高德 URI 跳转：不需要 Key，点击后跳转到高德地图检索。
-- 页面内嵌高德 JS 地图：需要高德开放平台 Web 端 JSAPI Key。
-
-Key 只需要开发者或部署方配置一次，访问网站的普通用户不需要填写。项目默认不提交真实 Key；本地开发时复制 `.env.example` 为 `.env.local`：
-
-```bash
-cp .env.example .env.local
-```
-
-然后填写：
-
-```env
-VITE_AMAP_KEY=你的高德Web端JSAPI Key
-VITE_AMAP_SECURITY_JS_CODE=你的安全密钥，可按高德控制台要求填写
-```
-
-填写后重启开发服务器：
-
-```bash
 npm run dev
 ```
 
-生产部署时，也应在构建环境中配置同名变量。这样打包后的网页会自动带上高德配置，用户打开页面即可直接使用内嵌高德地图。
-
-> 注意：Web 端 JSAPI Key 会出现在前端页面里，这是浏览器地图服务的正常工作方式。请在高德控制台设置 Web 端域名白名单，避免 Key 被其他网站滥用。
-
-### 3. 电脑本地开发预览
-
-```bash
-npm run dev
-```
-
-终端显示类似以下地址后，在浏览器打开：
+浏览器打开：
 
 ```text
 http://localhost:5173/
 ```
 
-开发服务器支持热更新，修改代码后页面会自动刷新。
-
-### 4. 手机或其他设备局域网预览
-
-电脑和手机需要连接同一个 Wi‑Fi，然后执行：
-
-```bash
-npm run dev -- --host 0.0.0.0
-```
-
-终端会显示 `Network` 地址，例如：
-
-```text
-http://192.168.1.100:5173/
-```
-
-在手机浏览器输入该地址即可查看。也可以用 PowerShell 查询电脑局域网 IP：
-
-```powershell
-Get-NetIPAddress -AddressFamily IPv4 |
-  Where-Object { $_.IPAddress -notlike "127.*" } |
-  Select-Object InterfaceAlias, IPAddress
-```
-
-如果手机无法访问：
-
-1. 确认手机和电脑位于同一局域网；
-2. 确认使用的是 WLAN 地址，不是 `127.0.0.1`；
-3. 允许 Node.js 通过 Windows 防火墙；
-4. 检查路由器是否开启了设备隔离；
-5. 确认端口 `5173` 未被其他程序占用。
-
-### 5. 生产构建
+校验内容并构建：
 
 ```bash
 npm run validate:content
 npm run build
-```
-
-构建结果输出至 `dist/`。生产包包含：
-
-- 压缩后的 HTML、CSS 和 JavaScript
-- 原创 SVG 地图
-- Web App Manifest
-- Service Worker 离线外壳
-- Azure Static Web Apps 配置
-
-### 6. 本地预览生产包
-
-```bash
-npm run preview -- --host 0.0.0.0
-```
-
-电脑浏览器访问：
-
-```text
-http://localhost:4173/
-```
-
-手机访问终端显示的 `Network` 地址，例如：
-
-```text
-http://192.168.1.100:4173/
-```
-
-开发预览和生产预览的区别：
-
-| 命令 | 用途 | 默认端口 |
-|---|---|---:|
-| `npm run dev` | 日常开发、热更新 | 5173 |
-| `npm run preview` | 验证最终 `dist/` 构建结果 | 4173 |
-
-停止本地服务器时，在运行服务器的终端按 `Ctrl + C`。
-
-检查遗址数据结构：
-
-```bash
-npm run validate:content
-```
-
-资料全部补齐后的严格检查：
-
-```bash
-npm run validate:content -- --strict
 ```
 
 ## 项目结构
@@ -260,52 +87,33 @@ npm run validate:content -- --strict
 ```text
 HuaiHai-h5-map/
 ├── public/
-│   ├── archive-map.svg              # 史实标注、阶段框和像素罗盘图层
-│   ├── favicon-pixel.png            # 像素风 PWA / 浏览器图标
-│   ├── site-placeholder.svg         # 史料图片备份资源
-│   ├── manifest.webmanifest
-│   ├── media/                        # 中期审查媒体资源与后续正式图片
-│   │   └── pixel/                    # 像素图标、节点图集、页面背景与地图底稿
-│   ├── sw.js
-│   └── staticwebapp.config.json     # Azure 静态站点配置
+│   ├── archive-map.svg              # 历史地图与像素装饰图层
+│   ├── favicon-pixel.png            # 像素风浏览器图标
+│   ├── manifest.webmanifest         # PWA 配置
+│   ├── media/                       # 页面背景、地图和遗址媒体资源
+│   │   └── pixel/                   # 像素图标、节点图集与地图底稿
+│   └── sw.js                        # 离线缓存脚本
 ├── src/
-│   ├── components/                  # 导航、地图、时间线、名录、详情等组件
+│   ├── components/                  # 导航、地图、时间线、名录和详情组件
 │   ├── data/sites.json              # 遗址数据唯一入口
-│   ├── styles/                      # 设计令牌和全局样式
-│   └── types/
-├── docs/
-│   ├── material-checklist.md        # 资料收集清单
-│   ├── content-guide.md             # 内容替换说明
-│   ├── qa-report.md                 # 多端验收结果
-│   └── qa/                          # 多端截图
-├── scripts/validate-content.mjs
-└── design-system/MASTER.md
+│   ├── styles/                      # 全局样式与设计令牌
+│   └── types/                       # TypeScript 类型定义
+├── scripts/validate-content.mjs     # 内容结构校验
+├── design-system/MASTER.md          # 视觉设计系统
+└── package.json
 ```
 
-## 内容维护
+## 数据维护
 
-遗址数据集中保存在 [`src/data/sites.json`](src/data/sites.json)。其中：
+遗址数据统一保存在 [`src/data/sites.json`](src/data/sites.json) 中：
 
 - `x`、`y` 是相对于底图的百分比坐标，不是经纬度。
-- `history` 用于正式历史正文。
-- `gallery` 用于历史照片和现场照片。
-- `videoUrl` 用于专题视频链接。
-- `sources` 用于权威资料来源。
-- `contentStatus` 控制页面上的资料准备状态。
+- `history` 是遗址档案中的历史正文。
+- `gallery` 保存遗址图片及图片说明。
+- `videoUrl` 保存专题视频链接。
+- `sources` 保存资料来源链接。
+- `stage`、`kind` 用于阶段筛选和地图图例。
 
-拿到正式资料后的替换步骤见 [内容替换指南](docs/content-guide.md)。
+## 设计说明
 
-## 相关文档
-
-- [资料收集清单](docs/material-checklist.md)
-- [中期审查媒体资源说明](docs/midterm-media-pack.md)
-- [实地资料需求表](docs/on-site-materials.md)
-- [地标事件调研与来源说明](docs/research-sources.md)
-- [内容替换指南](docs/content-guide.md)
-- [完整 QA 报告](docs/qa-report.md)
-- [设计系统](design-system/MASTER.md)
-- [需求卡片](docs/requirements-card.md)
-
-## 设计与实现说明
-
-前端设计采用 Dog-Frontier 工作流，参考其 `frontend-design` 设计哲学、设计令牌方法与 QA 检查标准。
+整体采用泛黄历史档案、像素画和红色战役标记的视觉语言。地图是用于历史文化展示的互动示意图，不用于精确导航或专业军事制图；高德地图仅承担第三方位置检索和导航辅助功能。
