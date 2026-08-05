@@ -29,8 +29,8 @@ const siteStageMeta: Record<string, string> = {
 };
 const phaseCards = [
   { key: "phase-one", stage: "第一阶段", code: "PHASE 01", direction: "徐东 · 碾庄圩方向", left: "83.6%", top: "11.6%", tilt: "3deg" },
-  { key: "phase-two", stage: "第二阶段", code: "PHASE 02", direction: "宿县 · 双堆集方向", left: "43.6%", top: "79%", tilt: "-2deg" },
-  { key: "phase-three", stage: "第三阶段", code: "PHASE 03", direction: "永城 · 陈官庄方向", left: "12.8%", top: "40.2%", tilt: "-3deg" },
+  { key: "phase-two", stage: "第二阶段", code: "PHASE 02", direction: "宿县 · 双堆集方向", left: "67%", top: "76%", tilt: "-2deg" },
+  { key: "phase-three", stage: "第三阶段", code: "PHASE 03", direction: "永城 · 陈官庄方向", left: "26%", top: "38%", tilt: "-3deg" },
 ] as const;
 
 const kindLabels: Record<Site["kind"], string> = {
@@ -63,7 +63,10 @@ function compactDate(site: Site) {
     .replace(/，.*$/, "")
     .replace(/(\d{4})年(\d{1,2})月(\d{1,2})日?/g, "$1.$2.$3")
     .replace(/(\d{4})年(\d{1,2})月/g, "$1.$2")
+    .replace(/(\d{1,2})月(\d{1,2})日?/g, "$1.$2")
+    .replace(/(\d{1,2})月/g, "$1")
     .replace(/(\d{4})年/g, "$1")
+    .replace(/日/g, "")
     .replace("至", "—");
 }
 
@@ -191,9 +194,10 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
                   title={`${site.eventDate}｜${site.eventTitle}`}
                 >
                   <span className="site-marker__symbol" aria-hidden="true" />
+                  <span className="site-marker__leader" aria-hidden="true" />
                   <span className="site-marker__label">
                     <small>{markerMeta(site)}</small>
-                    {site.shortName}
+                    <strong>{site.shortName}</strong>
                   </span>
                 </button>
               );

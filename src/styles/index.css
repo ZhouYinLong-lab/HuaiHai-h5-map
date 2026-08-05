@@ -1827,6 +1827,8 @@ a {
 
 .site-marker__symbol {
   display: block;
+  position: relative;
+  z-index: 1;
   width: 42px;
   height: 42px;
   flex: none;
@@ -1840,9 +1842,22 @@ a {
   transform: rotate(var(--pixel-marker-tilt, 0deg)) scale(var(--pixel-marker-scale, 1));
 }
 
+.site-marker__leader {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: calc(100% - 2px);
+  width: 25px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--marker-color) 0 4px, transparent 4px 7px);
+  opacity: 0.78;
+  pointer-events: none;
+}
+
 .site-marker__label {
   position: absolute;
-  left: calc(100% + 7px);
+  z-index: 2;
+  left: calc(100% + 27px);
   display: flex;
   min-width: max-content;
   flex-direction: column;
@@ -1859,6 +1874,23 @@ a {
   white-space: nowrap;
 }
 
+.site-marker__label::before {
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  width: 7px;
+  height: 7px;
+  border-left: 1px solid var(--marker-color);
+  border-bottom: 1px solid var(--marker-color);
+  background: #f6e5be;
+  content: "";
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.site-marker__label strong {
+  font: inherit;
+}
+
 .site-marker__label small {
   margin-bottom: 3px;
   color: var(--marker-color);
@@ -1867,23 +1899,76 @@ a {
 }
 
 .site-marker--label-left .site-marker__label {
-  right: calc(100% + 7px);
+  right: calc(100% + 27px);
   left: auto;
   align-items: flex-end;
 }
 
+.site-marker--label-left .site-marker__leader {
+  right: calc(100% - 2px);
+  left: auto;
+  background: repeating-linear-gradient(270deg, var(--marker-color) 0 4px, transparent 4px 7px);
+}
+
+.site-marker--label-left .site-marker__label::before {
+  right: -4px;
+  left: auto;
+  border-right: 1px solid var(--marker-color);
+  border-top: 1px solid var(--marker-color);
+  border-left: 0;
+  border-bottom: 0;
+}
+
 .site-marker--label-top .site-marker__label {
-  bottom: calc(100% + 8px);
+  bottom: calc(100% + 27px);
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
 }
 
+.site-marker--label-top .site-marker__leader {
+  top: auto;
+  bottom: calc(100% - 2px);
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: repeating-linear-gradient(180deg, var(--marker-color) 0 4px, transparent 4px 7px);
+}
+
+.site-marker--label-top .site-marker__label::before {
+  top: auto;
+  bottom: -4px;
+  left: 50%;
+  border-right: 1px solid var(--marker-color);
+  border-bottom: 1px solid var(--marker-color);
+  border-left: 0;
+  border-top: 0;
+  transform: translateX(-50%) rotate(45deg);
+}
+
 .site-marker--label-bottom .site-marker__label {
-  top: calc(100% + 14px);
+  top: calc(100% + 27px);
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
+}
+
+.site-marker--label-bottom .site-marker__leader {
+  top: calc(100% - 2px);
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: repeating-linear-gradient(180deg, var(--marker-color) 0 4px, transparent 4px 7px);
+}
+
+.site-marker--label-bottom .site-marker__label::before {
+  top: -4px;
+  left: 50%;
+  border-left: 1px solid var(--marker-color);
+  border-top: 1px solid var(--marker-color);
+  border-right: 0;
+  border-bottom: 0;
+  transform: translateX(-50%) rotate(45deg);
 }
 
 .site-marker:hover,
@@ -1904,6 +1989,10 @@ a {
   border-color: var(--marker-color);
   background: var(--marker-color);
   color: #fff5dc;
+}
+
+.site-marker--active .site-marker__label::before {
+  background: var(--marker-color);
 }
 
 .site-marker--active .site-marker__label small {
