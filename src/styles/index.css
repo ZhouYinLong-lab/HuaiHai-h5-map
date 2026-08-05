@@ -279,11 +279,61 @@ a {
 }
 
 .opening-scroll__pin {
+  display: none;
   fill: #a31f1d;
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center bottom;
   shape-rendering: crispEdges;
+}
+
+.opening-scroll__pixel-sites {
+  position: absolute;
+  inset: 7% 5% 6%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.opening-scroll__pixel-site {
+  position: absolute;
+  display: block;
+  width: 54px;
+  height: 54px;
+  background-image: url("/media/pixel/site-marker-atlas-v1.png");
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 3px rgb(62 36 17 / 30%));
+  opacity: 0;
+  animation: sitePixelRise 360ms steps(5, end) forwards;
+}
+
+.opening-scroll__pixel-site--battlefield {
+  top: 31%;
+  left: 33%;
+  background-position: 66.6667% 0;
+  animation-delay: 1780ms;
+}
+
+.opening-scroll__pixel-site--command {
+  top: 15%;
+  left: 64%;
+  background-position: 66.6667% 33.3333%;
+  animation-delay: 1910ms;
+}
+
+.opening-scroll__pixel-site--uprising {
+  top: 48%;
+  left: 16%;
+  background-position: 0 66.6667%;
+  animation-delay: 2030ms;
+}
+
+.opening-scroll__pixel-site--memorial {
+  top: 62%;
+  left: 68%;
+  background-position: 33.3333% 100%;
+  animation-delay: 2140ms;
 }
 
 .opening-scroll__pin rect {
@@ -2253,6 +2303,18 @@ a {
   65% {
     opacity: 1;
     transform: translateY(-3px) scale(1.08);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes sitePixelRise {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.75);
   }
 
   100% {

@@ -139,6 +139,13 @@ export function OpeningScroll() {
           </text>
         </svg>
 
+        <div className="opening-scroll__pixel-sites" aria-hidden="true">
+          <span className="opening-scroll__pixel-site opening-scroll__pixel-site--battlefield" />
+          <span className="opening-scroll__pixel-site opening-scroll__pixel-site--command" />
+          <span className="opening-scroll__pixel-site opening-scroll__pixel-site--uprising" />
+          <span className="opening-scroll__pixel-site opening-scroll__pixel-site--memorial" />
+        </div>
+
         <div className="opening-scroll__stamp">
           <span>淮海</span>
           <span>档案</span>
