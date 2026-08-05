@@ -50,6 +50,7 @@ const markerRows: Record<Site["kind"], number> = {
 const markerTilts = [-3, 2, -1, 1, 4] as const;
 const markerScales = [0.96, 1, 0.93, 1.03, 0.89] as const;
 const zoomLevels = [1, 1.5, 2.25] as const;
+const archiveMapUrl = "./archive-map.svg?rev=9";
 
 function nearestZoomLevel(scale: number) {
   return zoomLevels.reduce((nearest, level) =>
@@ -147,7 +148,7 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
               draggable={false}
             />
             <img
-              src="./archive-map.svg"
+              src={archiveMapUrl}
               alt="依据权威公开资料原创绘制的淮海战役地标与战场态势示意图"
               className="map-canvas__annotation-layer h-full w-full select-none"
               draggable={false}

@@ -1,4 +1,4 @@
-const CACHE_NAME = "huaihai-map-v8";
+const CACHE_NAME = "huaihai-map-v9";
 const APP_SHELL = [
   "./",
   "./manifest.webmanifest",
