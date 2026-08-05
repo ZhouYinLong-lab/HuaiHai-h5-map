@@ -2018,6 +2018,29 @@ a {
   backdrop-filter: blur(6px);
 }
 
+.map-zoom-status {
+  display: grid;
+  min-height: 42px;
+  place-items: center;
+  border-bottom: 1px solid rgb(52 38 28 / 18%);
+  background: rgb(243 229 196 / 82%);
+  color: var(--color-ink-muted);
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.map-zoom-status strong {
+  margin-top: -2px;
+  color: var(--color-red);
+  font-size: 16px;
+}
+
+.map-zoom-status small {
+  margin-top: -8px;
+  font-size: 8px;
+}
+
 .map-control:last-child {
   border-bottom: 0;
 }

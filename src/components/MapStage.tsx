@@ -31,7 +31,7 @@ const markerRows: Record<Site["kind"], number> = {
 
 const markerTilts = [-3, 2, -1, 1, 4] as const;
 const markerScales = [0.96, 1, 0.93, 1.03, 0.89] as const;
-const zoomLevels = [1, 2, 3] as const;
+const zoomLevels = [1, 1.5, 2.25] as const;
 
 function nearestZoomLevel(scale: number) {
   return zoomLevels.reduce((nearest, level) =>
@@ -66,7 +66,7 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
   }, [activeSiteId]);
 
   const zoomToLevel = (level: (typeof zoomLevels)[number]) => {
-    transformRef.current?.centerView(level, 260);
+    transformRef.current?.centerView(level, 520, "easeOut");
   };
 
   const zoomInToNextLevel = () => {
@@ -90,15 +90,21 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
         centerZoomedOut
         disablePadding
         limitToBounds
-        wheel={{ step: 1, smoothStep: 1 }}
+        wheel={{ step: 0.12, smoothStep: 0.002 }}
         pinch={{ step: 1 }}
-        alignmentAnimation={{ animationTime: 220, velocityAlignmentTime: 220 }}
+        zoomAnimation={{ animationTime: 520, animationType: "easeOut" }}
+        alignmentAnimation={{ animationTime: 520, velocityAlignmentTime: 520, animationType: "easeOut" }}
+        velocityAnimation={{ disabled: true }}
         doubleClick={{ disabled: true }}
         panning={{ velocityDisabled: true }}
         onTransformed={(_, state) => setCurrentScale(state.scale)}
         onPinchingStop={(ref) => {
           const level = nearestZoomLevel(ref.state.scale);
-          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 220);
+          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 520, "easeOut");
+        }}
+        onWheelStop={(ref) => {
+          const level = nearestZoomLevel(ref.state.scale);
+          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 520, "easeOut");
         }}
       >
         <TransformComponent
@@ -177,6 +183,11 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
       </div>
 
       <div className="map-controls">
+        <div className="map-zoom-status" aria-live="polite">
+          <span>视角</span>
+          <strong>{zoomLevels.indexOf(nearestZoomLevel(currentScale)) + 1}</strong>
+          <small>/ 3</small>
+        </div>
         <button className="map-control" type="button" onClick={zoomInToNextLevel} aria-label="放大地图到下一级">
           <PlusIcon />
         </button>
