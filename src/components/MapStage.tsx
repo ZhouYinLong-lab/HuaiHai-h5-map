@@ -3,8 +3,10 @@ import {
   TransformComponent,
   TransformWrapper,
   type ReactZoomPanPinchContentRef,
+  type ReactZoomPanPinchRef,
 } from "react-zoom-pan-pinch";
 import type { Site } from "../types/site";
+import { ASSET_REVISION } from "../utils/asset-revision";
 import { MinusIcon, PlusIcon, ResetIcon } from "./Icons";
 
 interface MapStageProps {
@@ -50,7 +52,12 @@ const markerRows: Record<Site["kind"], number> = {
 const markerTilts = [-3, 2, -1, 1, 4] as const;
 const markerScales = [0.96, 1, 0.93, 1.03, 0.89] as const;
 const zoomLevels = [1, 1.5, 2.25] as const;
-const archiveMapUrl = "./archive-map.svg?rev=9";
+// 吸附容差：最小档距的 16%。保持小于常见触控板滚轮/轻微 pinch 增量，
+// 只对真正接近档位的结果做微调，避免用户刚放大就被吸回原档位。
+const MIN_ZOOM_STEP = Math.min(...zoomLevels.slice(1).map((level, index) => level - zoomLevels[index]));
+const SNAP_TOLERANCE = MIN_ZOOM_STEP * 0.16;
+// 与 public/sw.js 的 ASSET_REVISION 保持一致（sw.js 无法 import TS 模块）
+const archiveMapUrl = `./archive-map.svg?rev=${ASSET_REVISION}`;
 
 function nearestZoomLevel(scale: number) {
   return zoomLevels.reduce((nearest, level) =>
@@ -107,13 +114,21 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
     zoomToLevel(previousLevel);
   };
 
+  const snapToNearestLevel = (ref: ReactZoomPanPinchRef) => {
+    const level = nearestZoomLevel(ref.state.scale);
+    if (Math.abs(level - ref.state.scale) <= SNAP_TOLERANCE) {
+      ref.centerView(level, 520, "easeOut");
+    }
+  };
+
   return (
     <section className="relative min-h-0 min-w-0 w-full flex-1 overflow-hidden" aria-label="淮海战役遗址交互地图">
       <TransformWrapper
         ref={transformRef}
         initialScale={1}
         minScale={1}
-        maxScale={3}
+        // 上限 2.5：高于最高吸附档 2.25、保留 pinch 少许余量，避免 3.0 成为滚轮永远不可达的死配置
+        maxScale={2.5}
         centerOnInit
         centerZoomedOut
         disablePadding
@@ -126,14 +141,8 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
         doubleClick={{ disabled: true }}
         panning={{ velocityDisabled: true }}
         onTransformed={(_, state) => setCurrentScale(state.scale)}
-        onPinchingStop={(ref) => {
-          const level = nearestZoomLevel(ref.state.scale);
-          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 520, "easeOut");
-        }}
-        onWheelStop={(ref) => {
-          const level = nearestZoomLevel(ref.state.scale);
-          if (Math.abs(level - ref.state.scale) > 0.01) ref.centerView(level, 520, "easeOut");
-        }}
+        onPinchingStop={snapToNearestLevel}
+        onWheelStop={snapToNearestLevel}
       >
         <TransformComponent
           wrapperClass="map-transform-wrapper"
