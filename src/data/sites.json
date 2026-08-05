@@ -16,12 +16,12 @@
     "labelPosition": "right",
     "summary": "淮海战役纪念馆与烈士纪念塔园林共同构成徐州核心纪念空间，是从战役全局、英烈记忆和人民支前三个层面进入淮海战役历史的重要入口。",
     "history": "淮海战役纪念馆位于徐州市泉山区解放南路2号淮海战役烈士纪念塔园林内，与烈士纪念塔、碑林、总前委群雕等共同构成徐州核心纪念空间。馆内以战役进程、重要人物、支前运动和胜利意义为主要叙事线索，结合历史图片、文献、地图、实物和场景复原，呈现从战前形势到战役胜利的完整叙事。官方网站介绍，馆藏包括战役期间的命令、日记、地图、武器装备和支前用品等，场馆同时承担史实陈列、英烈纪念和爱国主义教育功能。",
-    "verificationNote": "地址和纪念空间关系已据公开资料补充；开放时间、预约方式和展陈更新仍需上线前复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
+    "verificationNote": "地址和纪念空间关系已据公开资料补充；开放时间、预约方式和展陈更新仍需上线前复核。图集中已加入项目组实地拍摄照片，并与公开资料图片区分标注。",
     "navigationQuery": "徐州市解放南路2号 淮海战役纪念馆",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E7%BA%AA%E5%BF%B5%E9%A6%86",
     "videoUrl": null,
-    "image": "/media/sites/huaihai-campaign-museum/cover.jpg",
-    "imageAlt": "淮海战役纪念馆公开资料照片",
+    "image": "/media/sites/huaihai-campaign-museum/local-01.webp",
+    "imageAlt": "淮海战役纪念馆实地拍摄展陈照片",
     "tags": [
       "纪念场馆",
       "徐州",
@@ -30,19 +30,19 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/huaihai-campaign-museum/gallery-01.jpg",
-        "alt": "淮海战役纪念馆展陈或馆区公开资料照片",
-        "caption": "淮海战役纪念馆展陈"
+        "src": "/media/sites/huaihai-campaign-museum/local-01.webp",
+        "alt": "淮海战役纪念馆实地拍摄展陈照片",
+        "caption": "纪念馆展陈柜"
       },
       {
-        "src": "/media/sites/huaihai-campaign-museum/gallery-02.jpg",
-        "alt": "淮海战役纪念馆建筑外景公开资料照片",
-        "caption": "纪念馆建筑外景"
+        "src": "/media/sites/huaihai-campaign-museum/local-02.webp",
+        "alt": "淮海战役纪念馆实地拍摄艺术展照片",
+        "caption": "馆内艺术展陈"
       },
       {
-        "src": "/media/sites/huaihai-campaign-museum/gallery-03.jpg",
-        "alt": "淮海战役纪念馆历史陈列公开资料照片",
-        "caption": "战役历史陈列"
+        "src": "/media/sites/huaihai-campaign-museum/local-03.webp",
+        "alt": "淮海战役纪念馆实地拍摄全景画照片",
+        "caption": "淮海战役全景画"
       }
     ],
     "sources": [
@@ -57,6 +57,10 @@
       {
         "title": "中国政府网英文版：淮海战役纪念馆",
         "url": "https://www.chinaservicesinfo.com/s/202502/27/WS67c02d86498eec7e1f730716/huaihai-campaign-memorial-hall.html"
+      },
+      {
+        "title": "项目组实地拍摄照片（2025年8月）",
+        "url": null
       }
     ],
     "contentStatus": {
@@ -82,12 +86,12 @@
     "labelPosition": "left",
     "summary": "以淮海战役烈士纪念塔为核心的纪念园林，与纪念馆、碑林和总前委群雕共同形成徐州南郊的纪念轴线，承担英烈缅怀和红色教育功能。",
     "history": "淮海战役烈士纪念塔园林位于徐州市解放南路2号，园内以淮海战役烈士纪念塔为核心，并包含淮海战役纪念馆、碑林、总前委群雕、国防园等纪念空间。从园林入口到纪念塔的中轴线，将公共纪念、英烈姓名和战役叙事连接起来；纪念馆、全景画馆和碑林又把宏观战局、具体人物与牺牲者名单串联起来。参观者在园林中先经过公共纪念空间，再进入展馆阅读战史，最后回到纪念塔和墓园完成凭吊。它不是单一建筑，而是一组由纪念塔、展馆、雕塑和园林路径共同组成的淮海战役记忆场所。",
-    "verificationNote": "地址、主体建筑和纪念属性已据公开资料补充；具体开放安排与园区动线需现场复核。中期审查图片已替换为公开资料照片并在图注标注来源；正式上线前仍建议补充实拍或授权文件。",
+    "verificationNote": "地址、主体建筑和纪念属性已据公开资料补充；具体开放安排与园区动线需现场复核。图集中已加入项目组实地拍摄照片，并与公开资料图片区分标注。",
     "navigationQuery": "徐州市解放南路2号 淮海战役烈士纪念塔园林",
     "videoSearchUrl": "https://search.bilibili.com/all?keyword=%E6%B7%AE%E6%B5%B7%E6%88%98%E5%BD%B9%E7%83%88%E5%A3%AB%E7%BA%AA%E5%BF%B5%E5%A1%94%E5%9B%AD%E6%9E%97",
     "videoUrl": null,
-    "image": "/media/sites/xuzhou-memorial-tower/cover.png",
-    "imageAlt": "淮海战役烈士纪念塔园林公开资料照片",
+    "image": "/media/sites/xuzhou-memorial-tower/local-01.webp",
+    "imageAlt": "淮海战役烈士纪念塔实地拍摄照片",
     "tags": [
       "纪念设施",
       "徐州",
@@ -95,19 +99,19 @@
     ],
     "gallery": [
       {
-        "src": "/media/sites/xuzhou-memorial-tower/cover.png",
-        "alt": "淮海战役烈士纪念塔园林公开资料照片",
-        "caption": "淮海战役烈士纪念塔园林"
+        "src": "/media/sites/xuzhou-memorial-tower/local-01.webp",
+        "alt": "淮海战役烈士纪念塔实地拍摄照片",
+        "caption": "淮海战役烈士纪念塔"
       },
       {
-        "src": "/media/sites/xuzhou-memorial-tower/gallery-02.jpg",
-        "alt": "淮海战役烈士纪念塔园林全景公开资料照片",
-        "caption": "纪念塔园林中轴全景"
+        "src": "/media/sites/xuzhou-memorial-tower/local-02.webp",
+        "alt": "淮海战役烈士纪念塔园区实地拍摄纪念碑照片",
+        "caption": "园区纪念碑"
       },
       {
-        "src": "/media/sites/xuzhou-memorial-tower/gallery-06.jpg",
-        "alt": "淮海战役纪念馆历史场景展陈公开资料照片",
-        "caption": "纪念馆场景复原展陈"
+        "src": "/media/sites/xuzhou-memorial-tower/local-03.webp",
+        "alt": "淮海战役烈士纪念塔园区总前委群雕实地拍摄照片",
+        "caption": "总前委群雕"
       }
     ],
     "sources": [
@@ -122,6 +126,10 @@
       {
         "title": "中国江苏网：徐州淮海战役烈士纪念塔",
         "url": "https://review.jschina.com.cn/ijsetx2019/hsjd/xuzhou/201908/t20190806_2363988.shtml"
+      },
+      {
+        "title": "项目组实地拍摄照片（2025年8月）",
+        "url": null
       }
     ],
     "contentStatus": {
