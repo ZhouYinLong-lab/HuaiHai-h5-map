@@ -1,9 +1,13 @@
 # 淮海战役红色遗址交互地图
 
 <p align="center">
+  <a href="https://huaihai.zylatent.com">
+    <img src="https://img.shields.io/badge/在线网站-huaihai.zylatent.com-2563eb?style=flat-square&logo=safari" alt="在线网站">
+  </a>
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react" alt="React">
   <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite" alt="Vite">
   <img src="https://img.shields.io/badge/TypeScript-5.6-3178C6?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-e91e63?style=flat-square" alt="Made with love">
 </p>
 
 > 南京大学社会实践项目数字化展示成果
