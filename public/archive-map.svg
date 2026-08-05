@@ -124,25 +124,6 @@
     </g>
   </g>
 
-  <!-- 阶段印章 -->
-  <g display="none" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-weight="900" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".8" stroke-width="2">
-    <g transform="translate(1380 90) rotate(3)">
-      <rect width="250" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
-      <text x="125" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第一阶段</text>
-      <text x="125" y="62" fill="#1d1814" font-size="17" text-anchor="middle">徐东 · 碾庄圩方向</text>
-    </g>
-    <g transform="translate(650 845) rotate(-2)">
-      <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
-      <text x="135" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第二阶段</text>
-      <text x="135" y="62" fill="#1d1814" font-size="17" text-anchor="middle">宿县 · 双堆集方向</text>
-    </g>
-    <g transform="translate(95 410) rotate(-3)">
-      <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#493528" stroke-width="3"/>
-      <text x="135" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第三阶段</text>
-      <text x="135" y="62" fill="#1d1814" font-size="17" text-anchor="middle">永城 · 陈官庄方向</text>
-    </g>
-  </g>
-
   <!-- 标题牌 -->
   <g transform="translate(410 150)" filter="url(#inkShadow)">
     <path d="M0 0h520l28 28v122H0Z" fill="#efe1ba" fill-opacity=".92" stroke="#5e432e" stroke-opacity=".72" stroke-width="3"/>

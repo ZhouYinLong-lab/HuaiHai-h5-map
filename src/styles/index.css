@@ -1702,43 +1702,60 @@ a {
 }
 
 .map-phase-card {
+  --phase-border: #9f2729;
+  --phase-paper: rgb(239 224 184 / 88%);
   position: absolute;
   z-index: 7;
   display: grid;
   width: 15%;
-  min-width: 124px;
-  min-height: 58px;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto 1fr;
-  align-items: end;
-  gap: 0.18rem 0.45rem;
+  min-width: 150px;
+  min-height: 80px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  gap: 0.18rem;
   transform: translate(-50%, -50%) rotate(var(--phase-card-tilt));
-  border: 2px solid rgb(145 35 34 / 78%);
-  border-radius: 2px;
-  background: rgb(246 229 190 / 92%);
-  padding: 0.42rem 0.55rem 0.48rem;
+  border: 3px solid var(--phase-border);
+  border-radius: 0;
+  background: var(--phase-paper);
+  padding: 0.55rem 0.75rem 0.6rem;
   color: #1d1814;
   box-shadow: 0 8px 15px rgb(51 30 16 / 19%);
   font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
-  text-align: left;
+  text-align: center;
   transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
 }
 
 .map-phase-card::before {
   position: absolute;
   inset: 4px;
-  border: 1px solid rgb(93 55 30 / 18%);
+  border: 1px solid rgb(93 55 30 / 28%);
+  content: "";
+  pointer-events: none;
+}
+
+.map-phase-card::after {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 22px;
+  height: 22px;
+  border-bottom: 2px solid var(--phase-border);
+  border-left: 2px solid var(--phase-border);
+  background: #f2e3bc;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
   content: "";
   pointer-events: none;
 }
 
 .map-phase-card small {
   grid-column: 1 / -1;
-  color: var(--color-red);
+  color: var(--phase-border);
   font-family: system-ui, sans-serif;
   font-size: 8px;
   font-weight: 800;
   letter-spacing: 0.12em;
+  line-height: 1;
 }
 
 .map-phase-card strong {
@@ -1756,13 +1773,17 @@ a {
   white-space: nowrap;
 }
 
+.map-phase-card--phase-three {
+  --phase-border: #493528;
+}
+
 .map-phase-card.is-active,
 .map-phase-card:hover,
 .map-phase-card:focus-visible {
   z-index: 12;
   transform: translate(-50%, -50%) rotate(var(--phase-card-tilt)) scale(1.04);
   background: #fff0c7;
-  box-shadow: 0 11px 22px rgb(51 30 16 / 28%), 0 0 0 3px rgb(159 29 32 / 16%);
+  box-shadow: 0 11px 22px rgb(51 30 16 / 28%), 0 0 0 3px color-mix(in srgb, var(--phase-border) 20%, transparent);
 }
 
 .map-phase-card:focus-visible {
