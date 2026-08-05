@@ -94,7 +94,9 @@ a {
     radial-gradient(circle at 18% 12%, rgb(171 35 32 / 26%), transparent 18rem),
     linear-gradient(145deg, #110c0a 0%, #2b1a14 47%, #120d0b 100%);
   color: #f9eccf;
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
   isolation: isolate;
+  image-rendering: pixelated;
 }
 
 .opening-scroll.is-leaving {
@@ -121,10 +123,10 @@ a {
     radial-gradient(circle at 42% 44%, rgb(194 43 36 / 32%), transparent 14rem),
     radial-gradient(circle at 64% 36%, rgb(222 171 97 / 25%), transparent 13rem),
     conic-gradient(from 18deg at 50% 45%, transparent, rgb(255 217 146 / 13%), transparent 26%);
-  filter: blur(20px);
+  filter: none;
   opacity: 0.95;
   transform: scale(1.04);
-  animation: emberPulse 2800ms ease-in-out infinite alternate;
+  animation: emberPulse 2800ms steps(6, end) infinite alternate;
 }
 
 .opening-scroll__film {
@@ -143,7 +145,7 @@ a {
   aspect-ratio: 1.5;
   overflow: hidden;
   border: 1px solid rgb(111 72 34 / 45%);
-  border-radius: 16px 6px 18px 7px;
+  border-radius: 3px;
   background:
     linear-gradient(110deg, rgb(255 255 255 / 18%), transparent 18% 82%, rgb(97 54 25 / 17%)),
     repeating-linear-gradient(96deg, rgb(110 76 39 / 6%) 0 1px, transparent 1px 9px),
@@ -153,9 +155,9 @@ a {
     0 34px 70px rgb(0 0 0 / 44%),
     inset 0 0 0 6px rgb(110 75 38 / 7%),
     inset 0 0 42px rgb(89 56 28 / 18%);
-  transform: translateY(16px) rotateX(10deg) scale(0.96);
+  transform: translateY(16px) scale(0.96);
   opacity: 0;
-  animation: archiveOpen 720ms cubic-bezier(0.19, 1, 0.22, 1) 120ms forwards;
+  animation: archiveOpen 720ms steps(10, end) 120ms forwards;
 }
 
 .opening-scroll__case::before,
@@ -178,7 +180,8 @@ a {
 .opening-scroll__case::after {
   background: linear-gradient(100deg, transparent 0 35%, rgb(255 245 213 / 42%) 46%, transparent 57% 100%);
   transform: translateX(-120%);
-  animation: archiveLightSweep 1450ms ease 420ms forwards;
+  image-rendering: pixelated;
+  animation: archiveLightSweep 1450ms steps(12, end) 420ms forwards;
 }
 
 .opening-scroll__tab {
@@ -224,16 +227,20 @@ a {
   width: 90%;
   height: 87%;
   overflow: visible;
-  filter: url("#openingInkBleed");
+  shape-rendering: crispEdges;
+  image-rendering: pixelated;
 }
 
 .opening-scroll__province {
   fill: rgb(159 113 58 / 16%);
   stroke: rgb(76 49 26 / 46%);
   stroke-width: 1.6;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  shape-rendering: crispEdges;
   opacity: 0;
   transform-origin: center;
-  animation: mapInkIn 720ms ease 600ms forwards;
+  animation: mapInkIn 720ms steps(8, end) 600ms forwards;
 }
 
 .opening-scroll__province--two {
@@ -244,9 +251,10 @@ a {
 .opening-scroll__grid {
   stroke: rgb(74 48 25 / 21%);
   stroke-dasharray: 3 7;
-  stroke-linecap: round;
+  stroke-linecap: square;
+  shape-rendering: crispEdges;
   opacity: 0;
-  animation: mapInkIn 500ms ease 820ms forwards;
+  animation: mapInkIn 500ms steps(6, end) 820ms forwards;
 }
 
 .opening-scroll__route-path {
@@ -254,20 +262,20 @@ a {
   stroke: url("#openingRoute");
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
   stroke-width: 5;
-  filter: drop-shadow(0 0 4px rgb(159 29 32 / 34%));
+  shape-rendering: crispEdges;
 }
 
 .opening-scroll__route-path--main {
-  animation: lineDraw 980ms cubic-bezier(0.65, 0, 0.35, 1) 1120ms forwards;
+  animation: lineDraw 980ms steps(18, end) 1120ms forwards;
 }
 
 .opening-scroll__route-path--second {
   stroke-width: 3.5;
   opacity: 0.85;
-  animation: lineDraw 780ms cubic-bezier(0.65, 0, 0.35, 1) 1340ms forwards;
+  animation: lineDraw 780ms steps(14, end) 1340ms forwards;
 }
 
 .opening-scroll__pin {
@@ -275,39 +283,45 @@ a {
   opacity: 0;
   transform-box: fill-box;
   transform-origin: center bottom;
-  filter: drop-shadow(0 5px 5px rgb(79 26 14 / 28%));
+  shape-rendering: crispEdges;
 }
 
-.opening-scroll__pin circle {
+.opening-scroll__pin rect {
   stroke: #f8e2aa;
   stroke-width: 3;
 }
 
+.opening-scroll__pin path {
+  stroke: #f8e2aa;
+  stroke-width: 2;
+  stroke-linejoin: miter;
+}
+
 .opening-scroll__pin--xuzhou {
-  animation: pinRise 360ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 1780ms forwards;
+  animation: pinRise 360ms steps(5, end) 1780ms forwards;
 }
 
 .opening-scroll__pin--nianzhuang {
-  animation: pinRise 360ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 1910ms forwards;
+  animation: pinRise 360ms steps(5, end) 1910ms forwards;
 }
 
 .opening-scroll__pin--shuangduiji {
-  animation: pinRise 360ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 2030ms forwards;
+  animation: pinRise 360ms steps(5, end) 2030ms forwards;
 }
 
 .opening-scroll__pin--linhuan {
-  animation: pinRise 360ms cubic-bezier(0.18, 0.89, 0.32, 1.28) 2140ms forwards;
+  animation: pinRise 360ms steps(5, end) 2140ms forwards;
 }
 
 .opening-scroll__map-label {
   fill: rgb(76 39 22 / 78%);
-  font-family: STKaiti, KaiTi, serif;
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.08em;
   opacity: 0;
   transform: translateY(5px);
-  animation: titleRise 360ms ease 2160ms forwards;
+  animation: titleRise 360ms steps(5, end) 2160ms forwards;
 }
 
 .opening-scroll__map-label--two {
@@ -1718,9 +1732,10 @@ a {
   background: rgb(246 229 190 / 94%);
   padding: 4px 7px 5px;
   box-shadow: 0 4px 12px rgb(53 31 17 / 16%);
-  font-family: STKaiti, KaiTi, serif;
+  font-family: "SimHei", "Microsoft YaHei", Arial, sans-serif;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 900;
+  color: #171411;
   line-height: 1.05;
   white-space: nowrap;
 }

@@ -71,18 +71,10 @@ export function OpeningScroll() {
           viewBox="0 0 360 230"
           focusable="false"
           aria-hidden="true"
+          shapeRendering="crispEdges"
+          style={{ imageRendering: "pixelated" }}
         >
           <defs>
-            <filter id="openingInkBleed" x="-20%" y="-20%" width="140%" height="140%">
-              <feTurbulence
-                type="fractalNoise"
-                baseFrequency="0.9"
-                numOctaves="2"
-                seed="7"
-                result="noise"
-              />
-              <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.9" />
-            </filter>
             <linearGradient id="openingRoute" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#6d1514" stopOpacity="0.15" />
               <stop offset="42%" stopColor="#a31f1d" />
@@ -92,11 +84,11 @@ export function OpeningScroll() {
 
           <path
             className="opening-scroll__province opening-scroll__province--one"
-            d="M40 94 C76 43 124 42 154 69 C178 91 209 62 240 79 C284 103 315 139 292 176 C266 219 196 201 161 185 C121 167 103 195 70 171 C40 149 19 124 40 94Z"
+            d="M40 94H52V75H70V62H94V50H124V55H146V68H159V82H180V76H205V68H230V77H250V86H272V101H292V118H306V139H315V160H303V178H286V192H265V207H236V216H205V208H180V195H158V185H135V178H112V186H88V178H70V170H53V156H39V142H28V122H22V107H30V98H40Z"
           />
           <path
             className="opening-scroll__province opening-scroll__province--two"
-            d="M63 122 C92 104 117 113 141 132 C164 151 185 129 211 136 C249 146 264 177 241 196 C215 217 176 197 148 187 C117 175 88 191 66 169 C47 151 44 136 63 122Z"
+            d="M63 122H80V113H102V118H122V129H141V141H160V151H179V145H197V136H215V140H235V148H250V160H261V175H255V190H242V200H223V208H201V205H177V198H151V188H130V180H112V175H93V184H76V176H62V168H51V153H45V140H51V130H63Z"
           />
 
           <g className="opening-scroll__grid">
@@ -110,30 +102,30 @@ export function OpeningScroll() {
 
           <path
             className="opening-scroll__route-path opening-scroll__route-path--main"
-            d="M70 151 C102 105 139 127 159 94 C185 52 231 74 256 107 C281 139 274 166 306 177"
+            d="M70 151H84V136H98V122H113V116H129V124H143V112H151V96H159V83H172V70H188V64H207V70H224V78H239V89H249V103H258V116H270V130H280V146H288V162H298V170H306V177"
             pathLength={1}
           />
           <path
             className="opening-scroll__route-path opening-scroll__route-path--second"
-            d="M58 111 C91 132 119 157 157 150 C201 141 218 117 257 125 C284 131 300 144 318 158"
+            d="M58 111H74V119H89V130H103V141H119V151H138V154H157V149H176V143H195V135H214V124H235V122H257V126H276V132H291V141H303V150H318V158"
             pathLength={1}
           />
 
           <g className="opening-scroll__pin opening-scroll__pin--xuzhou">
-            <circle cx="158" cy="96" r="9" />
-            <path d="M158 102 L151 119 L166 119Z" />
+            <rect x="151" y="89" width="14" height="14" />
+            <path d="M151 103H165V109H162V119H154V109H151Z" />
           </g>
           <g className="opening-scroll__pin opening-scroll__pin--nianzhuang">
-            <circle cx="257" cy="108" r="8" />
-            <path d="M257 113 L251 128 L263 128Z" />
+            <rect x="250" y="101" width="14" height="14" />
+            <path d="M250 115H264V120H261V128H253V120H250Z" />
           </g>
           <g className="opening-scroll__pin opening-scroll__pin--shuangduiji">
-            <circle cx="207" cy="143" r="8" />
-            <path d="M207 148 L201 164 L214 164Z" />
+            <rect x="200" y="136" width="14" height="14" />
+            <path d="M200 150H214V155H211V164H203V155H200Z" />
           </g>
           <g className="opening-scroll__pin opening-scroll__pin--linhuan">
-            <circle cx="92" cy="130" r="8" />
-            <path d="M92 135 L86 151 L99 151Z" />
+            <rect x="85" y="123" width="14" height="14" />
+            <path d="M85 137H99V142H96V151H88V142H85Z" />
           </g>
 
           <text className="opening-scroll__map-label opening-scroll__map-label--one" x="128" y="88">

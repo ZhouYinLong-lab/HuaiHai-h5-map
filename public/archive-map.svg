@@ -72,7 +72,7 @@
     <path d="M-40 850h120v-25h100v-20h110v20h120v-10h110v-40h130v-45h110v-10h100v22h110v38h105v45h105v25h120v-5h115v-35h115v-25h110v15h110v-20h120" stroke="#9aa99b" stroke-opacity=".3" stroke-width="2" stroke-dasharray="3 10"/>
     <path d="M1420 70v90h-20v90h15v90h35v85h30v95h20v90h-10v90h20v90h-15v90h-35v90h-20v90" stroke="#718c85" stroke-opacity=".43" stroke-width="11"/>
   </g>
-  <g fill="#526c69" fill-opacity=".68" font-family="KaiTi, STKaiti, serif" font-size="24">
+  <g fill="#1e2926" fill-opacity=".92" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".82" stroke-width="3">
     <text x="105" y="210" rotate="-5">故黄河</text>
     <text x="1110" y="785" rotate="-8">浍河水系</text>
     <text x="1475" y="300" rotate="72">运河</text>
@@ -85,7 +85,7 @@
     <path d="M920 40v120h-5v130h10v150h-20v180h10v150h20v150h18v120" stroke-width="6"/>
     <path d="M920 40v120h-5v130h10v150h-20v180h10v150h20v150h18v120" stroke="#d8bd82" stroke-width="2" stroke-dasharray="12 11"/>
   </g>
-  <g fill="#49382a" font-family="KaiTi, STKaiti, serif" font-size="22" opacity=".78">
+  <g fill="#1c1915" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="900" opacity=".92" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".82" stroke-width="3">
     <text x="430" y="420" rotate="-4">陇海铁路</text>
     <text x="940" y="515" rotate="88">津浦铁路</text>
   </g>
@@ -101,15 +101,15 @@
   </g>
 
   <!-- 城镇与区域 -->
-  <g font-family="KaiTi, STKaiti, serif" fill="#3e3025">
-    <g font-size="58" font-weight="700" opacity=".84">
+  <g font-family="SimHei, Microsoft YaHei, Arial, sans-serif" fill="#171411" font-weight="900" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".86" stroke-width="5">
+    <g font-size="58" opacity=".96" writing-mode="vertical-rl" glyph-orientation-vertical="0" text-anchor="middle">
       <text x="890" y="330">徐州</text>
       <text x="1320" y="320">邳州</text>
       <text x="710" y="670">宿县</text>
       <text x="285" y="630">永城</text>
       <text x="75" y="700">商丘</text>
     </g>
-    <g font-size="34" opacity=".68">
+    <g font-size="34" opacity=".9" writing-mode="vertical-rl" glyph-orientation-vertical="0" text-anchor="middle">
       <text x="1010" y="190">贾汪</text>
       <text x="1500" y="410">新沂 · 窑湾</text>
       <text x="620" y="540">萧县</text>
@@ -120,21 +120,21 @@
   </g>
 
   <!-- 阶段印章 -->
-  <g font-family="KaiTi, STKaiti, serif">
+  <g font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-weight="900" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".8" stroke-width="2">
     <g transform="translate(1380 90) rotate(3)">
       <rect width="250" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
-      <text x="125" y="34" fill="#9f2729" font-size="25" font-weight="700" text-anchor="middle">第一阶段</text>
-      <text x="125" y="62" fill="#654736" font-size="17" text-anchor="middle">徐东 · 碾庄圩方向</text>
+      <text x="125" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第一阶段</text>
+      <text x="125" y="62" fill="#1d1814" font-size="17" text-anchor="middle">徐东 · 碾庄圩方向</text>
     </g>
     <g transform="translate(650 845) rotate(-2)">
       <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#9f2729" stroke-width="3"/>
-      <text x="135" y="34" fill="#9f2729" font-size="25" font-weight="700" text-anchor="middle">第二阶段</text>
-      <text x="135" y="62" fill="#654736" font-size="17" text-anchor="middle">宿县 · 双堆集方向</text>
+      <text x="135" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第二阶段</text>
+      <text x="135" y="62" fill="#1d1814" font-size="17" text-anchor="middle">宿县 · 双堆集方向</text>
     </g>
     <g transform="translate(95 410) rotate(-3)">
       <rect width="270" height="80" fill="#efe0b8" fill-opacity=".76" stroke="#493528" stroke-width="3"/>
-      <text x="135" y="34" fill="#493528" font-size="25" font-weight="700" text-anchor="middle">第三阶段</text>
-      <text x="135" y="62" fill="#654736" font-size="17" text-anchor="middle">永城 · 陈官庄方向</text>
+      <text x="135" y="34" fill="#1d1814" font-size="25" text-anchor="middle">第三阶段</text>
+      <text x="135" y="62" fill="#1d1814" font-size="17" text-anchor="middle">永城 · 陈官庄方向</text>
     </g>
   </g>
 
@@ -142,13 +142,13 @@
   <g transform="translate(55 52)" filter="url(#inkShadow)">
     <path d="M0 0h520l28 28v122H0Z" fill="#efe1ba" fill-opacity=".92" stroke="#5e432e" stroke-opacity=".72" stroke-width="3"/>
     <path d="M520 0v28h28" fill="none" stroke="#5e432e" stroke-width="3"/>
-    <text x="28" y="54" fill="#8f2024" font-family="KaiTi, STKaiti, serif" font-size="40" font-weight="700" letter-spacing="5">淮海战役地标与事件图</text>
-    <text x="30" y="96" fill="#4e392b" font-family="KaiTi, STKaiti, serif" font-size="22">1948.11.06 — 1949.01.10</text>
-    <text x="30" y="128" fill="#6d5239" font-family="serif" font-size="16" letter-spacing="2">ORIGINAL INTERACTIVE SITUATION MAP · 非导航地图</text>
+    <text x="28" y="54" fill="#1d1814" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="5">淮海战役地标与事件图</text>
+    <text x="30" y="96" fill="#1d1814" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="900">1948.11.06 — 1949.01.10</text>
+    <text x="30" y="128" fill="#1d1814" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2">ORIGINAL INTERACTIVE SITUATION MAP · 非导航地图</text>
   </g>
 
   <!-- 16-bit 像素罗盘与方位说明 -->
-  <g transform="translate(1586 855)" opacity=".78" font-family="KaiTi, STKaiti, serif" shape-rendering="crispEdges">
+  <g transform="translate(1586 855)" opacity=".92" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-weight="900" shape-rendering="crispEdges" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".7" stroke-width="2">
     <path d="M78 8h16v5h14v7h10v10h10v12h6v16h6v16h4v24h-4v16h-6v16h-6v12h-10v10H108v7H94v5H78v-5H64v-7H50v-10H40v-12H30v-16h-6V94h-4V78h4V62h6V46h6V34h10V24h10V16h14v-5h8Z" fill="#efe1ba" fill-opacity=".22" stroke="#4d3829" stroke-width="4"/>
     <path d="M78 22h16v5h14v8h10v12h8v16h6v23h-6v16h-8v12h-10v8H94v5H78v-5H64v-8H54v-12h-8V86h-4V63h6V47h8V35h10v-8h12Z" fill="none" stroke="#6a4b32" stroke-width="2" stroke-dasharray="5 7"/>
     <g fill="#4d3829">
@@ -173,9 +173,9 @@
       <text x="86" y="192">南</text>
       <text x="-6" y="94">西</text>
     </g>
-    <text x="86" y="218" fill="#6a4b32" font-size="16" text-anchor="middle" letter-spacing="2">像素罗盘</text>
+    <text x="86" y="218" fill="#1d1814" font-size="16" text-anchor="middle" letter-spacing="2">像素罗盘</text>
   </g>
-  <g transform="translate(80 1020)" fill="#4d3829" opacity=".68" font-family="KaiTi, STKaiti, serif">
+  <g transform="translate(80 1020)" fill="#1d1814" opacity=".9" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-weight="800">
     <text font-size="18">地理关系与作战动线为互动展示示意，不用于精确导航或学术制图。</text>
   </g>
 
