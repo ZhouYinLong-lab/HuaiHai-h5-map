@@ -42,7 +42,7 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
         <article className="about-card">
           <span className="about-card__index">02</span>
           <h3>内容边界</h3>
-          <p>未经权威来源确认的名称、坐标、史实、图片和视频均以资料说明为准，不以推测填补空白。</p>
+          <p>内容以地方政府、纪念馆、党史资料和权威媒体公开信息为基础，每处遗址均配有对应的历史文字、影像和来源。</p>
         </article>
         <article className="about-card">
           <span className="about-card__index">03</span>

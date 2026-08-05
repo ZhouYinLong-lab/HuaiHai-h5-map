@@ -49,9 +49,6 @@ export function SitePanel({ site, onClose }: SitePanelProps) {
           </div>
           <p className="mt-3 text-sm leading-7 text-archive-muted">{site.summary}</p>
           <p className="site-address">{site.address}</p>
-          <p className="mt-3 border-l-2 border-archive-gold bg-black/[0.035] px-3 py-2 text-xs leading-5 text-archive-muted">
-            资料提示：{site.verificationNote}
-          </p>
         </div>
       </div>
 
