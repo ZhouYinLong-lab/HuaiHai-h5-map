@@ -87,7 +87,12 @@
   </g>
   <g fill="#1c1915" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="900" opacity=".92" paint-order="stroke fill" stroke="#ead6a6" stroke-opacity=".82" stroke-width="3">
     <text x="430" y="420" rotate="-4">陇海铁路</text>
-    <text x="940" y="515" rotate="88">津浦铁路</text>
+    <text x="940" y="470" writing-mode="vertical-rl" glyph-orientation-vertical="0" text-anchor="middle">
+      <tspan x="940" dy="0">津</tspan>
+      <tspan x="940" dy="25">浦</tspan>
+      <tspan x="940" dy="25">铁</tspan>
+      <tspan x="940" dy="25">路</tspan>
+    </text>
   </g>
 
   <!-- 作战动线：像素折线与方块箭头 -->
