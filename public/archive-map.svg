@@ -178,7 +178,6 @@
       <text x="86" y="192">南</text>
       <text x="-6" y="94">西</text>
     </g>
-    <text x="86" y="218" fill="#1d1814" font-size="16" text-anchor="middle" letter-spacing="2">像素罗盘</text>
   </g>
   <g transform="translate(80 1020)" fill="#1d1814" opacity=".9" font-family="SimHei, Microsoft YaHei, Arial, sans-serif" font-weight="800">
     <text font-size="18">地理关系与作战动线为互动展示示意，不用于精确导航或学术制图。</text>
