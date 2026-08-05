@@ -21,6 +21,12 @@ const stageMeta: Record<(typeof stageOptions)[number], string> = {
   第三阶段: "PHASE 03",
   纪念传承: "MEMORY",
 };
+const siteStageMeta: Record<string, string> = {
+  第一阶段: "PHASE 01",
+  第二阶段: "PHASE 02",
+  第三阶段: "PHASE 03",
+  纪念传承: "MEMORY",
+};
 const phaseCards = [
   { key: "phase-one", stage: "第一阶段", code: "PHASE 01", direction: "徐东 · 碾庄圩方向", left: "83.6%", top: "11.6%", tilt: "3deg" },
   { key: "phase-two", stage: "第二阶段", code: "PHASE 02", direction: "宿县 · 双堆集方向", left: "43.6%", top: "79%", tilt: "-2deg" },
@@ -52,12 +58,18 @@ function nearestZoomLevel(scale: number) {
 }
 
 function compactDate(site: Site) {
-  if (site.stage === "纪念传承") return "纪念传承";
+  if (site.stage === "纪念传承") return "传承纪念";
   return site.eventDate
     .replace(/，.*$/, "")
-    .replace("1948年", "1948·")
-    .replace("1949年", "1949·")
+    .replace(/(\d{4})年(\d{1,2})月(\d{1,2})日?/g, "$1.$2.$3")
+    .replace(/(\d{4})年(\d{1,2})月/g, "$1.$2")
+    .replace(/(\d{4})年/g, "$1")
     .replace("至", "—");
+}
+
+function markerMeta(site: Site) {
+  const stage = siteStageMeta[site.stage] ?? site.stage;
+  return site.stage === "纪念传承" ? `${stage} · 传承纪念` : `${stage} · ${compactDate(site)}`;
 }
 
 export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
@@ -180,7 +192,7 @@ export function MapStage({ sites, activeSiteId, onSelectSite }: MapStageProps) {
                 >
                   <span className="site-marker__symbol" aria-hidden="true" />
                   <span className="site-marker__label">
-                    <small>{compactDate(site)}</small>
+                    <small>{markerMeta(site)}</small>
                     {site.shortName}
                   </span>
                 </button>

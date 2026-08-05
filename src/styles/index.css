@@ -1910,22 +1910,7 @@ a {
   color: #f8d8aa;
 }
 
-.map-canvas.is-overview .site-marker__label small {
-  display: none;
-}
-
 @media (max-width: 1099px) {
-  .map-canvas.is-overview .site-marker__label {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .map-canvas.is-overview .site-marker--active .site-marker__label,
-  .map-canvas.is-overview .site-marker:focus-visible .site-marker__label {
-    visibility: visible;
-    opacity: 1;
-  }
-
   .map-canvas.is-overview .site-marker__symbol {
     width: 34px;
     height: 34px;
