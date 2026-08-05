@@ -42,7 +42,7 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
         <article className="about-card">
           <span className="about-card__index">02</span>
           <h3>内容边界</h3>
-          <p>未经权威来源确认的名称、坐标、史实、图片和视频均明确标记为待核实，不以推测填补空白。</p>
+          <p>未经权威来源确认的名称、坐标、史实、图片和视频均以资料说明为准，不以推测填补空白。</p>
         </article>
         <article className="about-card">
           <span className="about-card__index">03</span>
@@ -54,13 +54,13 @@ export function ProjectAbout({ sites }: ProjectAboutProps) {
       <div className="readiness-section">
         <div>
           <p className="section-eyebrow">CONTENT READINESS / 内容准备度</p>
-          <h3>当前只等待权威资料与媒体素材</h3>
+          <h3>当前内容基于公开来源与已收录素材</h3>
         </div>
         <div className="readiness-grid">
           <ReadinessItem icon="map" label="地标事件" value={sites.length} total={sites.length} suffix="处已建档" />
           <ReadinessItem icon="clock" label="史实核验" value={readyHistory} total={sites.length} suffix="处已完成" />
-          <ReadinessItem icon="photo" label="历史图片" value={readyImages} total={sites.length} suffix="处已补充" />
-          <ReadinessItem icon="film" label="视频资料" value={readyVideos} total={sites.length} suffix="处已补充" />
+          <ReadinessItem icon="photo" label="历史图片" value={readyImages} total={sites.length} suffix="处已收录" />
+          <ReadinessItem icon="film" label="视频资料" value={readyVideos} total={sites.length} suffix="处已接入" />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import type { Site } from "../types/site";
 import { CheckIcon, CloseIcon, ExternalIcon, ImageIcon, PlayIcon, RouteIcon } from "./Icons";
+import { getContentStatusLabel, isContentReady } from "../utils/content-status";
 
 interface SitePanelProps {
   site: Site;
@@ -58,14 +59,14 @@ export function SitePanel({ site, onClose }: SitePanelProps) {
         <h3>遗址档案</h3>
         <p>{site.history}</p>
         <div className="status-pills">
-          <span className={site.contentStatus.history === "已核实" ? "is-ready" : ""}>
-            <CheckIcon /> 史实{site.contentStatus.history}
+          <span className={isContentReady(site, "history") ? "is-ready" : ""}>
+            <CheckIcon /> {getContentStatusLabel(site, "history")}
           </span>
-          <span className={site.contentStatus.images === "已补充" ? "is-ready" : ""}>
-            <ImageIcon /> 图片{site.contentStatus.images}
+          <span className={isContentReady(site, "images") ? "is-ready" : ""}>
+            <ImageIcon /> {getContentStatusLabel(site, "images")}
           </span>
-          <span className={site.contentStatus.video === "已补充" ? "is-ready" : ""}>
-            <PlayIcon /> 视频{site.contentStatus.video}
+          <span className={isContentReady(site, "video") ? "is-ready" : ""}>
+            <PlayIcon /> {getContentStatusLabel(site, "video")}
           </span>
         </div>
       </div>

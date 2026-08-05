@@ -41,7 +41,7 @@ const AMAP_KEY = import.meta.env.VITE_AMAP_KEY?.trim() ?? "";
 const AMAP_SECURITY_JS_CODE = import.meta.env.VITE_AMAP_SECURITY_JS_CODE?.trim() ?? "";
 const AMAP_LOADER_URL = "https://webapi.amap.com/loader.js";
 const AMAP_DOC_URL = "https://lbs.amap.com/";
-const AMAP_KEY_STATUS = AMAP_KEY ? "高德 JS API 已预置" : "高德 JS API 待部署配置";
+const AMAP_KEY_STATUS = AMAP_KEY ? "高德 JS API 已预置" : "高德 JS API 配置未启用";
 
 function buildAmapSearchUrl(query: string) {
   return `https://uri.amap.com/search?keyword=${encodeURIComponent(query)}&callnative=1`;
@@ -144,7 +144,7 @@ export function AmapExplorer({ sites, onSelectSite }: AmapExplorerProps) {
 
   const statusText = {
     idle: "准备加载高德地图",
-    "missing-key": "高德内嵌地图待部署配置",
+    "missing-key": "高德内嵌地图配置未启用",
     loading: "正在加载高德地图 JS API",
     ready: "高德地图 API 已接入",
     error: "高德地图加载失败，请检查 Key、域名白名单或网络",

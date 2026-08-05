@@ -52,7 +52,7 @@ export function AppNavigation({ activeView, onChange, siteCount }: AppNavigation
             );
           })}
         </div>
-        <p className="desktop-nav__foot">{siteCount} 处地标事件 · 资料持续核验中</p>
+        <p className="desktop-nav__foot">{siteCount} 处地标事件 · 公开资料版</p>
       </nav>
 
       <nav className="mobile-nav" aria-label="主要导航">

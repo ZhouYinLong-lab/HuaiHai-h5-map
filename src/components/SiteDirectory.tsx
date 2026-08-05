@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import type { Site } from "../types/site";
 import { ImageIcon, PlayIcon, SearchIcon } from "./Icons";
+import { getContentStatusLabel, isContentReady } from "../utils/content-status";
 
 interface SiteDirectoryProps {
   sites: Site[];
@@ -30,11 +31,11 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
 
   return (
     <section className="content-page" aria-labelledby="directory-title">
-      <div className="content-page__heading">
+        <div className="content-page__heading">
         <div>
           <p className="section-eyebrow">SITE ARCHIVE / 遗址档案</p>
           <h2 id="directory-title">淮海战役红色遗址名录</h2>
-          <p>按区域浏览当前收录节点。正式史料到位后，只需替换对应档案内容。</p>
+          <p>按区域浏览当前收录节点，档案内容可依据新来源持续更新。</p>
         </div>
         <div className="archive-count" aria-label={`共收录${sites.length}处遗址`}>
           <strong>{sites.length}</strong>
@@ -103,11 +104,11 @@ export function SiteDirectory({ sites, onSelectSite, onShowOnMap }: SiteDirector
                   <strong>{site.eventTitle}</strong>
                 </div>
                 <div className="site-card__status" aria-label="内容准备状态">
-                  <span className={site.contentStatus.images === "已补充" ? "is-ready" : ""}>
-                    <ImageIcon /> 图片{site.contentStatus.images}
+                  <span className={isContentReady(site, "images") ? "is-ready" : ""}>
+                    <ImageIcon /> {getContentStatusLabel(site, "images")}
                   </span>
-                  <span className={site.contentStatus.video === "已补充" ? "is-ready" : ""}>
-                    <PlayIcon /> 视频{site.contentStatus.video}
+                  <span className={isContentReady(site, "video") ? "is-ready" : ""}>
+                    <PlayIcon /> {getContentStatusLabel(site, "video")}
                   </span>
                 </div>
                 <div className="site-card__actions">
